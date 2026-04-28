@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import { ButtonHTMLAttributes, forwardRef } from "react";
 
-type Variant = "solid" | "outline";
+type Variant = "solid" | "outline" | "outlineLight";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   to?: string;
@@ -18,16 +18,15 @@ export const GoldButton = forwardRef<HTMLButtonElement, Props>(
     const styles =
       variant === "solid"
         ? "bg-gradient-gold text-primary-foreground hover:shadow-gold hover:-translate-y-0.5"
+        : variant === "outlineLight"
+        ? "border border-white/70 text-white hover:bg-white hover:text-foreground"
         : "border border-primary/70 text-primary hover:bg-primary hover:text-primary-foreground";
 
     const content = (
       <>
         {children}
         {arrow && (
-          <ArrowRight
-            size={14}
-            className="transition-transform duration-500 group-hover:translate-x-1"
-          />
+          <ArrowRight size={14} className="transition-transform duration-500 group-hover:translate-x-1" />
         )}
       </>
     );

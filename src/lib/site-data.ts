@@ -9,81 +9,134 @@ import gallery8 from "@/assets/gallery-8.jpg";
 import gallery9 from "@/assets/gallery-9.jpg";
 import gallery10 from "@/assets/gallery-10.jpg";
 
+import firstKhis from "@/assets/products/first-khis.jpg";
+import firstKhis2 from "@/assets/products/first-khis-2.jpg";
+import eternalKhis from "@/assets/products/eternal-khis.jpg";
+import eternalKhis2 from "@/assets/products/eternal-khis-2.jpg";
+import naturalKhis from "@/assets/products/natural-khis.jpg";
+import naturalKhis2 from "@/assets/products/natural-khis-2.jpg";
+
+import spaHero from "@/assets/blog/spa-hero.jpg";
+import quietLuxuryHero from "@/assets/blog/quiet-luxury-hero.jpg";
+
 export const galleryImages = [
-  { src: gallery1, alt: "Tume puidust vann modernses katusealuses vannitoas" },
-  { src: gallery2, alt: "Eternal KHIS vann tööstuslikus interjööris" },
-  { src: gallery3, alt: "Kensington — ümar puitvann katuseaial" },
-  { src: gallery4, alt: "Natural KHIS — mullivann küünalde valgel" },
-  { src: gallery5, alt: "Käsitöö puitvann tumedas luksusvannitoas" },
-  { src: gallery6, alt: "Vannituba avatud elutoaga, samet sohva" },
-  { src: gallery7, alt: "Natural KHIS graniit-põhi, õhumassaaž ja valgustus" },
-  { src: gallery8, alt: "Vastseliina palverännakute maja vannid" },
-  { src: gallery9, alt: "UK Kensington — õhumassaaž, valgustus ja küte" },
-  { src: gallery10, alt: "Eternal KHIS valgustuse all katusakna juures" },
+  { src: gallery1, alt: "Dark wooden bath in a modern attic bathroom" },
+  { src: gallery2, alt: "Eternal KHIS in an industrial interior" },
+  { src: gallery3, alt: "Kensington — round wooden bath on a roof terrace" },
+  { src: gallery4, alt: "Natural KHIS — bath by candlelight" },
+  { src: gallery5, alt: "Handcrafted wooden bath in a dark luxury bathroom" },
+  { src: gallery6, alt: "Open-plan bathroom with velvet sofa" },
+  { src: gallery7, alt: "Natural KHIS — granite bottom, air-massage and lighting" },
+  { src: gallery8, alt: "Vastseliina Pilgrim House baths" },
+  { src: gallery9, alt: "UK Kensington — air-massage, lighting and heating" },
+  { src: gallery10, alt: "Eternal KHIS lit beneath a skylight" },
 ];
 
 export const products = [
   {
     slug: "first-khis",
     name: "First KHIS",
-    tagline: "Esimene oma laadis — ajatu klassika",
-    image: gallery10,
+    tagline: "for simple luxury in smaller spaces",
+    image: firstKhis,
+    secondaryImage: firstKhis2,
+    capacity: "Up to 380 litres",
+    styles: "Classic & French",
     description:
-      "Originaalne KHIS mudel — käsitööna kokku pandud termotöödeldud saarepuust. Skulptuuriline silueti ja sügav, soe puidu toon.",
+      "First KHIS is the smallest model, though still larger than average with a capacity of up to 380 litres. First KHIS is available in two styles (Classic and French).",
+    deliveryNote:
+      "Once your order is received and we confirm all the custom details, your exclusive, handcrafted bath will be delivered within 9 weeks (depending on the model and availability of accessories).",
+    detail: [
+      {
+        title: "First KHIS Classic",
+        text: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
+      },
+      {
+        title: "First KHIS French",
+        text: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
+      },
+    ],
   },
   {
     slug: "eternal-khis",
     name: "Eternal KHIS",
-    tagline: "Igavene vorm — modernne luksus",
-    image: gallery2,
+    tagline: "for a spa-like experience at home",
+    image: eternalKhis,
+    secondaryImage: eternalKhis2,
+    capacity: "Up to 700 litres",
+    styles: "Classic & French",
     description:
-      "Ovaalne, vabaltseisev vann tugeva siluetiga. Loodud kestma põlvkondi tänu termotöödeldud puidu vastupidavusele.",
+      "Wooden bath “Eternal KHIS” is tall and sculptural, with a capacity of up to 700 litres. It is the perfect centrepiece for large bathrooms. Each bath can be made-to-order, based upon your specific needs and preferences. Eternal KHIS is available in two elegant styles (Classic and French).",
+    deliveryNote:
+      "Once your order is received and we confirm all the custom details, your exclusive, handcrafted bath will be delivered within 9 weeks (depending on the model and availability of accessories).",
+    detail: [
+      {
+        title: "Eternal KHIS Classic",
+        text: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
+      },
+      {
+        title: "Eternal KHIS French",
+        text: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
+      },
+    ],
   },
   {
     slug: "natural-khis",
     name: "Natural KHIS",
-    tagline: "Looduse jõud — õhumassaaž ja graniit",
-    image: gallery4,
+    tagline: "for a group indoors or in nature",
+    image: naturalKhis,
+    secondaryImage: naturalKhis2,
+    capacity: "Up to 960 litres",
+    styles: "Natural KHIS Classic",
     description:
-      "Ümar mullivanni mudel graniit-põhja, õhumassaaži süsteemi ja kromoteraapia valgustusega — täielik spaa-elamus kodus.",
+      "Natural KHIS is a large and versatile bath with an impressive capacity of up to 960 litres. Customisations include light, massage and heating systems.",
+    deliveryNote:
+      "Once your order is received and we confirm all the custom details, your exclusive, handcrafted bath will be delivered within 9 weeks (depending on the model and availability of accessories).",
+    detail: [
+      {
+        title: "Natural KHIS Classic",
+        text: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
+      },
+    ],
   },
 ];
 
+// Verbatim from the live site
 export const features = [
-  { title: "Käsitöö", text: "Iga vann valmib meistri käte all Eestis." },
-  { title: "Termotöödeldud puit", text: "Vastupidav, stabiilne ja ajatu." },
-  { title: "Kohandatav", text: "Mõõdud ja viimistlus teie ruumi järgi." },
-  { title: "Kivipõhi", text: "Graniit põhi soojuse ja luksuse jaoks." },
-  { title: "Massaaži süsteem", text: "Õhu- ja vee-massaaž lõõgastuseks." },
-  { title: "Valgustus", text: "Kromoteraapia LED valgustus." },
-  { title: "Loodussõbralik", text: "Ei ühtegi gramm plastikut." },
-  { title: "Käsitsi viimistlus", text: "Vahaõli viimistlus, sügav läige." },
+  { title: "One of a kind", text: "Bathtubs unlike any others in the world." },
+  { title: "Hand-made", text: "Built by a single master, plank by plank." },
+  { title: "Fully customisable", text: "Size, style and finish made for your space." },
+  { title: "Natural materials", text: "Real wood — never plastic, never composite." },
+  { title: "Thermally processed wood", text: "Ash treated at 215°C for water resistance." },
+  { title: "Unique rubber seals", text: "Custom seals certified by Gislaved Gummi AB." },
+  { title: "Stainless steel cables", text: "Hidden interior cables, yacht-deck technology." },
+  { title: "Eco-friendly finishing", text: "Natural linen seed oil or hot waxing only." },
 ];
 
 export const blogPosts = [
   {
-    slug: "kasitoo-vann-eestist",
-    date: "12. märts 2026",
-    category: "Käsitöö",
-    title: "Käsitöö, mis kestab põlvkondi",
+    slug: "2026-spa-inspired-bathrooms",
+    date: "April 2026",
+    category: "Trends 2026",
+    title: "2026 Spa-Inspired Bathrooms: Why Deeper Soaking Is the Hero Experience This Year",
     excerpt:
-      "Kuidas iga KHIS vann sünnib meistri käes — alates puidu valikust kuni viimase vahaõli kihini. Lugu materjalist, ajast ja kannatlikkusest.",
-    image: gallery5,
+      "In 2026, spa-inspired bathrooms have become one of the most sought-after features in home design. The shift is clear: deeper soaking is no longer a luxury reserved for five-star hotels — it is the hero experience people are actively building into their own homes.",
+    image: spaHero,
   },
   {
-    slug: "loodus-vannitoas",
-    date: "28. veebruar 2026",
-    category: "Inspiratsioon",
-    title: "Loodus tagasi vannituppa",
+    slug: "2026-quiet-luxury-bathrooms",
+    date: "April 2026",
+    category: "Design",
+    title: "Best 2026 “Quiet Luxury” Bathrooms: Warm, Textured Restraint (Not Sterile Minimalism)",
     excerpt:
-      "Miks puit on parim materjal vannile — soojus, akustika, esteetika. Kuidas puitvann muudab igapäevase pesemise rituaaliks.",
-    image: gallery6,
+      "In 2026, quiet luxury bathrooms defined by warm, textured restraint rather than sterile minimalism have become the clearest expression of refined living at home — backed by 96% of bathroom industry respondents identifying neutrals as the most popular bath colours of the year.",
+    image: quietLuxuryHero,
   },
 ];
 
 export const navItems = [
-  { to: "/shop", label: "Pood" },
+  { to: "/about", label: "About" },
+  { to: "/technology", label: "Technology" },
   { to: "/tailor-made", label: "Tailor-made" },
-  { to: "/about", label: "Meist" },
-  { to: "/blog", label: "Blogi" },
+  { to: "/gallery", label: "Gallery" },
+  { to: "/blog", label: "Journal" },
 ];

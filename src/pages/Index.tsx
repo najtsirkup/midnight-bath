@@ -1,3 +1,3 @@
-import { HomeLayout } from "@/components/site/HomeLayout";
-const Index = () => <HomeLayout variant="default" />;
+import HomeLayout from "@/components/site/HomeLayout";
+const Index = () => <HomeLayout />;
 export default Index;
