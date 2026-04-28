@@ -136,7 +136,15 @@ export const blogPosts = [
 export const navItems = [
   { to: "/about", label: "About" },
   { to: "/technology", label: "Technology" },
+  {
+    label: "Products",
+    children: [
+      { to: "/shop/first-khis", label: "First KHIS" },
+      { to: "/shop/eternal-khis", label: "Eternal KHIS" },
+      { to: "/shop/natural-khis", label: "Natural KHIS" },
+    ],
+  },
   { to: "/tailor-made", label: "Tailor-made" },
   { to: "/gallery", label: "Gallery" },
-  { to: "/blog", label: "Journal" },
-];
+  { to: "/blog", label: "Blog" },
+] as const;

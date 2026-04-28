@@ -32,13 +32,13 @@ export const Footer = () => (
         <h4 className="text-xs uppercase tracking-[0.3em] text-primary mb-5">Navigate</h4>
         <ul className="space-y-3">
           <li><Link to="/" className="text-sm text-foreground/80 hover:text-primary transition-colors">Home</Link></li>
-          {navItems.map((n) => (
-            <li key={n.to}>
-              <Link to={n.to} className="text-sm text-foreground/80 hover:text-primary transition-colors">
-                {n.label}
-              </Link>
-            </li>
-          ))}
+          {navItems.flatMap((n) =>
+            "to" in n
+              ? [<li key={n.to}><Link to={n.to} className="text-sm text-foreground/80 hover:text-primary transition-colors">{n.label}</Link></li>]
+              : n.children.map((c) => (
+                  <li key={c.to}><Link to={c.to} className="text-sm text-foreground/80 hover:text-primary transition-colors">{c.label}</Link></li>
+                ))
+          )}
         </ul>
       </div>
 

@@ -6,90 +6,52 @@
 
 @layer base {
   :root {
-    /* Warm Stone — KHIS quiet-luxury palette (light, warm, sophisticated) */
-    --background: 36 22% 96%;          /* Warm cream */
-    --foreground: 25 18% 14%;          /* Deep espresso */
+    /* Midnight Classic — deep, expensive, cinematic */
+    --background: 25 18% 8%;            /* Near-black espresso */
+    --foreground: 36 28% 94%;           /* Warm cream text */
 
-    --card: 36 24% 99%;
-    --card-foreground: 25 18% 14%;
+    --card: 25 16% 11%;
+    --card-foreground: 36 28% 94%;
 
-    --popover: 36 24% 99%;
-    --popover-foreground: 25 18% 14%;
+    --popover: 25 16% 11%;
+    --popover-foreground: 36 28% 94%;
 
-    --primary: 18 38% 52%;             /* Warm terracotta — matches the KHIS logo */
-    --primary-foreground: 36 24% 99%;
-    --primary-glow: 18 55% 65%;
+    --primary: 36 55% 62%;              /* Warm gold/champagne */
+    --primary-foreground: 25 18% 8%;
+    --primary-glow: 38 70% 72%;
 
-    --secondary: 32 18% 90%;           /* Soft taupe */
-    --secondary-foreground: 25 18% 14%;
+    --secondary: 25 14% 14%;            /* Soft graphite */
+    --secondary-foreground: 36 28% 94%;
 
-    --muted: 32 14% 88%;
-    --muted-foreground: 25 10% 40%;
+    --muted: 25 12% 16%;
+    --muted-foreground: 36 12% 68%;
 
-    --accent: 18 38% 52%;
-    --accent-foreground: 36 24% 99%;
+    --accent: 36 55% 62%;
+    --accent-foreground: 25 18% 8%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 36 24% 99%;
+    --destructive-foreground: 36 28% 94%;
 
-    --border: 28 14% 82%;
-    --input: 28 14% 82%;
-    --ring: 18 38% 52%;
+    --border: 36 10% 24%;
+    --input: 36 10% 24%;
+    --ring: 36 55% 62%;
 
     --radius: 0.125rem;
 
-    /* On dark hero imagery */
     --on-dark: 36 30% 96%;
     --on-dark-muted: 36 15% 80%;
 
-    /* Soft hero overlay so the picture stays visible */
-    --gradient-hero: linear-gradient(180deg, hsl(25 30% 8% / 0.25) 0%, hsl(25 30% 8% / 0.55) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(18 38% 52%), hsl(15 42% 44%));
-    --gradient-radial-gold: radial-gradient(circle at center, hsl(18 38% 52% / 0.14), transparent 70%);
-    --shadow-luxury: 0 30px 80px -30px hsl(25 30% 12% / 0.25);
-    --shadow-gold: 0 10px 40px -10px hsl(18 38% 52% / 0.35);
+    /* Toned-down hero overlays so the picture stays visible */
+    --gradient-hero: linear-gradient(180deg, hsl(25 30% 6% / 0.20) 0%, hsl(25 30% 6% / 0.50) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(36 55% 62%), hsl(34 60% 52%));
+    --gradient-radial-gold: radial-gradient(circle at center, hsl(36 55% 62% / 0.14), transparent 70%);
+    --shadow-luxury: 0 30px 80px -30px hsl(0 0% 0% / 0.6);
+    --shadow-gold: 0 10px 40px -10px hsl(36 55% 62% / 0.45);
 
     --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans: 'Inter', system-ui, sans-serif;
 
     --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  /* Ocean Mist (Concept B) — applied via .theme-ocean wrapper on /v2 */
-  .theme-ocean {
-    --background: 210 35% 14%;
-    --foreground: 200 30% 95%;
-
-    --card: 210 30% 18%;
-    --card-foreground: 200 30% 95%;
-
-    --popover: 210 30% 16%;
-    --popover-foreground: 200 30% 95%;
-
-    --primary: 195 75% 65%;
-    --primary-foreground: 210 40% 10%;
-    --primary-glow: 190 90% 75%;
-
-    --secondary: 210 25% 22%;
-    --secondary-foreground: 200 30% 95%;
-
-    --muted: 210 22% 20%;
-    --muted-foreground: 210 15% 70%;
-
-    --accent: 195 70% 60%;
-    --accent-foreground: 210 40% 10%;
-
-    --border: 200 30% 50% / 0.25;
-    --input: 210 25% 25%;
-    --ring: 195 75% 65%;
-
-    --radius: 1rem;
-
-    --gradient-hero: linear-gradient(180deg, hsl(210 40% 10% / 0.55) 0%, hsl(210 35% 14% / 0.85) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(195 75% 65%), hsl(200 80% 55%));
-    --gradient-radial-gold: radial-gradient(circle at center, hsl(195 75% 65% / 0.2), transparent 70%);
-    --shadow-luxury: 0 30px 80px -30px hsl(210 60% 5% / 0.7);
-    --shadow-gold: 0 10px 40px -10px hsl(195 75% 65% / 0.5);
   }
 }
 
@@ -138,7 +100,7 @@
     filter: brightness(0) invert(1);
   }
 
-  /* Page banner — tall image hero that feels expensive */
+  /* Page banner — tall image hero that feels expensive (lighter overlay) */
   .page-banner {
     position: relative;
     min-height: 60vh;
@@ -152,6 +114,65 @@
   }
   .page-banner > .page-banner-overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(180deg, hsl(25 30% 8% / 0.30) 0%, hsl(25 30% 8% / 0.65) 100%);
+    background: linear-gradient(180deg, hsl(25 30% 6% / 0.25) 0%, hsl(25 30% 6% / 0.55) 100%);
   }
+
+  /* Rich typography for raw-HTML blog posts */
+  .blog-html {
+    @apply text-foreground/90;
+    font-size: 1.0625rem;
+    line-height: 1.8;
+  }
+  .blog-html h1 {
+    font-family: var(--font-serif);
+    @apply text-4xl md:text-5xl text-foreground mt-0 mb-8 leading-tight;
+  }
+  .blog-html h2 {
+    font-family: var(--font-serif);
+    @apply text-3xl md:text-4xl text-foreground mt-16 mb-5 leading-tight;
+  }
+  .blog-html h3 {
+    font-family: var(--font-serif);
+    @apply text-xl md:text-2xl text-foreground mt-10 mb-3;
+  }
+  .blog-html p { @apply my-5; }
+  .blog-html a {
+    @apply text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors;
+  }
+  .blog-html ul, .blog-html ol { @apply my-6 pl-6 space-y-2; }
+  .blog-html ul { list-style: none; }
+  .blog-html ul li { @apply relative pl-5; }
+  .blog-html ul li::before {
+    content: "·";
+    @apply absolute left-0 text-primary font-serif text-2xl leading-none top-1;
+  }
+  .blog-html ol { list-style: decimal; }
+  .blog-html ol li::marker { @apply text-primary; }
+  .blog-html strong { @apply text-foreground font-medium; }
+  .blog-html em { @apply italic; }
+  .blog-html blockquote {
+    @apply border-l-2 border-primary pl-6 my-10 italic text-foreground;
+    font-family: var(--font-serif);
+    font-size: 1.375rem;
+    line-height: 1.6;
+    background: transparent !important;
+    color: inherit !important;
+  }
+  .blog-html img {
+    @apply w-full my-10 border border-border bg-muted;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+  .blog-html table {
+    @apply w-full my-10 border border-border text-sm;
+    border-collapse: collapse;
+  }
+  .blog-html th, .blog-html td {
+    @apply border border-border px-4 py-3 align-top text-left;
+  }
+  .blog-html th {
+    @apply bg-secondary text-foreground font-medium uppercase tracking-[0.15em] text-xs;
+  }
+  .blog-html td p { @apply my-0; }
+  .blog-html u { text-decoration: none; }
 }

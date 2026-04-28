@@ -167,7 +167,7 @@ const HomeLayout = () => {
         <div className="container-luxe">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
-              <p className="eyebrow mb-4">Journal</p>
+              <p className="eyebrow mb-4">Blog</p>
               <h2 className="font-serif text-4xl md:text-5xl">Latest reading</h2>
             </div>
             <Link to="/blog" className="text-xs uppercase tracking-[0.3em] text-primary inline-flex items-center gap-2">

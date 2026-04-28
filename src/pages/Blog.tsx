@@ -6,8 +6,8 @@ import gallery6 from "@/assets/gallery-6.jpg";
 
 const Blog = () => (
   <PageShell
-    eyebrow="Journal"
-    title="KHIS Journal"
+    eyebrow="Blog"
+    title="KHIS Blog"
     subtitle="Stories on craftsmanship, quiet luxury, and the deep-soak bathroom."
     bannerImage={gallery6}
     bannerAlt="KHIS bath in a calm interior"
