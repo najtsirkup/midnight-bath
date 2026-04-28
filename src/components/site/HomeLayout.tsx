@@ -1,90 +1,82 @@
 import { Link } from "react-router-dom";
-import { Hammer, Flame, Settings2, Mountain, Waves, Sparkles, Leaf, Brush } from "lucide-react";
+import { ArrowRight, Hammer, Flame, Settings2, Mountain, Waves, Anchor, Leaf, Brush } from "lucide-react";
 import heroBath from "@/assets/hero-bath.jpg";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { GoldButton } from "@/components/site/GoldButton";
-import { products, features, blogPosts } from "@/lib/site-data";
-import { cn } from "@/lib/utils";
+import { products, features, blogPosts, galleryImages } from "@/lib/site-data";
 
-const featureIcons = [Hammer, Flame, Settings2, Mountain, Waves, Sparkles, Leaf, Brush];
+const featureIcons = [Hammer, Brush, Settings2, Leaf, Flame, Waves, Anchor, Mountain];
 
-interface Props {
-  variant?: "default" | "v2";
-}
-
-export const HomeLayout = ({ variant = "default" }: Props) => {
-  const isV2 = variant === "v2";
-
+const HomeLayout = () => {
   return (
-    <div className={cn("min-h-screen bg-background text-foreground", isV2 && "theme-ocean")}>
-      <Header variant={variant} />
+    <div className="min-h-screen bg-background text-foreground">
+      <Header overDark />
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <img
           src={heroBath}
-          alt="Käsitööna valmistatud puidust luksusvann"
+          alt="Handcrafted KHIS wooden bathtub"
           className="absolute inset-0 w-full h-full object-cover animate-slow-zoom"
           width={1920}
           height={1080}
         />
+        {/* Lighter overlay so the picture stays visible */}
         <div className="absolute inset-0 bg-gradient-hero" />
-        <div className="absolute inset-0 bg-background/40" />
 
-        <div className="container-luxe relative z-10 text-center max-w-4xl animate-fade-up">
-          <p className="eyebrow mb-8">KHIS Bath — Est. Estonia</p>
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-foreground">
-            Tunneta kvaliteetpuidu <em className="text-primary not-italic">soojust</em> ja
-            luksust oma vannitoas
+        <div className="container-luxe relative z-10 text-center max-w-4xl animate-fade-up py-32">
+          <p className="eyebrow mb-8 text-white/80">KHIS Bath — Handcrafted in Estonia</p>
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-white">
+            Feel the warmth and luxury of <em className="text-primary-glow not-italic">fine wood</em> in your bathroom.
           </h1>
-          <p className="mt-8 max-w-2xl mx-auto text-base md:text-lg text-foreground/80 leading-relaxed font-light">
-            Käsitööna valmistatud termotöödeldud puidust vannid — sünniks looduslikust
-            materjalist, loodud kestma terve elu.
+          <p className="mt-8 max-w-2xl mx-auto text-base md:text-lg text-white/85 leading-relaxed font-light">
+            Nowadays plastic consumption has become a global problem. Let&rsquo;s fight against
+            plastic pollution together and be by green environment. Use natural products.
           </p>
           <div className="mt-12 flex flex-wrap gap-4 justify-center">
-            <GoldButton to="/shop">Vaata mudeleid</GoldButton>
-            <GoldButton to="/tailor-made" variant="outline" arrow={false}>
-              Tailor-made
+            <GoldButton to="/tailor-made">Request a quote</GoldButton>
+            <GoldButton to="/about" variant="outlineLight" arrow={false}>
+              About KHIS
             </GoldButton>
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-foreground/50">
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-white/60">
           Scroll
         </div>
       </section>
 
       {/* PHILOSOPHY */}
-      <section className="py-32 md:py-44">
+      <section className="py-28 md:py-40 bg-background">
         <div className="container-luxe text-center max-w-3xl">
-          <p className="eyebrow mb-6">Filosoofia</p>
+          <p className="eyebrow mb-6">Philosophy</p>
           <div className="gold-divider mb-10" />
           <h2 className="font-serif text-3xl md:text-5xl leading-tight">
-            Loodus tagasi vannituppa.<br />
-            <span className="text-primary italic">Ilma ühegi grammita</span> plastikut.
+            Bath as a design element.<br />
+            <span className="text-primary italic">Build your bathroom around it.</span>
           </h2>
           <p className="mt-10 text-base md:text-lg text-muted-foreground leading-relaxed font-light">
-            Plastikvannid täitvad kodud, ookeanid ja meie kehad. KHIS sündis vastusena —
-            iga vann on käsitööna ehitatud termotöödeldud puidust, mis kestab põlvkondi
-            ning naaseb lõpuks loodusele tagasi.
+            Loneliness can be boring. Emptiness can be sad. Neither is true for a KHIS bathtub —
+            with its unique design, meant to catch your attention and please the senses even when empty.
+            As in nature, you only can build your own universe in a safe, cozy, warm and inspiring place.
           </p>
         </div>
       </section>
 
       {/* PRODUCTS */}
-      <section className="py-24 md:py-32 border-t border-border/40">
+      <section className="py-24 md:py-32 border-t border-border/60 bg-secondary/40">
         <div className="container-luxe">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
-              <p className="eyebrow mb-4">Kollektsioon</p>
-              <h2 className="font-serif text-4xl md:text-5xl">KHIS mudelid</h2>
+              <p className="eyebrow mb-4">Collection</p>
+              <h2 className="font-serif text-4xl md:text-5xl">Models of KHIS</h2>
             </div>
             <Link
-              to="/shop"
-              className="text-xs uppercase tracking-[0.3em] text-primary hover:opacity-70 transition-opacity"
+              to="/tailor-made"
+              className="text-xs uppercase tracking-[0.3em] text-primary hover:opacity-70 transition-opacity inline-flex items-center gap-2"
             >
-              Vaata kõiki →
+              Order tailor-made <ArrowRight size={14} />
             </Link>
           </div>
 
@@ -92,27 +84,25 @@ export const HomeLayout = ({ variant = "default" }: Props) => {
             {products.map((p) => (
               <Link
                 key={p.slug}
-                to="/shop"
-                className={cn(
-                  "group relative overflow-hidden border border-border/40 bg-card transition-all duration-700 hover:-translate-y-2 hover:shadow-luxury",
-                  isV2 && "glass-card rounded-2xl"
-                )}
+                to={`/shop/${p.slug}`}
+                className="group relative overflow-hidden border border-border bg-card transition-all duration-700 hover:-translate-y-2 hover:shadow-luxury"
               >
-                <div className="relative aspect-[4/5] overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-radial-gold opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10" />
+                <div className="relative aspect-[4/5] overflow-hidden bg-muted">
                   <img
                     src={p.image}
                     alt={p.name}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
                 </div>
-                <div className="p-8 relative">
+                <div className="p-8">
                   <h3 className="font-serif text-2xl mb-2 group-hover:text-primary transition-colors">
                     {p.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground">{p.tagline}</p>
+                  <p className="text-sm text-muted-foreground italic">{p.tagline}</p>
+                  <p className="mt-4 text-xs uppercase tracking-[0.25em] text-primary inline-flex items-center gap-2">
+                    Discover <ArrowRight size={12} className="transition-transform group-hover:translate-x-1" />
+                  </p>
                 </div>
               </Link>
             ))}
@@ -121,11 +111,11 @@ export const HomeLayout = ({ variant = "default" }: Props) => {
       </section>
 
       {/* FEATURES */}
-      <section className="py-24 md:py-32 bg-secondary/30 border-y border-border/40">
+      <section className="py-24 md:py-32 border-y border-border/60 bg-background">
         <div className="container-luxe">
           <div className="text-center mb-16">
-            <p className="eyebrow mb-4">Eripära</p>
-            <h2 className="font-serif text-4xl md:text-5xl">KHISi eripära</h2>
+            <p className="eyebrow mb-4">Features</p>
+            <h2 className="font-serif text-4xl md:text-5xl">Features of KHIS</h2>
             <div className="gold-divider mt-8" />
           </div>
 
@@ -133,13 +123,7 @@ export const HomeLayout = ({ variant = "default" }: Props) => {
             {features.map((f, i) => {
               const Icon = featureIcons[i];
               return (
-                <div
-                  key={f.title}
-                  className={cn(
-                    "text-center p-6 transition-all duration-500 hover:-translate-y-1",
-                    isV2 && "glass-card"
-                  )}
-                >
+                <div key={f.title} className="text-center p-6 transition-all duration-500 hover:-translate-y-1">
                   <div className="inline-flex items-center justify-center w-14 h-14 mb-5 border border-primary/40 text-primary">
                     <Icon size={22} strokeWidth={1.2} />
                   </div>
@@ -152,30 +136,53 @@ export const HomeLayout = ({ variant = "default" }: Props) => {
         </div>
       </section>
 
-      {/* NEWS */}
-      <section className="py-24 md:py-32">
+      {/* GALLERY PREVIEW */}
+      <section className="py-24 md:py-32 bg-secondary/40 border-t border-border/60">
+        <div className="container-luxe">
+          <div className="text-center mb-14">
+            <p className="eyebrow mb-4">Gallery</p>
+            <h2 className="font-serif text-4xl md:text-5xl">KHIS in the world</h2>
+            <div className="gold-divider mt-8" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {galleryImages.slice(0, 4).map((img, i) => (
+              <div key={i} className="overflow-hidden border border-border group">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-110"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <GoldButton to="/gallery">Vaata rohkem</GoldButton>
+          </div>
+        </div>
+      </section>
+
+      {/* JOURNAL */}
+      <section className="py-24 md:py-32 bg-background">
         <div className="container-luxe">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
-              <p className="eyebrow mb-4">Ajakiri</p>
-              <h2 className="font-serif text-4xl md:text-5xl">Viimased uudised</h2>
+              <p className="eyebrow mb-4">Journal</p>
+              <h2 className="font-serif text-4xl md:text-5xl">Latest reading</h2>
             </div>
-            <Link to="/blog" className="text-xs uppercase tracking-[0.3em] text-primary">
-              Kõik artiklid →
+            <Link to="/blog" className="text-xs uppercase tracking-[0.3em] text-primary inline-flex items-center gap-2">
+              All articles <ArrowRight size={14} />
             </Link>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10">
             {blogPosts.map((post) => (
               <Link
-                to="/blog"
+                to={`/blog/${post.slug}`}
                 key={post.slug}
-                className={cn(
-                  "group block border border-border/40 overflow-hidden transition-all duration-700 hover:-translate-y-1 hover:shadow-luxury",
-                  isV2 && "glass-card rounded-2xl"
-                )}
+                className="group block border border-border bg-card overflow-hidden transition-all duration-700 hover:-translate-y-1 hover:shadow-luxury"
               >
-                <div className="aspect-[16/10] overflow-hidden">
+                <div className="aspect-[16/10] overflow-hidden bg-muted">
                   <img
                     src={post.image}
                     alt={post.title}
@@ -189,7 +196,7 @@ export const HomeLayout = ({ variant = "default" }: Props) => {
                     <span className="w-px h-3 bg-border" />
                     <span>{post.date}</span>
                   </div>
-                  <h3 className="font-serif text-2xl mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="font-serif text-xl md:text-2xl mb-3 leading-snug group-hover:text-primary transition-colors">
                     {post.title}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{post.excerpt}</p>
@@ -201,40 +208,28 @@ export const HomeLayout = ({ variant = "default" }: Props) => {
       </section>
 
       {/* CONTACT */}
-      <section className="py-24 md:py-32 bg-secondary/30 border-t border-border/40">
+      <section className="py-24 md:py-32 bg-secondary/40 border-t border-border/60">
         <div className="container-luxe max-w-3xl">
           <div className="text-center mb-14">
-            <p className="eyebrow mb-4">Kontakt</p>
-            <h2 className="font-serif text-4xl md:text-5xl">Võta ühendust</h2>
+            <p className="eyebrow mb-4">Contact us</p>
+            <h2 className="font-serif text-4xl md:text-5xl">Tell us about your project</h2>
             <p className="mt-6 text-muted-foreground">
-              Soovid kohandatud vanni või rohkem informatsiooni? Kirjuta meile.
+              Looking for a tailor-made bath or more information? Write to us.
             </p>
           </div>
 
-          <form
-            className="space-y-10"
-            onSubmit={(e) => {
-              e.preventDefault();
-            }}
-          >
+          <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
             <div className="grid md:grid-cols-2 gap-10">
               <div>
-                <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">
-                  Nimi
-                </label>
+                <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">Name</label>
                 <input
                   type="text"
                   required
-                  className={cn(
-                    "w-full bg-transparent border-0 border-b border-border focus:border-primary outline-none py-3 text-foreground transition-colors",
-                    isV2 && "border-primary/30 focus:border-primary"
-                  )}
+                  className="w-full bg-transparent border-0 border-b border-border focus:border-primary outline-none py-3 text-foreground transition-colors"
                 />
               </div>
               <div>
-                <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">
-                  E-post
-                </label>
+                <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">Email</label>
                 <input
                   type="email"
                   required
@@ -243,9 +238,7 @@ export const HomeLayout = ({ variant = "default" }: Props) => {
               </div>
             </div>
             <div>
-              <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">
-                Sõnum
-              </label>
+              <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">Message</label>
               <textarea
                 rows={4}
                 required
@@ -253,7 +246,7 @@ export const HomeLayout = ({ variant = "default" }: Props) => {
               />
             </div>
             <div className="text-center pt-6">
-              <GoldButton type="submit">Saada</GoldButton>
+              <GoldButton type="submit">Send</GoldButton>
             </div>
           </form>
         </div>
@@ -263,3 +256,5 @@ export const HomeLayout = ({ variant = "default" }: Props) => {
     </div>
   );
 };
+
+export default HomeLayout;
