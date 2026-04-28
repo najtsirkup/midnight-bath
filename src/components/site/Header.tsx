@@ -119,15 +119,32 @@ export const Header = ({ overDark = false }: { overDark?: boolean }) => {
       {open && (
         <div className="lg:hidden border-t border-border/60 bg-background/95 backdrop-blur-xl">
           <nav className="container-luxe py-6 flex flex-col gap-5">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                className="text-sm uppercase tracking-[0.25em] text-foreground/90 hover:text-primary"
-              >
-                {item.label}
-              </NavLink>
-            ))}
+            {navItems.flatMap((item) =>
+              "to" in item
+                ? [
+                    <NavLink
+                      key={item.to}
+                      to={item.to}
+                      className="text-sm uppercase tracking-[0.25em] text-foreground/90 hover:text-primary"
+                    >
+                      {item.label}
+                    </NavLink>,
+                  ]
+                : [
+                    <div key={item.label} className="space-y-3">
+                      <p className="text-xs uppercase tracking-[0.3em] text-primary">{item.label}</p>
+                      {item.children.map((c) => (
+                        <NavLink
+                          key={c.to}
+                          to={c.to}
+                          className="block pl-4 text-sm uppercase tracking-[0.25em] text-foreground/80 hover:text-primary"
+                        >
+                          {c.label}
+                        </NavLink>
+                      ))}
+                    </div>,
+                  ]
+            )}
           </nav>
         </div>
       )}
