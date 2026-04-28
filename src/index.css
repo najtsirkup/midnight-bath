@@ -6,43 +6,48 @@
 
 @layer base {
   :root {
-    /* Midnight Classic (default + Concept A) */
-    --background: 222 47% 8%;          /* Midnight Blue #0A1128-ish */
-    --foreground: 40 30% 92%;
+    /* Warm Stone — KHIS quiet-luxury palette (light, warm, sophisticated) */
+    --background: 36 22% 96%;          /* Warm cream */
+    --foreground: 25 18% 14%;          /* Deep espresso */
 
-    --card: 222 45% 11%;
-    --card-foreground: 40 30% 92%;
+    --card: 36 24% 99%;
+    --card-foreground: 25 18% 14%;
 
-    --popover: 222 45% 10%;
-    --popover-foreground: 40 30% 92%;
+    --popover: 36 24% 99%;
+    --popover-foreground: 25 18% 14%;
 
-    --primary: 40 55% 58%;             /* Elegant gold/bronze */
-    --primary-foreground: 222 47% 8%;
-    --primary-glow: 42 70% 68%;
+    --primary: 18 38% 52%;             /* Warm terracotta — matches the KHIS logo */
+    --primary-foreground: 36 24% 99%;
+    --primary-glow: 18 55% 65%;
 
-    --secondary: 222 35% 16%;
-    --secondary-foreground: 40 30% 92%;
+    --secondary: 32 18% 90%;           /* Soft taupe */
+    --secondary-foreground: 25 18% 14%;
 
-    --muted: 222 30% 14%;
-    --muted-foreground: 220 15% 65%;
+    --muted: 32 14% 88%;
+    --muted-foreground: 25 10% 40%;
 
-    --accent: 40 45% 50%;
-    --accent-foreground: 222 47% 8%;
+    --accent: 18 38% 52%;
+    --accent-foreground: 36 24% 99%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 40 30% 92%;
+    --destructive-foreground: 36 24% 99%;
 
-    --border: 222 30% 20%;
-    --input: 222 30% 20%;
-    --ring: 40 55% 58%;
+    --border: 28 14% 82%;
+    --input: 28 14% 82%;
+    --ring: 18 38% 52%;
 
     --radius: 0.125rem;
 
-    --gradient-hero: linear-gradient(180deg, hsl(222 47% 5% / 0.7) 0%, hsl(222 47% 8% / 0.92) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(40 55% 58%), hsl(35 60% 48%));
-    --gradient-radial-gold: radial-gradient(circle at center, hsl(40 55% 58% / 0.18), transparent 70%);
-    --shadow-luxury: 0 30px 80px -30px hsl(222 60% 2% / 0.8);
-    --shadow-gold: 0 10px 40px -10px hsl(40 55% 58% / 0.4);
+    /* On dark hero imagery */
+    --on-dark: 36 30% 96%;
+    --on-dark-muted: 36 15% 80%;
+
+    /* Soft hero overlay so the picture stays visible */
+    --gradient-hero: linear-gradient(180deg, hsl(25 30% 8% / 0.25) 0%, hsl(25 30% 8% / 0.55) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(18 38% 52%), hsl(15 42% 44%));
+    --gradient-radial-gold: radial-gradient(circle at center, hsl(18 38% 52% / 0.14), transparent 70%);
+    --shadow-luxury: 0 30px 80px -30px hsl(25 30% 12% / 0.25);
+    --shadow-gold: 0 10px 40px -10px hsl(18 38% 52% / 0.35);
 
     --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans: 'Inter', system-ui, sans-serif;
@@ -114,7 +119,7 @@
     max-width: 1400px;
   }
   .eyebrow {
-    @apply text-xs uppercase tracking-[0.3em] text-primary/80 font-medium;
+    @apply text-xs uppercase tracking-[0.3em] text-primary font-medium;
   }
   .gold-divider {
     @apply mx-auto h-px w-16 bg-primary/60;
@@ -127,11 +132,26 @@
     pointer-events: none;
     z-index: 0;
   }
-  .theme-ocean .glass-card {
-    background: hsl(210 35% 20% / 0.5);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid hsl(195 75% 65% / 0.25);
-    box-shadow: 0 0 30px hsl(195 75% 65% / 0.08), inset 0 0 20px hsl(195 75% 65% / 0.05);
+
+  /* Logo: orange→white inversion for use over dark backgrounds */
+  .logo-on-dark {
+    filter: brightness(0) invert(1);
+  }
+
+  /* Page banner — tall image hero that feels expensive */
+  .page-banner {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .page-banner > .page-banner-img {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .page-banner > .page-banner-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, hsl(25 30% 8% / 0.30) 0%, hsl(25 30% 8% / 0.65) 100%);
   }
 }
