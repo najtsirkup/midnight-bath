@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, ChevronDown } from "lucide-react";
 import { navItems } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/logo-orange.jpg";
@@ -56,20 +56,51 @@ export const Header = ({ overDark = false }: { overDark?: boolean }) => {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              className={({ isActive }) =>
-                cn(
-                  "text-[11px] uppercase tracking-[0.3em] transition-colors py-1",
-                  isActive ? activeColor : linkColor
-                )
-              }
-            >
-              {item.label}
-            </NavLink>
-          ))}
+          {navItems.map((item) =>
+            "to" in item ? (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                className={({ isActive }) =>
+                  cn(
+                    "text-[11px] uppercase tracking-[0.3em] transition-colors py-1",
+                    isActive ? activeColor : linkColor
+                  )
+                }
+              >
+                {item.label}
+              </NavLink>
+            ) : (
+              <div key={item.label} className="relative group py-1">
+                <button
+                  className={cn(
+                    "inline-flex items-center gap-1.5 text-[11px] uppercase tracking-[0.3em] transition-colors",
+                    linkColor
+                  )}
+                >
+                  {item.label} <ChevronDown size={12} className="opacity-70" />
+                </button>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="bg-card border border-border shadow-luxury min-w-[220px] py-2">
+                    {item.children.map((c) => (
+                      <NavLink
+                        key={c.to}
+                        to={c.to}
+                        className={({ isActive }) =>
+                          cn(
+                            "block px-5 py-3 text-[11px] uppercase tracking-[0.25em] transition-colors hover:bg-secondary",
+                            isActive ? "text-primary" : "text-foreground/80 hover:text-primary"
+                          )
+                        }
+                      >
+                        {c.label}
+                      </NavLink>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )
+          )}
           <span className={cn("inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.3em] border px-3 py-1.5 cursor-default",
             lightSurface ? "border-border text-muted-foreground" : "border-white/30 text-white/80")}>
             <Globe size={11} /> ENG
