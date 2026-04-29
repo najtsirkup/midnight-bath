@@ -21,7 +21,7 @@ export const Header = ({ overDark = false }: { overDark?: boolean }) => {
 
   // When scrolled or when not over a dark hero — switch to light surface
   const lightSurface = scrolled || open || !overDark;
-  const linkColor = lightSurface ? "text-foreground/85 hover:text-primary" : "text-white/90 hover:text-white";
+  const linkColor = lightSurface ? "text-foreground hover:text-primary" : "text-white hover:text-primary-glow drop-shadow-[0_1px_8px_rgba(0,0,0,0.6)]";
   const activeColor = "text-primary";
 
   return (

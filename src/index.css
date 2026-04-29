@@ -2,51 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* KHIS Bath — Midnight Classic design system. All colors HSL. */
+/* KHIS Bath — Midnight Blue Classic design system. All colors HSL. */
 
 @layer base {
   :root {
-    /* Midnight Classic — deep, expensive, cinematic */
-    --background: 25 18% 8%;            /* Near-black espresso */
-    --foreground: 36 28% 94%;           /* Warm cream text */
+    /* Midnight Blue — deep navy, expensive, cinematic (not pitch black) */
+    --background: 218 35% 11%;          /* Midnight blue */
+    --foreground: 36 38% 96%;           /* Bright warm cream — high contrast */
 
-    --card: 25 16% 11%;
-    --card-foreground: 36 28% 94%;
+    --card: 218 32% 14%;
+    --card-foreground: 36 38% 96%;
 
-    --popover: 25 16% 11%;
-    --popover-foreground: 36 28% 94%;
+    --popover: 218 32% 14%;
+    --popover-foreground: 36 38% 96%;
 
-    --primary: 36 55% 62%;              /* Warm gold/champagne */
-    --primary-foreground: 25 18% 8%;
-    --primary-glow: 38 70% 72%;
+    --primary: 36 62% 66%;              /* Brighter champagne gold */
+    --primary-foreground: 218 35% 11%;
+    --primary-glow: 38 78% 76%;
 
-    --secondary: 25 14% 14%;            /* Soft graphite */
-    --secondary-foreground: 36 28% 94%;
+    --secondary: 218 28% 16%;           /* Soft navy graphite */
+    --secondary-foreground: 36 38% 96%;
 
-    --muted: 25 12% 16%;
-    --muted-foreground: 36 12% 68%;
+    --muted: 218 24% 18%;
+    --muted-foreground: 36 22% 82%;     /* Brighter muted text — readable */
 
-    --accent: 36 55% 62%;
-    --accent-foreground: 25 18% 8%;
+    --accent: 36 62% 66%;
+    --accent-foreground: 218 35% 11%;
 
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 36 28% 94%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 36 38% 96%;
 
-    --border: 36 10% 24%;
-    --input: 36 10% 24%;
-    --ring: 36 55% 62%;
+    --border: 218 18% 28%;
+    --input: 218 18% 28%;
+    --ring: 36 62% 66%;
 
     --radius: 0.125rem;
 
-    --on-dark: 36 30% 96%;
-    --on-dark-muted: 36 15% 80%;
+    --on-dark: 36 40% 98%;
+    --on-dark-muted: 36 22% 86%;
 
     /* Toned-down hero overlays so the picture stays visible */
-    --gradient-hero: linear-gradient(180deg, hsl(25 30% 6% / 0.20) 0%, hsl(25 30% 6% / 0.50) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(36 55% 62%), hsl(34 60% 52%));
-    --gradient-radial-gold: radial-gradient(circle at center, hsl(36 55% 62% / 0.14), transparent 70%);
-    --shadow-luxury: 0 30px 80px -30px hsl(0 0% 0% / 0.6);
-    --shadow-gold: 0 10px 40px -10px hsl(36 55% 62% / 0.45);
+    --gradient-hero: linear-gradient(180deg, hsl(218 40% 8% / 0.20) 0%, hsl(218 40% 8% / 0.50) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(36 62% 66%), hsl(34 65% 56%));
+    --gradient-radial-gold: radial-gradient(circle at center, hsl(36 62% 66% / 0.16), transparent 70%);
+    --shadow-luxury: 0 30px 80px -30px hsl(218 60% 4% / 0.7);
+    --shadow-gold: 0 10px 40px -10px hsl(36 62% 66% / 0.5);
 
     --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans: 'Inter', system-ui, sans-serif;
@@ -73,6 +73,11 @@
     font-weight: 500;
     letter-spacing: -0.01em;
   }
+  /* Native select dropdown options — force readable colors on dark theme */
+  select option {
+    background-color: hsl(var(--card));
+    color: hsl(var(--foreground));
+  }
 }
 
 @layer components {
@@ -84,7 +89,7 @@
     @apply text-xs uppercase tracking-[0.3em] text-primary font-medium;
   }
   .gold-divider {
-    @apply mx-auto h-px w-16 bg-primary/60;
+    @apply mx-auto h-px w-16 bg-primary/70;
   }
   .glow-bg::before {
     content: "";
@@ -100,7 +105,7 @@
     filter: brightness(0) invert(1);
   }
 
-  /* Page banner — tall image hero that feels expensive (lighter overlay) */
+  /* Page banner — tall image hero (lighter overlay so picture stays visible) */
   .page-banner {
     position: relative;
     min-height: 60vh;
@@ -114,12 +119,12 @@
   }
   .page-banner > .page-banner-overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(180deg, hsl(25 30% 6% / 0.25) 0%, hsl(25 30% 6% / 0.55) 100%);
+    background: linear-gradient(180deg, hsl(218 40% 8% / 0.25) 0%, hsl(218 40% 8% / 0.55) 100%);
   }
 
   /* Rich typography for raw-HTML blog posts */
   .blog-html {
-    @apply text-foreground/90;
+    @apply text-foreground/95;
     font-size: 1.0625rem;
     line-height: 1.8;
   }

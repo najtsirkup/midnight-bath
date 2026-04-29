@@ -4,6 +4,7 @@ import heroBath from "@/assets/hero-bath.jpg";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { GoldButton } from "@/components/site/GoldButton";
+import ContactForm from "@/components/site/ContactForm";
 import { products, features, blogPosts, galleryImages } from "@/lib/site-data";
 
 const featureIcons = [Hammer, Brush, Settings2, Leaf, Flame, Waves, Anchor, Mountain];
@@ -26,23 +27,23 @@ const HomeLayout = () => {
         <div className="absolute inset-0 bg-gradient-hero" />
 
         <div className="container-luxe relative z-10 text-center max-w-4xl animate-fade-up py-32">
-          <p className="eyebrow mb-8 text-white/80">KHIS Bath — Handcrafted in Estonia</p>
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-white">
+          <p className="eyebrow mb-8 text-white">KHIS Bath — Handcrafted in Estonia</p>
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.6)]">
             Feel the warmth and luxury of <em className="text-primary-glow not-italic">fine wood</em> in your bathroom.
           </h1>
-          <p className="mt-8 max-w-2xl mx-auto text-base md:text-lg text-white/85 leading-relaxed font-light">
+          <p className="mt-8 max-w-2xl mx-auto text-base md:text-lg text-white leading-relaxed font-light drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             Nowadays plastic consumption has become a global problem. Let&rsquo;s fight against
             plastic pollution together and be by green environment. Use natural products.
           </p>
           <div className="mt-12 flex flex-wrap gap-4 justify-center">
-            <GoldButton to="/tailor-made">Request a quote</GoldButton>
+            <GoldButton to="/contact">Request a quote</GoldButton>
             <GoldButton to="/about" variant="outlineLight" arrow={false}>
               About KHIS
             </GoldButton>
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-white/60">
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-white/80">
           Scroll
         </div>
       </section>
@@ -87,12 +88,12 @@ const HomeLayout = () => {
                 to={`/shop/${p.slug}`}
                 className="group relative overflow-hidden border border-border bg-card transition-all duration-700 hover:-translate-y-2 hover:shadow-luxury"
               >
-                <div className="relative aspect-[4/5] overflow-hidden bg-muted">
+                <div className="relative aspect-[4/5] overflow-hidden bg-secondary/60 flex items-center justify-center p-6">
                   <img
                     src={p.image}
                     alt={p.name}
                     loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-8">
@@ -208,49 +209,7 @@ const HomeLayout = () => {
       </section>
 
       {/* CONTACT */}
-      <section className="py-24 md:py-32 bg-secondary/40 border-t border-border/60">
-        <div className="container-luxe max-w-3xl">
-          <div className="text-center mb-14">
-            <p className="eyebrow mb-4">Contact us</p>
-            <h2 className="font-serif text-4xl md:text-5xl">Tell us about your project</h2>
-            <p className="mt-6 text-muted-foreground">
-              Looking for a tailor-made bath or more information? Write to us.
-            </p>
-          </div>
-
-          <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
-            <div className="grid md:grid-cols-2 gap-10">
-              <div>
-                <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">Name</label>
-                <input
-                  type="text"
-                  required
-                  className="w-full bg-transparent border-0 border-b border-border focus:border-primary outline-none py-3 text-foreground transition-colors"
-                />
-              </div>
-              <div>
-                <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">Email</label>
-                <input
-                  type="email"
-                  required
-                  className="w-full bg-transparent border-0 border-b border-border focus:border-primary outline-none py-3 text-foreground transition-colors"
-                />
-              </div>
-            </div>
-            <div>
-              <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">Message</label>
-              <textarea
-                rows={4}
-                required
-                className="w-full bg-transparent border-0 border-b border-border focus:border-primary outline-none py-3 text-foreground transition-colors resize-none"
-              />
-            </div>
-            <div className="text-center pt-6">
-              <GoldButton type="submit">Send</GoldButton>
-            </div>
-          </form>
-        </div>
-      </section>
+      <ContactForm />
 
       <Footer />
     </div>

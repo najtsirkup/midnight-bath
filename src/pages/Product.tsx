@@ -23,11 +23,13 @@ const Product = () => {
         <div className="container-luxe">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div className="space-y-6">
-              <div className="relative bg-muted">
-                <div className="absolute -inset-6 bg-gradient-radial-gold opacity-60 blur-2xl" />
-                <img src={product.image} alt={product.name} className="relative w-full aspect-[4/3] object-cover border border-border" />
+              <div className="relative bg-secondary/60 flex items-center justify-center p-8 aspect-[4/3]">
+                <div className="absolute -inset-6 bg-gradient-radial-gold opacity-60 blur-2xl pointer-events-none" />
+                <img src={product.image} alt={product.name} className="relative w-full h-full object-contain" />
               </div>
-              <img src={product.secondaryImage} alt={`${product.name} detail`} loading="lazy" className="w-full aspect-[4/3] object-cover border border-border bg-muted" />
+              <div className="bg-secondary/60 flex items-center justify-center p-8 aspect-[4/3] border border-border">
+                <img src={product.secondaryImage} alt={`${product.name} detail`} loading="lazy" className="w-full h-full object-contain" />
+              </div>
             </div>
 
             <div className="md:sticky md:top-28">
@@ -50,7 +52,7 @@ const Product = () => {
               <p className="text-sm text-muted-foreground italic mb-10">{product.deliveryNote}</p>
 
               <div className="flex flex-wrap gap-4">
-                <GoldButton to="/tailor-made">Request a quote</GoldButton>
+                <GoldButton to="/contact">Request a quote</GoldButton>
                 <GoldButton to="/technology" variant="outline" arrow={false}>Technology</GoldButton>
               </div>
             </div>
@@ -84,8 +86,8 @@ const Product = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {others.map((p) => (
                 <Link key={p.slug} to={`/shop/${p.slug}`} className="group block border border-border bg-card overflow-hidden hover:-translate-y-1 hover:shadow-luxury transition-all duration-700">
-                  <div className="aspect-[16/10] overflow-hidden bg-muted">
-                    <img src={p.image} alt={p.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                  <div className="aspect-[16/10] overflow-hidden bg-secondary/60 flex items-center justify-center p-6">
+                    <img src={p.image} alt={p.name} loading="lazy" className="max-w-full max-h-full object-contain transition-transform duration-1000 group-hover:scale-105" />
                   </div>
                   <div className="p-8">
                     <h3 className="font-serif text-2xl mb-1 group-hover:text-primary transition-colors">{p.name}</h3>

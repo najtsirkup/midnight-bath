@@ -80,7 +80,7 @@ const Technology = () => (
               bath of the highest quality craftsmanship — protected by OHIM registration so you won&rsquo;t
               find baths like these made by anyone else.
             </p>
-            <GoldButton to="/tailor-made">Configure your bath</GoldButton>
+            <GoldButton to="/contact">Configure your bath</GoldButton>
           </div>
         </div>
       </div>
