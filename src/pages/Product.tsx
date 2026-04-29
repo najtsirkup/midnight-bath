@@ -50,7 +50,7 @@ const Product = () => {
               <p className="text-sm text-muted-foreground italic mb-10">{product.deliveryNote}</p>
 
               <div className="flex flex-wrap gap-4">
-                <GoldButton to="/tailor-made">Request a quote</GoldButton>
+                <GoldButton to="/contact">Request a quote</GoldButton>
                 <GoldButton to="/technology" variant="outline" arrow={false}>Technology</GoldButton>
               </div>
             </div>

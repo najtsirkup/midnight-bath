@@ -32,7 +32,7 @@ const TailorMade = () => (
           air-massage, lights and a stone bottom</span>. Tell us your vision — we will hand-build it.
         </p>
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
-          <GoldButton to="#quote">Request a free quote</GoldButton>
+          <GoldButton to="/contact">Request a free quote</GoldButton>
           <a
             href="https://khisbath.com/wp-content/uploads/stone-selection.pdf"
             target="_blank" rel="noreferrer"

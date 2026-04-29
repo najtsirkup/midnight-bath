@@ -100,7 +100,7 @@ const About = () => (
               </p>
             </div>
             <div className="mt-10">
-              <GoldButton to="/tailor-made">Start your project</GoldButton>
+              <GoldButton to="/contact">Start your project</GoldButton>
             </div>
           </div>
         </div>

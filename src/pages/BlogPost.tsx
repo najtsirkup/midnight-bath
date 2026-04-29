@@ -36,7 +36,7 @@ const BlogPost = () => {
             <h3 className="font-serif text-3xl md:text-4xl mb-6">
               Ready for your own quiet luxury bath?
             </h3>
-            <GoldButton to="/tailor-made">Request a tailor-made quote</GoldButton>
+            <GoldButton to="/contact">Request a tailor-made quote</GoldButton>
           </div>
         </div>
       </article>
