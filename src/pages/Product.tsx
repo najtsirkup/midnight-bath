@@ -86,8 +86,8 @@ const Product = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {others.map((p) => (
                 <Link key={p.slug} to={`/shop/${p.slug}`} className="group block border border-border bg-card overflow-hidden hover:-translate-y-1 hover:shadow-luxury transition-all duration-700">
-                  <div className="aspect-[16/10] overflow-hidden bg-muted">
-                    <img src={p.image} alt={p.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                  <div className="aspect-[16/10] overflow-hidden bg-secondary/60 flex items-center justify-center p-6">
+                    <img src={p.image} alt={p.name} loading="lazy" className="max-w-full max-h-full object-contain transition-transform duration-1000 group-hover:scale-105" />
                   </div>
                   <div className="p-8">
                     <h3 className="font-serif text-2xl mb-1 group-hover:text-primary transition-colors">{p.name}</h3>

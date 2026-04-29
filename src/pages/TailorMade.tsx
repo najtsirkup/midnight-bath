@@ -121,8 +121,8 @@ const TailorMade = () => (
           <div className="grid md:grid-cols-3 gap-8">
             {products.map((p) => (
               <div key={p.slug} className="border border-border bg-card overflow-hidden">
-                <div className="aspect-[4/3] overflow-hidden bg-muted">
-                  <img src={p.image} alt={p.name} loading="lazy" className="w-full h-full object-cover" />
+                <div className="aspect-[4/3] overflow-hidden bg-secondary/60 flex items-center justify-center p-6">
+                  <img src={p.image} alt={p.name} loading="lazy" className="max-w-full max-h-full object-contain" />
                 </div>
                 <div className="p-6">
                   <h3 className="font-serif text-xl mb-1">{p.name}</h3>
