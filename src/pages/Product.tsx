@@ -23,11 +23,13 @@ const Product = () => {
         <div className="container-luxe">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div className="space-y-6">
-              <div className="relative bg-muted">
-                <div className="absolute -inset-6 bg-gradient-radial-gold opacity-60 blur-2xl" />
-                <img src={product.image} alt={product.name} className="relative w-full aspect-[4/3] object-cover border border-border" />
+              <div className="relative bg-secondary/60 flex items-center justify-center p-8 aspect-[4/3]">
+                <div className="absolute -inset-6 bg-gradient-radial-gold opacity-60 blur-2xl pointer-events-none" />
+                <img src={product.image} alt={product.name} className="relative w-full h-full object-contain" />
               </div>
-              <img src={product.secondaryImage} alt={`${product.name} detail`} loading="lazy" className="w-full aspect-[4/3] object-cover border border-border bg-muted" />
+              <div className="bg-secondary/60 flex items-center justify-center p-8 aspect-[4/3] border border-border">
+                <img src={product.secondaryImage} alt={`${product.name} detail`} loading="lazy" className="w-full h-full object-contain" />
+              </div>
             </div>
 
             <div className="md:sticky md:top-28">
