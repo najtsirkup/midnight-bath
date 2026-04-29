@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/site/PageShell";
 import { GoldButton } from "@/components/site/GoldButton";
+import ContactForm from "@/components/site/ContactForm";
 import { Mountain, Waves, Lightbulb, Ruler, Palette, Thermometer, Check, Clock, Award, Globe } from "lucide-react";
 import { products } from "@/lib/site-data";
 import gallery4 from "@/assets/gallery-4.jpg";
@@ -145,35 +146,7 @@ const TailorMade = () => (
             Tell us about your space and your wishes. We&rsquo;ll come back with a personal proposal — usually within 48 hours.
           </p>
         </div>
-        <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
-          <div className="grid md:grid-cols-2 gap-10">
-            {[
-              ["Name", "text"], ["Email", "email"], ["Country", "text"], ["Phone (optional)", "tel"],
-            ].map(([label, type]) => (
-              <div key={label}>
-                <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">{label}</label>
-                <input type={type} required={type !== "tel"} className="w-full bg-transparent border-0 border-b border-border focus:border-primary outline-none py-3 transition-colors" />
-              </div>
-            ))}
-          </div>
-          <div>
-            <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">Preferred model</label>
-            <select className="w-full bg-transparent border-0 border-b border-border focus:border-primary outline-none py-3 transition-colors">
-              <option>Not sure yet — please advise</option>
-              <option>First KHIS (up to 380 L)</option>
-              <option>Eternal KHIS (up to 700 L)</option>
-              <option>Natural KHIS (up to 960 L)</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">Tell us about your project</label>
-            <textarea rows={5} required className="w-full bg-transparent border-0 border-b border-border focus:border-primary outline-none py-3 resize-none transition-colors" />
-          </div>
-          <div className="text-center pt-6">
-            <GoldButton type="submit">Send my request</GoldButton>
-            <p className="mt-6 text-xs text-muted-foreground">We respond personally — never with a templated reply.</p>
-          </div>
-        </form>
+        <ContactForm embedded />
       </div>
     </section>
   </PageShell>
