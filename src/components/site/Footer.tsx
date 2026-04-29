@@ -8,13 +8,13 @@ export const Footer = () => (
     <div className="container-luxe py-20 grid gap-12 md:grid-cols-4">
       <div className="md:col-span-2">
         <div className="flex items-center gap-3">
-          <img src={logo} alt="KHIS Bath" className="h-10 w-10 object-contain mix-blend-multiply" loading="lazy" />
+          <img src={logo} alt="KHIS Bath" className="h-10 w-10 object-contain logo-on-dark" loading="lazy" />
           <div className="flex items-baseline gap-2 leading-none">
-            <span className="font-serif text-xl tracking-[0.25em]">KHIS</span>
+            <span className="font-serif text-xl tracking-[0.25em] text-foreground">KHIS</span>
             <span className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Bath</span>
           </div>
         </div>
-        <p className="mt-6 max-w-md text-sm text-muted-foreground leading-relaxed">
+        <p className="mt-6 max-w-md text-sm text-foreground/80 leading-relaxed">
           Handcrafted, thermally processed wooden bathtubs. Built in Estonia, shipped worldwide.
           Let&rsquo;s fight against plastic pollution together — use natural products.
         </p>
