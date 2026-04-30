@@ -43,7 +43,7 @@ export const Footer = () => (
       <div className="md:col-span-4">
         <h4 className="text-xs uppercase tracking-[0.3em] text-primary mb-5">Navigate</h4>
         {(() => {
-          const links = [
+          const links: { to: string; label: string }[] = [
             { to: "/", label: "Home" },
             ...navItems.flatMap((n) =>
               "to" in n ? [{ to: n.to, label: n.label }] : n.children.map((c) => ({ to: c.to, label: c.label }))
