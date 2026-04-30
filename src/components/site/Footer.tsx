@@ -38,7 +38,7 @@ export const Footer = () => (
         <p className="mt-6 max-w-md text-sm text-foreground/80 leading-relaxed">
           The company is a member of the{" "}
           <a
-            href="https://www.furnitureindustry.ee"
+            href="https://furnitureindustry.ee/en/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:opacity-80"
