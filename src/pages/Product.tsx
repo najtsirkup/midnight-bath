@@ -58,6 +58,31 @@ const Product = () => {
             </div>
           </div>
 
+          {/* Technical drawings */}
+          {product.specs && product.specs.length > 0 && (
+            <div className="mt-24 md:mt-32">
+              <div className="text-center mb-12">
+                <p className="eyebrow mb-4">Dimensions</p>
+                <h2 className="font-serif text-3xl md:text-4xl">Technical drawings</h2>
+                <div className="gold-divider mt-8" />
+                <p className="mt-6 text-sm text-muted-foreground max-w-xl mx-auto">
+                  Indicative dimensions in millimetres. Each KHIS is custom-made — final sizing
+                  is tailored to your space.
+                </p>
+              </div>
+              <div className={`grid gap-8 ${product.specs.length > 1 ? "md:grid-cols-2" : "md:grid-cols-1 max-w-3xl mx-auto"}`}>
+                {product.specs.map((s) => (
+                  <div key={s.alt} className="bg-white p-8 border border-border">
+                    <img src={s.src} alt={s.alt} loading="lazy" className="w-full h-auto object-contain" />
+                    <p className="mt-4 text-center text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                      {s.alt.split(" — ")[0]}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Features */}
           <div className="mt-32">
             <div className="text-center mb-14">
