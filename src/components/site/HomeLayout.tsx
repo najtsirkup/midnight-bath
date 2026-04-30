@@ -43,9 +43,6 @@ const HomeLayout = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-white/80">
-          Scroll
-        </div>
       </section>
 
       {/* PHILOSOPHY */}
