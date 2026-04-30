@@ -16,6 +16,12 @@ import eternalKhis2 from "@/assets/products/eternal-khis-2.jpg";
 import naturalKhis from "@/assets/products/natural-khis.jpg";
 import naturalKhis2 from "@/assets/products/natural-khis-2.jpg";
 
+import firstClassicSpec from "@/assets/products/first-khis-classic-spec.png";
+import firstFrenchSpec from "@/assets/products/first-khis-french-spec.png";
+import eternalClassicSpec from "@/assets/products/eternal-khis-classic-spec.png";
+import eternalFrenchSpec from "@/assets/products/eternal-khis-french-spec.png";
+import naturalClassicSpec from "@/assets/products/natural-khis-classic-spec.png";
+
 import spaHero from "@/assets/blog/spa-hero.jpg";
 import quietLuxuryHero from "@/assets/blog/quiet-luxury-hero.jpg";
 
