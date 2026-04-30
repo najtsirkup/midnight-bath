@@ -43,12 +43,14 @@ export const Footer = () => (
       <div className="md:col-span-4">
         <h4 className="text-xs uppercase tracking-[0.3em] text-primary mb-5">Navigate</h4>
         {(() => {
-          const links: { to: string; label: string }[] = [
-            { to: "/", label: "Home" },
-            ...navItems.flatMap((n) =>
-              "to" in n ? [{ to: n.to, label: n.label }] : n.children.map((c) => ({ to: c.to, label: c.label }))
-            ),
-          ];
+          const links: { to: string; label: string }[] = [{ to: "/", label: "Home" }];
+          navItems.forEach((n) => {
+            if ("to" in n) {
+              links.push({ to: n.to, label: n.label });
+            } else {
+              n.children.forEach((c) => links.push({ to: c.to, label: c.label }));
+            }
+          });
           return (
             <ul className="grid grid-cols-2 gap-x-6 gap-y-2.5">
               {links.map((l) => (
