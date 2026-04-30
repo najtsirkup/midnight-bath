@@ -61,6 +61,10 @@ export const products = [
         text: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
       },
     ],
+    specs: [
+      { src: firstClassicSpec, alt: "First KHIS Classic — technical drawing" },
+      { src: firstFrenchSpec, alt: "First KHIS French — technical drawing" },
+    ],
   },
   {
     slug: "eternal-khis",
