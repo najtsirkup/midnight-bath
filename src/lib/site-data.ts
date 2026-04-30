@@ -164,5 +164,5 @@ export const navItems = [
   { to: "/tailor-made", label: "Tailor-made" },
   { to: "/gallery", label: "Gallery" },
   { to: "/blog", label: "Blog" },
-  { to: "/contact", label: "Contact" },
+  { to: "/#contact", label: "Contact" },
 ] as const;
