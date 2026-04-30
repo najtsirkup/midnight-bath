@@ -16,6 +16,12 @@ import eternalKhis2 from "@/assets/products/eternal-khis-2.jpg";
 import naturalKhis from "@/assets/products/natural-khis.jpg";
 import naturalKhis2 from "@/assets/products/natural-khis-2.jpg";
 
+import firstClassicSpec from "@/assets/products/first-khis-classic-spec.png";
+import firstFrenchSpec from "@/assets/products/first-khis-french-spec.png";
+import eternalClassicSpec from "@/assets/products/eternal-khis-classic-spec.png";
+import eternalFrenchSpec from "@/assets/products/eternal-khis-french-spec.png";
+import naturalClassicSpec from "@/assets/products/natural-khis-classic-spec.png";
+
 import spaHero from "@/assets/blog/spa-hero.jpg";
 import quietLuxuryHero from "@/assets/blog/quiet-luxury-hero.jpg";
 
@@ -55,6 +61,10 @@ export const products = [
         text: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
       },
     ],
+    specs: [
+      { src: firstClassicSpec, alt: "First KHIS Classic — technical drawing" },
+      { src: firstFrenchSpec, alt: "First KHIS French — technical drawing" },
+    ],
   },
   {
     slug: "eternal-khis",
@@ -78,6 +88,10 @@ export const products = [
         text: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
       },
     ],
+    specs: [
+      { src: eternalClassicSpec, alt: "Eternal KHIS Classic — technical drawing" },
+      { src: eternalFrenchSpec, alt: "Eternal KHIS French — technical drawing" },
+    ],
   },
   {
     slug: "natural-khis",
@@ -96,6 +110,9 @@ export const products = [
         title: "Natural KHIS Classic",
         text: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
       },
+    ],
+    specs: [
+      { src: naturalClassicSpec, alt: "Natural KHIS Classic — technical drawing" },
     ],
   },
 ];
@@ -147,5 +164,5 @@ export const navItems = [
   { to: "/tailor-made", label: "Tailor-made" },
   { to: "/gallery", label: "Gallery" },
   { to: "/blog", label: "Blog" },
-  { to: "/contact", label: "Contact" },
+  { to: "/#contact", label: "Contact" },
 ] as const;
