@@ -88,6 +88,10 @@ export const products = [
         text: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
       },
     ],
+    specs: [
+      { src: eternalClassicSpec, alt: "Eternal KHIS Classic — technical drawing" },
+      { src: eternalFrenchSpec, alt: "Eternal KHIS French — technical drawing" },
+    ],
   },
   {
     slug: "natural-khis",
@@ -106,6 +110,9 @@ export const products = [
         title: "Natural KHIS Classic",
         text: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
       },
+    ],
+    specs: [
+      { src: naturalClassicSpec, alt: "Natural KHIS Classic — technical drawing" },
     ],
   },
 ];
