@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Mail, MapPin, Phone, Award } from "lucide-react";
-import { navItems } from "@/lib/site-data";
-import logo from "@/assets/logo-orange.jpg";
+import logo from "@/assets/logo-khis.png";
+import { useLang } from "@/lib/i18n";
+
 
 const PartnerBadge = ({
   href,
