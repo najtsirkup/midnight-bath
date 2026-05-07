@@ -3,9 +3,11 @@ import { PageShell } from "@/components/site/PageShell";
 import { GoldButton } from "@/components/site/GoldButton";
 import { products, features } from "@/lib/site-data";
 import { Check, ArrowRight } from "lucide-react";
+import { useLang } from "@/lib/i18n";
 
 const Product = () => {
   const { slug = "" } = useParams();
+  const { t } = useLang();
   const product = products.find((p) => p.slug === slug);
   if (!product) return <Navigate to="/" replace />;
 
@@ -13,7 +15,7 @@ const Product = () => {
 
   return (
     <PageShell
-      eyebrow="KHIS Collection"
+      eyebrow={t("products.collection_eyebrow")}
       title={product.name}
       subtitle={product.tagline}
       bannerImage={product.image}
@@ -52,33 +54,46 @@ const Product = () => {
               <p className="text-sm text-muted-foreground italic mb-10">{product.deliveryNote}</p>
 
               <div className="flex flex-wrap gap-4">
-                <GoldButton to="/contact">Request a quote</GoldButton>
-                <GoldButton to="/technology" variant="outline" arrow={false}>Technology</GoldButton>
+                <GoldButton to="/contact">{t("cta.request_quote")}</GoldButton>
+                <GoldButton to="/technology" variant="outline" arrow={false}>{t("product.tech_btn")}</GoldButton>
               </div>
             </div>
           </div>
 
-          {/* Technical drawings */}
+          {/* Technical drawings — dark background to match the original drawings */}
           {product.specs && product.specs.length > 0 && (
             <div className="mt-24 md:mt-32">
               <div className="text-center mb-12">
-                <p className="eyebrow mb-4">Dimensions</p>
-                <h2 className="font-serif text-3xl md:text-4xl">Technical drawings</h2>
+                <p className="eyebrow mb-4">{t("product.tech_eyebrow")}</p>
+                <h2 className="font-serif text-3xl md:text-4xl">{t("product.tech_title")}</h2>
                 <div className="gold-divider mt-8" />
                 <p className="mt-6 text-sm text-muted-foreground max-w-xl mx-auto">
-                  Indicative dimensions in millimetres. Each KHIS is custom-made — final sizing
-                  is tailored to your space.
+                  {t("product.tech_lead")}
                 </p>
               </div>
               <div className={`grid gap-8 ${product.specs.length > 1 ? "md:grid-cols-2" : "md:grid-cols-1 max-w-3xl mx-auto"}`}>
                 {product.specs.map((s) => (
-                  <div key={s.alt} className="bg-white p-8 border border-border">
-                    <img src={s.src} alt={s.alt} loading="lazy" className="w-full h-auto object-contain" />
-                    <p className="mt-4 text-center text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                      {s.alt.split(" — ")[0]}
-                    </p>
+                  <div
+                    key={s.alt}
+                    className="p-8 border border-primary/30 flex items-center justify-center"
+                    style={{ background: "hsl(218 40% 8%)" }}
+                  >
+                    <img
+                      src={s.src}
+                      alt={s.alt}
+                      loading="lazy"
+                      className="w-full h-auto object-contain"
+                    />
                   </div>
                 ))}
+                {/* Captions row below */}
+                <div className={`${product.specs.length > 1 ? "md:col-span-2" : ""} grid gap-8 ${product.specs.length > 1 ? "md:grid-cols-2" : ""}`}>
+                  {product.specs.map((s) => (
+                    <p key={s.alt + "-c"} className="text-center text-xs uppercase tracking-[0.25em] text-primary">
+                      {s.alt.split(" — ")[0]}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
           )}
@@ -86,16 +101,16 @@ const Product = () => {
           {/* Features */}
           <div className="mt-32">
             <div className="text-center mb-14">
-              <p className="eyebrow mb-4">Hallmarks</p>
-              <h2 className="font-serif text-4xl md:text-5xl">Features of KHIS</h2>
+              <p className="eyebrow mb-4">{t("features.hallmarks")}</p>
+              <h2 className="font-serif text-4xl md:text-5xl">{t("features.title")}</h2>
               <div className="gold-divider mt-8" />
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {features.map((f) => (
-                <div key={f.title} className="border border-border p-6 bg-card">
+                <div key={f.key} className="border border-border p-6 bg-card">
                   <Check size={16} className="text-primary mb-4" />
-                  <h3 className="font-serif text-base mb-1">{f.title}</h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">{f.text}</p>
+                  <h3 className="font-serif text-base mb-1">{t(`feat.${f.key}.t`)}</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{t(`feat.${f.key}.b`)}</p>
                 </div>
               ))}
             </div>
@@ -104,8 +119,8 @@ const Product = () => {
           {/* You may also like */}
           <div className="mt-32">
             <div className="text-center mb-14">
-              <p className="eyebrow mb-4">You may also like</p>
-              <h2 className="font-serif text-4xl md:text-5xl">Other KHIS models</h2>
+              <p className="eyebrow mb-4">{t("product.also_eyebrow")}</p>
+              <h2 className="font-serif text-4xl md:text-5xl">{t("product.also_title")}</h2>
               <div className="gold-divider mt-8" />
             </div>
             <div className="grid md:grid-cols-2 gap-8">
@@ -118,7 +133,7 @@ const Product = () => {
                     <h3 className="font-serif text-2xl mb-1 group-hover:text-primary transition-colors">{p.name}</h3>
                     <p className="text-sm text-muted-foreground italic mb-4">{p.tagline}</p>
                     <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-primary">
-                      Discover <ArrowRight size={12} />
+                      {t("products.discover")} <ArrowRight size={12} />
                     </span>
                   </div>
                 </Link>
