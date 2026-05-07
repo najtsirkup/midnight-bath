@@ -117,16 +117,16 @@ export const products = [
   },
 ];
 
-// Verbatim from the live site
+// Feature keys — translated via i18n
 export const features = [
-  { title: "One of a kind", text: "Bathtubs unlike any others in the world." },
-  { title: "Hand-made", text: "Built by a single master, plank by plank." },
-  { title: "Fully customisable", text: "Size, style and finish made for your space." },
-  { title: "Natural materials", text: "Real wood — never plastic, never composite." },
-  { title: "Thermally processed wood", text: "Ash treated at 215°C for water resistance." },
-  { title: "Unique rubber seals", text: "Custom seals certified by Gislaved Gummi AB." },
-  { title: "Stainless steel cables", text: "Hidden interior cables, yacht-deck technology." },
-  { title: "Eco-friendly finishing", text: "Natural linen seed oil or hot waxing only." },
+  { key: "one_of_a_kind" },
+  { key: "handmade" },
+  { key: "custom" },
+  { key: "natural" },
+  { key: "thermal" },
+  { key: "seals" },
+  { key: "cables" },
+  { key: "eco" },
 ];
 
 export const blogPosts = [
