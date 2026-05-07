@@ -5,53 +5,57 @@ import { Mountain, Waves, Lightbulb, Ruler, Palette, Thermometer, Check, Clock, 
 import { products } from "@/lib/site-data";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery7 from "@/assets/gallery-7.jpg";
+import { useLang } from "@/lib/i18n";
 
-const extras = [
-  { icon: Mountain, title: "Stone bottom", text: "Natural stone bottom for added warmth and a one-of-a-kind feel underfoot. See our stone bottom selection." },
-  { icon: Waves, title: "Air-massage system", text: "Quiet, powerful bubble system for full-body relaxation, integrated invisibly into the bath." },
-  { icon: Lightbulb, title: "Chromotherapy lights", text: "LED lighting system in multiple colours — turn each soak into an atmosphere." },
-  { icon: Ruler, title: "Made-to-measure", text: "Every bath is sized and proportioned for your specific space and your body." },
-  { icon: Palette, title: "Hand-finished", text: "Choose natural linen seed oil or hot waxing — the finish that fits your bathroom's character." },
-  { icon: Thermometer, title: "Heating system", text: "Integrated heater holds water at the perfect temperature throughout a long, deep soak." },
-];
-
-const TailorMade = () => (
+const TailorMade = () => {
+  const { t } = useLang();
+  const extras = [
+    { icon: Mountain, title: t("ext.stone.t"), text: t("ext.stone.b") },
+    { icon: Waves, title: t("ext.air.t"), text: t("ext.air.b") },
+    { icon: Lightbulb, title: t("ext.light.t"), text: t("ext.light.b") },
+    { icon: Ruler, title: t("ext.size.t"), text: t("ext.size.b") },
+    { icon: Palette, title: t("ext.finish.t"), text: t("ext.finish.b") },
+    { icon: Thermometer, title: t("ext.heat.t"), text: t("ext.heat.b") },
+  ];
+  const steps: [string, string, string][] = [
+    ["01", t("step.consult.t"), t("step.consult.b")],
+    ["02", t("step.design.t"), t("step.design.b")],
+    ["03", t("step.build.t"), t("step.build.b")],
+    ["04", t("step.delivery.t"), t("step.delivery.b")],
+  ];
+  return (
   <PageShell
-    eyebrow="Tailor-made"
-    title={<>Every KHIS bath is <em className="text-primary-glow not-italic">unique</em>.</>}
-    subtitle="You don't pick a KHIS off a shelf. You commission one. Choose the model, the style, the dimensions, the bottom, the finish — and the features that make it yours."
+    eyebrow={t("tailor.eyebrow")}
+    title={<>{t("tailor.title_1")} <em className="text-primary-glow not-italic">{t("tailor.title_em")}</em>.</>}
+    subtitle={t("tailor.subtitle")}
     bannerImage={gallery4}
     bannerAlt="Tailor-made KHIS bath in candlelight"
   >
-    {/* Conversion-focused intro */}
     <section className="py-20 md:py-28 bg-background">
       <div className="container-luxe max-w-4xl text-center">
         <p className="text-lg md:text-xl text-foreground/90 leading-relaxed font-light">
-          KHIS performs special orders, where each client can choose the type of bath, the style, and the
-          right size for them. There is also possible to add <span className="text-primary">heating system,
-          air-massage, lights and a stone bottom</span>. Tell us your vision — we will hand-build it.
+          {t("tailor.intro")}
         </p>
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
-          <GoldButton to="/contact">Request a free quote</GoldButton>
+          <GoldButton to="/contact">{t("tailor.free_quote")}</GoldButton>
           <a
             href="https://khisbath.com/wp-content/uploads/stone-selection.pdf"
             target="_blank" rel="noreferrer"
             className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-primary hover:opacity-70 px-4 py-4"
           >
-            View stone selection →
+            {t("tailor.stone_select")}
           </a>
         </div>
       </div>
     </section>
 
-    {/* Trust strip */}
     <section className="py-10 border-y border-border bg-secondary/40">
       <div className="container-luxe grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         {[
-          [Clock, "9 weeks", "Delivery from order confirmation"],
-          [Award, "OHIM", "Registered, protected designs"],
-          [Globe, "Worldwide", "Shipping to your door"],
-          [Check, "100%", "Natural materials, no plastic"],
+          [Clock, t("tailor.weeks"), t("tailor.delivery_label")],
+          [Award, "OHIM", t("tailor.ohim_label")],
+          [Globe, t("tailor.worldwide"), t("tailor.shipping")],
+          [Check, "100%", t("tailor.no_plastic")],
         ].map(([Icon, n, l]: any) => (
           <div key={l} className="flex flex-col items-center gap-2">
             <Icon size={20} className="text-primary" strokeWidth={1.2} />
@@ -62,12 +66,11 @@ const TailorMade = () => (
       </div>
     </section>
 
-    {/* Customisation grid */}
     <section className="py-24 md:py-32">
       <div className="container-luxe">
         <div className="text-center mb-16">
-          <p className="eyebrow mb-4">What you can customise</p>
-          <h2 className="font-serif text-4xl md:text-5xl">Six ways to make it yours</h2>
+          <p className="eyebrow mb-4">{t("tailor.what_eyebrow")}</p>
+          <h2 className="font-serif text-4xl md:text-5xl">{t("tailor.what_title")}</h2>
           <div className="gold-divider mt-8" />
         </div>
 
@@ -83,26 +86,20 @@ const TailorMade = () => (
           ))}
         </div>
 
-        {/* Process */}
         <div className="grid md:grid-cols-2 gap-12 items-center mt-32">
           <div className="relative">
             <div className="absolute -inset-6 bg-gradient-radial-gold opacity-60 blur-2xl" />
             <img src={gallery7} alt="Natural KHIS — stone bottom and air-massage" loading="lazy" className="relative w-full aspect-square object-cover border border-border" />
           </div>
           <div>
-            <p className="eyebrow mb-4">How it works</p>
-            <h2 className="font-serif text-4xl md:text-5xl mb-8">Your bath, in four steps</h2>
+            <p className="eyebrow mb-4">{t("tailor.how_eyebrow")}</p>
+            <h2 className="font-serif text-4xl md:text-5xl mb-8">{t("tailor.how_title")}</h2>
             <ol className="space-y-6">
-              {[
-                ["01", "Consultation", "Tell us about your space, your model preference and any custom features."],
-                ["02", "Design & quote", "We confirm dimensions, style, and add-ons. You receive a transparent quote."],
-                ["03", "Hand-built", "Frants and the team build your bath in roughly 9 weeks, plank by plank."],
-                ["04", "Worldwide delivery", "We crate and ship your bath to your door, anywhere in the world."],
-              ].map(([n, t, d]) => (
+              {steps.map(([n, ti, d]) => (
                 <li key={n} className="flex gap-6">
                   <span className="font-serif text-2xl text-primary">{n}</span>
                   <div>
-                    <h4 className="font-serif text-xl mb-1">{t}</h4>
+                    <h4 className="font-serif text-xl mb-1">{ti}</h4>
                     <p className="text-sm text-muted-foreground">{d}</p>
                   </div>
                 </li>
@@ -111,11 +108,10 @@ const TailorMade = () => (
           </div>
         </div>
 
-        {/* Choose model */}
         <div className="mt-32">
           <div className="text-center mb-14">
-            <p className="eyebrow mb-4">Start from a model</p>
-            <h2 className="font-serif text-4xl md:text-5xl">Pick your foundation</h2>
+            <p className="eyebrow mb-4">{t("tailor.start_eyebrow")}</p>
+            <h2 className="font-serif text-4xl md:text-5xl">{t("tailor.start_title")}</h2>
             <div className="gold-divider mt-8" />
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -136,20 +132,18 @@ const TailorMade = () => (
       </div>
     </section>
 
-    {/* Quote form */}
     <section id="quote" className="py-24 md:py-32 bg-secondary/40 border-t border-border scroll-mt-24">
       <div className="container-luxe max-w-3xl">
         <div className="text-center mb-14">
-          <p className="eyebrow mb-4">Free quote — no commitment</p>
-          <h2 className="font-serif text-4xl md:text-5xl">Request your tailor-made KHIS</h2>
-          <p className="mt-6 text-muted-foreground">
-            Tell us about your space and your wishes. We&rsquo;ll come back with a personal proposal — usually within 48 hours.
-          </p>
+          <p className="eyebrow mb-4">{t("tailor.quote_eyebrow")}</p>
+          <h2 className="font-serif text-4xl md:text-5xl">{t("tailor.quote_title")}</h2>
+          <p className="mt-6 text-muted-foreground">{t("tailor.quote_lead")}</p>
         </div>
         <ContactForm embedded />
       </div>
     </section>
   </PageShell>
-);
+  );
+};
 
 export default TailorMade;
