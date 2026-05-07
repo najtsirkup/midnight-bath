@@ -14,11 +14,13 @@ import Product from "./pages/Product.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import ScrollToTop from "./components/site/ScrollToTop";
+import { LangProvider } from "@/lib/i18n";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
+    <LangProvider>
     <TooltipProvider>
       <Toaster />
       <Sonner />
@@ -38,6 +40,7 @@ const App = () => (
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
+    </LangProvider>
   </QueryClientProvider>
 );
 
