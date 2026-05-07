@@ -1,39 +1,59 @@
+import { useState } from "react";
 import { PageShell } from "@/components/site/PageShell";
+import { Lightbox } from "@/components/site/Lightbox";
 import { galleryImages } from "@/lib/site-data";
-import gallery3 from "@/assets/gallery-3.jpg";
+import { useLang } from "@/lib/i18n";
+import couchBanner from "@/assets/gallery-couch.jpg";
 
-const Gallery = () => (
-  <PageShell
-    eyebrow="Gallery"
-    title="KHIS in the world"
-    subtitle="From private homes in the UK to pilgrimage houses in Estonia — every KHIS bath finds its own room."
-    bannerImage={gallery3}
-    bannerAlt="KHIS bath on a roof terrace"
-  >
-    <section className="py-20 md:py-28">
-      <div className="container-luxe">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {galleryImages.map((img, i) => (
-            <div
-              key={i}
-              className={`overflow-hidden border border-border group bg-muted ${
-                i % 7 === 0 ? "md:col-span-2 md:row-span-2" : ""
-              }`}
-            >
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading="lazy"
-                className={`w-full object-cover transition-transform duration-1000 group-hover:scale-110 ${
-                  i % 7 === 0 ? "h-full min-h-[400px] md:min-h-[600px]" : "aspect-square"
+const Gallery = () => {
+  const { t } = useLang();
+  const [index, setIndex] = useState<number | null>(null);
+
+  return (
+    <PageShell
+      eyebrow={t("gallery.eyebrow")}
+      title={t("gallery.title")}
+      subtitle={t("gallery.subtitle")}
+      bannerImage={couchBanner}
+      bannerAlt="KHIS bath beside a green velvet sofa"
+    >
+      <section className="py-20 md:py-28">
+        <div className="container-luxe">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {galleryImages.map((img, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => setIndex(i)}
+                className={`overflow-hidden border border-border group bg-muted cursor-zoom-in ${
+                  i % 7 === 0 ? "md:col-span-2 md:row-span-2" : ""
                 }`}
-              />
-            </div>
-          ))}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className={`w-full object-cover transition-transform duration-1000 group-hover:scale-110 ${
+                    i % 7 === 0 ? "h-full min-h-[400px] md:min-h-[600px]" : "aspect-square"
+                  }`}
+                />
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  </PageShell>
-);
+      </section>
+
+      {index !== null && (
+        <Lightbox
+          images={galleryImages}
+          index={index}
+          onClose={() => setIndex(null)}
+          onPrev={() => setIndex((i) => (i! - 1 + galleryImages.length) % galleryImages.length)}
+          onNext={() => setIndex((i) => (i! + 1) % galleryImages.length)}
+        />
+      )}
+    </PageShell>
+  );
+};
 
 export default Gallery;
