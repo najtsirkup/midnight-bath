@@ -44,12 +44,8 @@ export const Footer = () => {
       <div className="container-luxe py-12 md:py-14 grid gap-10 md:grid-cols-12">
         {/* Brand + intro + partners */}
         <div className="md:col-span-5">
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="KHIS Bath" className="h-12 w-12 object-contain" loading="lazy" />
-            <div className="flex items-baseline gap-2 leading-none">
-              <span className="font-serif text-xl tracking-[0.25em] text-foreground">KHIS</span>
-              <span className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Bath</span>
-            </div>
+          <div>
+            <img src={logo} alt="KHIS" className="h-16 w-auto object-contain" loading="lazy" />
           </div>
           <p className="mt-6 max-w-md text-sm text-foreground/80 leading-relaxed">
             {t("footer.member")}{" "}
