@@ -82,22 +82,14 @@ export const Header = ({ overDark = false }: { overDark?: boolean }) => {
       )}
     >
       <div className="container-luxe flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center gap-3 group">
+        <Link to="/" className="group shrink-0">
           <img
             src={logo}
-            alt="KHIS Bath"
+            alt="KHIS"
             width={44}
             height={44}
-            className="h-11 w-11 object-contain"
+            className="h-12 w-auto object-contain"
           />
-          <div className="hidden sm:flex items-baseline gap-2 leading-none">
-            <span className={cn("font-serif text-xl tracking-[0.25em]", lightSurface ? "text-foreground" : "text-white")}>
-              KHIS
-            </span>
-            <span className={cn("text-[10px] uppercase tracking-[0.4em]", lightSurface ? "text-muted-foreground" : "text-white/70")}>
-              Bath
-            </span>
-          </div>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-9">
