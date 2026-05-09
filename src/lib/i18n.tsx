@@ -21,12 +21,12 @@ const dict: Record<string, { en: string; et: string }> = {
 
   // ===== Hero =====
   "hero.eyebrow": { en: "KHIS Bath — Handcrafted in Estonia", et: "KHIS Bath — Käsitsi valmistatud Eestis" },
-  "hero.title_1": { en: "Feel the warmth and luxury of", et: "Tunne peene puidu" },
-  "hero.title_em": { en: "fine wood", et: "soojust ja luksust" },
-  "hero.title_2": { en: "in your bathroom.", et: "oma vannitoas." },
+  "hero.title_1": { en: "Feel the warmth and luxury of", et: "Naturaalse puidu pehmus ja" },
+  "hero.title_em": { en: "fine wood", et: "luksuslik tunnetus" },
+  "hero.title_2": { en: "in your bathroom.", et: "igas detailis." },
   "hero.lead": {
     en: "Nowadays plastic consumption has become a global problem. Let's fight against plastic pollution together and be by green environment. Use natural products.",
-    et: "Tänapäeval on plasti tarbimine muutunud ülemaailmseks probleemiks. Võitleme koos plastireostuse vastu ja olgem rohelise keskkonna poolt. Kasuta looduslikke tooteid.",
+    et: "Keskkonnasõbralikum tulevik algab teadlikest valikutest — eelista looduslikke tooteid ja aita vähendada plastireostust.",
   },
   "cta.request_quote": { en: "Request a quote", et: "Küsi pakkumist" },
   "cta.about_khis": { en: "About KHIS", et: "KHISist" },
@@ -55,7 +55,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "feat.one_of_a_kind.t": { en: "One of a kind", et: "Ainulaadne" },
   "feat.one_of_a_kind.b": { en: "Bathtubs unlike any others in the world.", et: "Vannid, mille sarnaseid pole maailmas." },
   "feat.handmade.t": { en: "Hand-made", et: "Käsitöö" },
-  "feat.handmade.b": { en: "Built by a single master, plank by plank.", et: "Ehitatud ühe meistri poolt, laud lauatuhaaval." },
+  "feat.handmade.b": { en: "Built by a single master, plank by plank.", et: "Ehitatud ühe meistri poolt, laud-lauahaaval." },
   "feat.custom.t": { en: "Fully customisable", et: "Täielikult kohandatav" },
   "feat.custom.b": { en: "Size, style and finish made for your space.", et: "Suurus, stiil ja viimistlus sinu ruumi jaoks." },
   "feat.natural.t": { en: "Natural materials", et: "Looduslikud materjalid" },
@@ -149,7 +149,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "about.indulge_t": { en: "Your very own home spa.", et: "Sinu enda kodune spa." },
   "about.indulge_p1": {
     en: "We believe in natural flow of time and experience. We believe that maintaining the natural rhythm of life is essential, keeping up with harmony around us is the path to follow.",
-    et: "Usume aja ja kogemuse loomulikku voogu. Usume, et elurütmi loomuliku rütmi säilitamine on hädavajalik — meid ümbritsev harmoonia on tee, mida järgida.",
+    et: "Usume aja ja kogemuse loomulikku voogu. Usume, et elu loomuliku rütmi säilitamine on hädavajalik ning meid ümbritsev harmoonia on tee, mida tasub järgida.",
   },
   "about.indulge_p2": {
     en: "You can have your very own home spa, indulge yourself with the lasting warmth of a wooden KHIS bathtub, experience tranquility and the relaxing effect of bathing.",
@@ -264,7 +264,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "step.design.t": { en: "Design & quote", et: "Disain ja pakkumine" },
   "step.design.b": { en: "We confirm dimensions, style, and add-ons. You receive a transparent quote.", et: "Kinnitame mõõdud, stiili ja lisad. Saad läbipaistva pakkumise." },
   "step.build.t": { en: "Hand-built", et: "Käsitsi ehitatud" },
-  "step.build.b": { en: "Frants and the team build your bath in roughly 9 weeks, plank by plank.", et: "Frants ja meeskond ehitavad sinu vanni umbes 9 nädalaga, laud lauatuhaaval." },
+  "step.build.b": { en: "Frants and the team build your bath in roughly 9 weeks, plank by plank.", et: "Frants ja meeskond ehitavad sinu vanni umbes 9 nädalaga, laud-lauahaaval." },
   "step.delivery.t": { en: "Worldwide delivery", et: "Ülemaailmne tarne" },
   "step.delivery.b": { en: "We crate and ship your bath to your door, anywhere in the world.", et: "Pakime ja saadame sinu vanni ukse taha, ükskõik kuhu maailmas." },
 
