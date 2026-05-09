@@ -122,8 +122,8 @@ const TailorMade = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="font-serif text-xl mb-1">{p.name}</h3>
-                  <p className="text-xs text-muted-foreground italic mb-4">{p.tagline}</p>
-                  <p className="text-xs uppercase tracking-[0.2em] text-primary">{p.capacity}</p>
+                  <p className="text-xs text-muted-foreground italic mb-4">{t(`prod.${p.slug}.tagline`)}</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-primary">{t(`prod.${p.slug}.capacity`)}</p>
                 </div>
               </div>
             ))}
