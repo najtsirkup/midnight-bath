@@ -5,6 +5,26 @@ import { products, features } from "@/lib/site-data";
 import { Check, ArrowRight } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 
+const detailKeysBySlug: Record<string, { t: string; b: string }[]> = {
+  "first-khis": [
+    { t: "prod.first-khis.classic.t", b: "prod.first-khis.classic.b" },
+    { t: "prod.first-khis.french.t", b: "prod.first-khis.french.b" },
+  ],
+  "eternal-khis": [
+    { t: "prod.eternal-khis.classic.t", b: "prod.eternal-khis.classic.b" },
+    { t: "prod.eternal-khis.french.t", b: "prod.eternal-khis.french.b" },
+  ],
+  "natural-khis": [
+    { t: "prod.natural-khis.classic.t", b: "prod.natural-khis.classic.b" },
+  ],
+};
+
+const stylesKeyBySlug: Record<string, string> = {
+  "first-khis": "prod.styles.classic_french",
+  "eternal-khis": "prod.styles.classic_french",
+  "natural-khis": "prod.styles.natural_classic",
+};
+
 const Product = () => {
   const { slug = "" } = useParams();
   const { t } = useLang();
@@ -12,6 +32,12 @@ const Product = () => {
   if (!product) return <Navigate to="/" replace />;
 
   const others = products.filter((p) => p.slug !== slug);
+  const detailKeys = detailKeysBySlug[product.slug] || [];
+  const tagline = t(`prod.${product.slug}.tagline`);
+  const description = t(`prod.${product.slug}.description`);
+  const capacity = t(`prod.${product.slug}.capacity`);
+  const styles = t(stylesKeyBySlug[product.slug] || "");
+  const deliveryNote = t("prod.delivery_note");
 
   return (
     <PageShell
