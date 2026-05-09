@@ -5,6 +5,26 @@ import { products, features } from "@/lib/site-data";
 import { Check, ArrowRight } from "lucide-react";
 import { useLang } from "@/lib/i18n";
 
+const detailKeysBySlug: Record<string, { t: string; b: string }[]> = {
+  "first-khis": [
+    { t: "prod.first-khis.classic.t", b: "prod.first-khis.classic.b" },
+    { t: "prod.first-khis.french.t", b: "prod.first-khis.french.b" },
+  ],
+  "eternal-khis": [
+    { t: "prod.eternal-khis.classic.t", b: "prod.eternal-khis.classic.b" },
+    { t: "prod.eternal-khis.french.t", b: "prod.eternal-khis.french.b" },
+  ],
+  "natural-khis": [
+    { t: "prod.natural-khis.classic.t", b: "prod.natural-khis.classic.b" },
+  ],
+};
+
+const stylesKeyBySlug: Record<string, string> = {
+  "first-khis": "prod.styles.classic_french",
+  "eternal-khis": "prod.styles.classic_french",
+  "natural-khis": "prod.styles.natural_classic",
+};
+
 const Product = () => {
   const { slug = "" } = useParams();
   const { t } = useLang();
@@ -12,12 +32,18 @@ const Product = () => {
   if (!product) return <Navigate to="/" replace />;
 
   const others = products.filter((p) => p.slug !== slug);
+  const detailKeys = detailKeysBySlug[product.slug] || [];
+  const tagline = t(`prod.${product.slug}.tagline`);
+  const description = t(`prod.${product.slug}.description`);
+  const capacity = t(`prod.${product.slug}.capacity`);
+  const styles = t(stylesKeyBySlug[product.slug] || "");
+  const deliveryNote = t("prod.delivery_note");
 
   return (
     <PageShell
       eyebrow={t("products.collection_eyebrow")}
       title={product.name}
-      subtitle={product.tagline}
+      subtitle={tagline}
       bannerImage={product.image}
       bannerAlt={product.name}
     >
@@ -36,22 +62,22 @@ const Product = () => {
 
             <div className="md:sticky md:top-28">
               <div className="flex flex-wrap gap-3 mb-6">
-                <span className="text-[10px] uppercase tracking-[0.25em] border border-primary/40 text-primary px-3 py-1.5">{product.capacity}</span>
-                <span className="text-[10px] uppercase tracking-[0.25em] border border-border text-muted-foreground px-3 py-1.5">{product.styles}</span>
+                <span className="text-[10px] uppercase tracking-[0.25em] border border-primary/40 text-primary px-3 py-1.5">{capacity}</span>
+                <span className="text-[10px] uppercase tracking-[0.25em] border border-border text-muted-foreground px-3 py-1.5">{styles}</span>
               </div>
 
-              <p className="text-foreground/90 leading-relaxed mb-6">{product.description}</p>
+              <p className="text-foreground/90 leading-relaxed mb-6">{description}</p>
 
               <div className="space-y-8 mb-10">
-                {product.detail.map((d) => (
-                  <div key={d.title} className="border-l-2 border-primary pl-6">
-                    <h3 className="font-serif text-xl mb-2">{d.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{d.text}</p>
+                {detailKeys.map((d) => (
+                  <div key={d.t} className="border-l-2 border-primary pl-6">
+                    <h3 className="font-serif text-xl mb-2">{t(d.t)}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{t(d.b)}</p>
                   </div>
                 ))}
               </div>
 
-              <p className="text-sm text-muted-foreground italic mb-10">{product.deliveryNote}</p>
+              <p className="text-sm text-muted-foreground italic mb-10">{deliveryNote}</p>
 
               <div className="flex flex-wrap gap-4">
                 <GoldButton to="/contact">{t("cta.request_quote")}</GoldButton>
@@ -131,7 +157,7 @@ const Product = () => {
                   </div>
                   <div className="p-8">
                     <h3 className="font-serif text-2xl mb-1 group-hover:text-primary transition-colors">{p.name}</h3>
-                    <p className="text-sm text-muted-foreground italic mb-4">{p.tagline}</p>
+                    <p className="text-sm text-muted-foreground italic mb-4">{t(`prod.${p.slug}.tagline`)}</p>
                     <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-primary">
                       {t("products.discover")} <ArrowRight size={12} />
                     </span>

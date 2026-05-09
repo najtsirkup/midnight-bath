@@ -99,7 +99,7 @@ const HomeLayout = () => {
                   <h3 className="font-serif text-2xl mb-2 group-hover:text-primary transition-colors">
                     {p.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground italic">{p.tagline}</p>
+                  <p className="text-sm text-muted-foreground italic">{t(`prod.${p.slug}.tagline`)}</p>
                   <p className="mt-4 text-xs uppercase tracking-[0.25em] text-primary inline-flex items-center gap-2">
                     {t("products.discover")} <ArrowRight size={12} className="transition-transform group-hover:translate-x-1" />
                   </p>
