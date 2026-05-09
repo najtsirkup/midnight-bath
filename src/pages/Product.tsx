@@ -157,7 +157,7 @@ const Product = () => {
                   </div>
                   <div className="p-8">
                     <h3 className="font-serif text-2xl mb-1 group-hover:text-primary transition-colors">{p.name}</h3>
-                    <p className="text-sm text-muted-foreground italic mb-4">{p.tagline}</p>
+                    <p className="text-sm text-muted-foreground italic mb-4">{t(`prod.${p.slug}.tagline`)}</p>
                     <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-primary">
                       {t("products.discover")} <ArrowRight size={12} />
                     </span>
