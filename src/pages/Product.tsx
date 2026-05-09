@@ -43,7 +43,7 @@ const Product = () => {
     <PageShell
       eyebrow={t("products.collection_eyebrow")}
       title={product.name}
-      subtitle={product.tagline}
+      subtitle={tagline}
       bannerImage={product.image}
       bannerAlt={product.name}
     >
@@ -62,22 +62,22 @@ const Product = () => {
 
             <div className="md:sticky md:top-28">
               <div className="flex flex-wrap gap-3 mb-6">
-                <span className="text-[10px] uppercase tracking-[0.25em] border border-primary/40 text-primary px-3 py-1.5">{product.capacity}</span>
-                <span className="text-[10px] uppercase tracking-[0.25em] border border-border text-muted-foreground px-3 py-1.5">{product.styles}</span>
+                <span className="text-[10px] uppercase tracking-[0.25em] border border-primary/40 text-primary px-3 py-1.5">{capacity}</span>
+                <span className="text-[10px] uppercase tracking-[0.25em] border border-border text-muted-foreground px-3 py-1.5">{styles}</span>
               </div>
 
-              <p className="text-foreground/90 leading-relaxed mb-6">{product.description}</p>
+              <p className="text-foreground/90 leading-relaxed mb-6">{description}</p>
 
               <div className="space-y-8 mb-10">
-                {product.detail.map((d) => (
-                  <div key={d.title} className="border-l-2 border-primary pl-6">
-                    <h3 className="font-serif text-xl mb-2">{d.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{d.text}</p>
+                {detailKeys.map((d) => (
+                  <div key={d.t} className="border-l-2 border-primary pl-6">
+                    <h3 className="font-serif text-xl mb-2">{t(d.t)}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{t(d.b)}</p>
                   </div>
                 ))}
               </div>
 
-              <p className="text-sm text-muted-foreground italic mb-10">{product.deliveryNote}</p>
+              <p className="text-sm text-muted-foreground italic mb-10">{deliveryNote}</p>
 
               <div className="flex flex-wrap gap-4">
                 <GoldButton to="/contact">{t("cta.request_quote")}</GoldButton>
