@@ -297,6 +297,61 @@ const dict: Record<string, { en: string; et: string }> = {
 
   // Worldwide bar
   "common.worldwide_delivery": { en: "Worldwide delivery", et: "Ülemaailmne tarne" },
+
+  // ===== Products (per-model) =====
+  "prod.styles.classic_french": { en: "Classic & French", et: "Classic ja French" },
+  "prod.styles.natural_classic": { en: "Natural KHIS Classic", et: "Natural KHIS Classic" },
+
+  "prod.first-khis.tagline": { en: "for simple luxury in smaller spaces", et: "lihtne luksus väiksematesse ruumidesse" },
+  "prod.first-khis.capacity": { en: "Up to 380 litres", et: "Kuni 380 liitrit" },
+  "prod.first-khis.description": {
+    en: "First KHIS is the smallest model, though still larger than average with a capacity of up to 380 litres. First KHIS is available in two styles (Classic and French).",
+    et: "First KHIS on väikseim mudel, kuid siiski keskmisest suurem — mahutavus kuni 380 liitrit. First KHIS on saadaval kahes stiilis (Classic ja French).",
+  },
+  "prod.first-khis.classic.t": { en: "First KHIS Classic", et: "First KHIS Classic" },
+  "prod.first-khis.classic.b": {
+    en: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
+    et: "Meie standardstiil kõrgete sirgete külgedega. Pakub suurimat veemahtu. Isegi väikseim mudel loob spaa-tunde.",
+  },
+  "prod.first-khis.french.t": { en: "First KHIS French", et: "First KHIS French" },
+  "prod.first-khis.french.b": {
+    en: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
+    et: "Klassikaline Prantsuse stiil sümmeetriliste väljalõigetega külgedel. Tagab mugava sisenemise mõlemalt poolt.",
+  },
+
+  "prod.eternal-khis.tagline": { en: "for a spa-like experience at home", et: "spaa-elamus sinu enda kodus" },
+  "prod.eternal-khis.capacity": { en: "Up to 700 litres", et: "Kuni 700 liitrit" },
+  "prod.eternal-khis.description": {
+    en: "Wooden bath “Eternal KHIS” is tall and sculptural, with a capacity of up to 700 litres. It is the perfect centrepiece for large bathrooms. Each bath can be made-to-order, based upon your specific needs and preferences. Eternal KHIS is available in two elegant styles (Classic and French).",
+    et: "Puidust vann „Eternal KHIS“ on kõrge ja skulpturaalne, mahutavusega kuni 700 liitrit. See on suurte vannitubade ideaalne keskpunkt. Iga vann valmib eritellimusena vastavalt sinu vajadustele ja soovidele. Eternal KHIS on saadaval kahes elegantses stiilis (Classic ja French).",
+  },
+  "prod.eternal-khis.classic.t": { en: "Eternal KHIS Classic", et: "Eternal KHIS Classic" },
+  "prod.eternal-khis.classic.b": {
+    en: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
+    et: "Meie standardstiil kõrgete sirgete külgedega. Pakub suurimat veemahtu. Isegi väikseim mudel loob spaa-tunde.",
+  },
+  "prod.eternal-khis.french.t": { en: "Eternal KHIS French", et: "Eternal KHIS French" },
+  "prod.eternal-khis.french.b": {
+    en: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
+    et: "Klassikaline Prantsuse stiil sümmeetriliste väljalõigetega külgedel. Tagab mugava sisenemise mõlemalt poolt.",
+  },
+
+  "prod.natural-khis.tagline": { en: "for a group indoors or in nature", et: "seltskonnale siseruumides või looduses" },
+  "prod.natural-khis.capacity": { en: "Up to 960 litres", et: "Kuni 960 liitrit" },
+  "prod.natural-khis.description": {
+    en: "Natural KHIS is a large and versatile bath with an impressive capacity of up to 960 litres. Customisations include light, massage and heating systems.",
+    et: "Natural KHIS on suur ja mitmekülgne vann muljetavaldava mahutavusega kuni 960 liitrit. Kohanduste hulka kuuluvad valgustus-, massaaži- ja küttesüsteem.",
+  },
+  "prod.natural-khis.classic.t": { en: "Natural KHIS Classic", et: "Natural KHIS Classic" },
+  "prod.natural-khis.classic.b": {
+    en: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
+    et: "Meie standardstiil kõrgete sirgete külgedega. Pakub suurimat veemahtu. Isegi väikseim mudel loob spaa-tunde.",
+  },
+
+  "prod.delivery_note": {
+    en: "Once your order is received and we confirm all the custom details, your exclusive, handcrafted bath will be delivered within 9 weeks (depending on the model and availability of accessories).",
+    et: "Pärast tellimuse vastuvõtmist ja kõigi detailide kinnitamist tarnime sinu eksklusiivse käsitsi valmistatud vanni 9 nädala jooksul (sõltuvalt mudelist ja lisatarvikute saadavusest).",
+  },
 };
 
 interface Ctx {
