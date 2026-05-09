@@ -2,7 +2,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { GoldButton } from "@/components/site/GoldButton";
 import { Hammer, Settings2, Anchor, Leaf } from "lucide-react";
 import technologyImg from "@/assets/products/eternal-khis-2.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
+import gallery7 from "@/assets/tech-engineering.jpg";
 import { useLang } from "@/lib/i18n";
 
 const Technology = () => {
