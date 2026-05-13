@@ -84,7 +84,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "blog.all": { en: "All articles", et: "Kõik artiklid" },
 
   // ===== Contact =====
-  "contact.eyebrow": { en: "Free quote — no commitment", et: "Tasuta pakkumine — ilma kohustuseta" },
+  "contact.eyebrow": { en: "Free quote — no commitment", et: "Saada meile päring või võta meiega ühendust!" },
   "contact.title": { en: "Tell us about your project", et: "Räägi meile oma projektist" },
   "contact.lead": {
     en: "Looking for a tailor-made bath or more information? Write to us — usually within 48 hours.",
@@ -98,7 +98,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "contact.not_sure": { en: "Not sure yet — please advise", et: "Pole veel kindel — palun nõustage" },
   "contact.tellus": { en: "Tell us about your project", et: "Räägi meile oma projektist" },
   "contact.send": { en: "Send my request", et: "Saada päring" },
-  "contact.personal": { en: "We respond personally — never with a templated reply.", et: "Vastame isiklikult — mitte kunagi šablooniga." },
+  "contact.personal": { en: "We respond personally — never with a templated reply.", et: "Personaalne lähenemine igale päringule." },
 
   // ===== Footer =====
   "footer.member": {
