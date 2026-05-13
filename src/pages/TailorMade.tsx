@@ -38,13 +38,6 @@ const TailorMade = () => {
         </p>
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
           <GoldButton to="/contact">{t("tailor.free_quote")}</GoldButton>
-          <a
-            href="https://khisbath.com/wp-content/uploads/stone-selection.pdf"
-            target="_blank" rel="noreferrer"
-            className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-primary hover:opacity-70 px-4 py-4"
-          >
-            {t("tailor.stone_select")}
-          </a>
         </div>
       </div>
     </section>
