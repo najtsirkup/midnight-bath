@@ -109,7 +109,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "footer.and": { en: "and the", et: "ja" },
   "footer.cluster": { en: "Wood Cluster of Southeast Estonia", et: "Kagu-Eesti Puiduklastri liige" },
   "footer.member_suffix": { en: ".", et: "." },
-  "footer.navigate": { en: "Navigate", et: "Liikumine" },
+  "footer.navigate": { en: "Navigate", et: "Lingid" },
   "footer.cert": { en: "Certifications", et: "Sertifikaadid" },
   "footer.cert.ohim": { en: "OHIM (European Union) registered designs", et: "OHIM (Euroopa Liit) registreeritud disainid" },
   "footer.cert.gislaved": { en: "Gislaved Gummi AB (Sweden) certified rubber seals", et: "Gislaved Gummi AB (Rootsi) sertifitseeritud kummitihendid" },
