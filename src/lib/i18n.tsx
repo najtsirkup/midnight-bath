@@ -227,7 +227,7 @@ const dict: Record<string, { en: string; et: string }> = {
   },
   "tailor.intro": {
     en: "KHIS performs special orders, where each client can choose the type of bath, the style, and the right size for them. There is also possible to add heating system, air-massage, lights and a stone bottom. Tell us your vision — we will hand-build it.",
-    et: "KHIS teostab eritellimusi, kus iga klient saab valida vanni tüübi, stiili ja sobiva suuruse. Lisaks on võimalik lisada küttesüsteem, õhumassaaž, valgustus ja kivipõhi. Räägi meile oma visioonist — me ehitame selle käsitsi.",
+    et: "Iga eritellimusel valmiv KHIS vann luuakse vastavalt sinu soovidele, ruumile ja visioonile. Võimalik on valida mudel, stiil ja mõõdud ning lisada erinevaid funktsioone, sealhulgas küttesüsteem, õhumassaaž ja valgustus. Jaga meiega oma visiooni — meie loome sellest ajatult elegantse käsitööna valminud vanni.",
   },
   "tailor.intro_em": { en: "heating system, air-massage, lights and a stone bottom", et: "küttesüsteem, õhumassaaž, valgustus ja kivipõhi" },
   "tailor.free_quote": { en: "Request a free quote", et: "Küsi tasuta pakkumist" },
@@ -237,7 +237,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "tailor.ohim_label": { en: "Registered, protected designs", et: "Registreeritud, kaitstud disainid" },
   "tailor.worldwide": { en: "Worldwide", et: "Üle maailma" },
   "tailor.shipping": { en: "Shipping to your door", et: "Tarne ukseni" },
-  "tailor.no_plastic": { en: "Natural materials, no plastic", et: "Looduslikud materjalid, plastivaba" },
+  "tailor.no_plastic": { en: "Natural materials, no plastic", et: "Loodusest inspireeritud. Puidu loomulik ilu ja soojus igas detailis." },
   "tailor.what_eyebrow": { en: "What you can customise", et: "Mida saad kohandada" },
   "tailor.what_title": { en: "Six ways to make it yours", et: "Kuus viisi seda omaks teha" },
   "tailor.how_eyebrow": { en: "How it works", et: "Kuidas see käib" },
