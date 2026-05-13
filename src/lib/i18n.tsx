@@ -280,7 +280,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "product.tech_title": { en: "Technical drawings", et: "Tehnilised joonised" },
   "product.tech_lead": {
     en: "Indicative dimensions in millimetres. Each KHIS is custom-made — final sizing is tailored to your space.",
-    et: "Soovituslikud mõõdud millimeetrites. Iga KHIS on eritellimusel — lõplikud mõõdud kohandatakse sinu ruumi järgi.",
+    et: "Mõõdud on toodud millimeetrites. KHIS vannid on saadaval erinevates standardmõõtudes sõltuvalt mudelist ja konfiguratsioonist. Lisaks on võimalik esitada päring täielikult eritellimusel valmistatava vanni jaoks, mis valmib sinu soovide, visiooni ja ruumilahenduse järgi.",
   },
   "product.also_eyebrow": { en: "You may also like", et: "Sulle võib ka meeldida" },
   "product.also_title": { en: "Other KHIS models", et: "Teised KHIS mudelid" },
