@@ -120,10 +120,10 @@ const dict: Record<string, { en: string; et: string }> = {
 
   // ===== About page =====
   "about.eyebrow": { en: "About us", et: "Meist" },
-  "about.title": { en: "KHIS by Frants Seer", et: "KHIS — Frants Seer" },
+  "about.title": { en: "KHIS by Frants Seer", et: "Vann kui disainielement" },
   "about.subtitle": {
     en: "Bath as a design element. Build your bathroom — or your very personal spa — around it.",
-    et: "Vann kui disainielement. Ehita oma vannituba — või oma väga isiklik spa — selle ümber.",
+    et: "Loo vannituba või privaatne spaa, mille keskpunktiks on ajatu elegants.",
   },
   "about.section1_eyebrow": { en: "Bath as a design element", et: "Vann kui disainielement" },
   "about.section1_title": { en: "Meant to please your senses, even empty.", et: "Loodud meelt rõõmustama, isegi tühjana." },
