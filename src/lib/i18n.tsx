@@ -49,25 +49,25 @@ const dict: Record<string, { en: string; et: string }> = {
 
   // ===== Features =====
   "features.eyebrow": { en: "Features", et: "Omadused" },
-  "features.title": { en: "Features of KHIS", et: "KHISi omadused" },
+  "features.title": { en: "Features of KHIS", et: "Tunnused" },
   "features.hallmarks": { en: "Hallmarks", et: "Tunnused" },
 
-  "feat.one_of_a_kind.t": { en: "One of a kind", et: "Ainulaadne" },
-  "feat.one_of_a_kind.b": { en: "Bathtubs unlike any others in the world.", et: "Vannid, mille sarnaseid pole maailmas." },
-  "feat.handmade.t": { en: "Hand-made", et: "Käsitöö" },
-  "feat.handmade.b": { en: "Built by a single master, plank by plank.", et: "Ehitatud ühe meistri poolt, laud-lauahaaval." },
-  "feat.custom.t": { en: "Fully customisable", et: "Täielikult kohandatav" },
-  "feat.custom.b": { en: "Size, style and finish made for your space.", et: "Suurus, stiil ja viimistlus sinu ruumi jaoks." },
-  "feat.natural.t": { en: "Natural materials", et: "Looduslikud materjalid" },
-  "feat.natural.b": { en: "Real wood — never plastic, never composite.", et: "Päris puit — mitte kunagi plast ega komposiit." },
+  "feat.one_of_a_kind.t": { en: "One of a kind", et: "Eksklusiivne disain" },
+  "feat.one_of_a_kind.b": { en: "Bathtubs unlike any others in the world.", et: "Vannid, mis on ainulaadsed maailmas." },
+  "feat.handmade.t": { en: "Hand-made", et: "Käsitööna valmistatud" },
+  "feat.handmade.b": { en: "Built by a single master, plank by plank.", et: "Iga vann valmib meistri käe all, detail-detaili haaval." },
+  "feat.custom.t": { en: "Fully customisable", et: "Eritellimusel lahendused" },
+  "feat.custom.b": { en: "Size, style and finish made for your space.", et: "Suurus, stiil ja viimistlus vastavalt sinu ruumile ja soovidele." },
+  "feat.natural.t": { en: "Natural materials", et: "Looduslik materjal" },
+  "feat.natural.b": { en: "Real wood — never plastic, never composite.", et: "Puidu loomulik soojus ja pehmus sinu vannitoas." },
   "feat.thermal.t": { en: "Thermally processed wood", et: "Termiliselt töödeldud puit" },
-  "feat.thermal.b": { en: "Ash treated at 215°C for water resistance.", et: "Saar töödeldud 215°C juures veekindluse tagamiseks." },
-  "feat.seals.t": { en: "Unique rubber seals", et: "Unikaalsed kummitihendid" },
-  "feat.seals.b": { en: "Custom seals certified by Gislaved Gummi AB.", et: "Kohandatud tihendid sertifitseeritud Gislaved Gummi AB poolt." },
-  "feat.cables.t": { en: "Stainless steel cables", et: "Roostevabad terastrossid" },
-  "feat.cables.b": { en: "Hidden interior cables, yacht-deck technology.", et: "Peidetud sisemised trossid, jahilaeva tekitehnoloogia." },
+  "feat.thermal.b": { en: "Ash treated at 215°C for water resistance.", et: "Valge saar töödeldakse 215°C juures, et tagada vastupidavus ja veekindlus." },
+  "feat.seals.t": { en: "Unique rubber seals", et: "Kohandatud kummitihendid" },
+  "feat.seals.b": { en: "Custom seals certified by Gislaved Gummi AB.", et: "Spetsiaalselt välja töötatud tihendid koostöös Gislaved Gummi AB-ga." },
+  "feat.cables.t": { en: "Stainless steel cables", et: "Roostevabast terasest trossid" },
+  "feat.cables.b": { en: "Hidden interior cables, yacht-deck technology.", et: "Peidetud kinnitussüsteem, inspireeritud jahilaevade tekitehnoloogiast." },
   "feat.eco.t": { en: "Eco-friendly finishing", et: "Keskkonnasõbralik viimistlus" },
-  "feat.eco.b": { en: "Natural linen seed oil or hot waxing only.", et: "Ainult naturaalne linaseemneõli või kuumvahatamine." },
+  "feat.eco.b": { en: "Natural linen seed oil or hot waxing only.", et: "Viimistluses kasutatakse kvaliteetset Osmo õlivaha." },
 
   // ===== Gallery section =====
   "gallery.eyebrow": { en: "Gallery", et: "Galerii" },
@@ -84,7 +84,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "blog.all": { en: "All articles", et: "Kõik artiklid" },
 
   // ===== Contact =====
-  "contact.eyebrow": { en: "Free quote — no commitment", et: "Tasuta pakkumine — ilma kohustuseta" },
+  "contact.eyebrow": { en: "Free quote — no commitment", et: "Saada meile päring või võta meiega ühendust!" },
   "contact.title": { en: "Tell us about your project", et: "Räägi meile oma projektist" },
   "contact.lead": {
     en: "Looking for a tailor-made bath or more information? Write to us — usually within 48 hours.",
@@ -98,7 +98,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "contact.not_sure": { en: "Not sure yet — please advise", et: "Pole veel kindel — palun nõustage" },
   "contact.tellus": { en: "Tell us about your project", et: "Räägi meile oma projektist" },
   "contact.send": { en: "Send my request", et: "Saada päring" },
-  "contact.personal": { en: "We respond personally — never with a templated reply.", et: "Vastame isiklikult — mitte kunagi šablooniga." },
+  "contact.personal": { en: "We respond personally — never with a templated reply.", et: "Personaalne lähenemine igale päringule." },
 
   // ===== Footer =====
   "footer.member": {
@@ -109,7 +109,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "footer.and": { en: "and the", et: "ja" },
   "footer.cluster": { en: "Wood Cluster of Southeast Estonia", et: "Kagu-Eesti Puiduklastri liige" },
   "footer.member_suffix": { en: ".", et: "." },
-  "footer.navigate": { en: "Navigate", et: "Liikumine" },
+  "footer.navigate": { en: "Navigate", et: "Lingid" },
   "footer.cert": { en: "Certifications", et: "Sertifikaadid" },
   "footer.cert.ohim": { en: "OHIM (European Union) registered designs", et: "OHIM (Euroopa Liit) registreeritud disainid" },
   "footer.cert.gislaved": { en: "Gislaved Gummi AB (Sweden) certified rubber seals", et: "Gislaved Gummi AB (Rootsi) sertifitseeritud kummitihendid" },
@@ -120,10 +120,10 @@ const dict: Record<string, { en: string; et: string }> = {
 
   // ===== About page =====
   "about.eyebrow": { en: "About us", et: "Meist" },
-  "about.title": { en: "KHIS by Frants Seer", et: "KHIS — Frants Seer" },
+  "about.title": { en: "KHIS by Frants Seer", et: "Vann kui disainielement" },
   "about.subtitle": {
     en: "Bath as a design element. Build your bathroom — or your very personal spa — around it.",
-    et: "Vann kui disainielement. Ehita oma vannituba — või oma väga isiklik spa — selle ümber.",
+    et: "Loo vannituba või privaatne spaa, mille keskpunktiks on ajatu elegants.",
   },
   "about.section1_eyebrow": { en: "Bath as a design element", et: "Vann kui disainielement" },
   "about.section1_title": { en: "Meant to please your senses, even empty.", et: "Loodud meelt rõõmustama, isegi tühjana." },
@@ -177,45 +177,45 @@ const dict: Record<string, { en: string; et: string }> = {
 
   // ===== Technology page =====
   "tech.eyebrow": { en: "Technology", et: "Tehnoloogia" },
-  "tech.title_1": { en: "The craftsmanship behind every", et: "Käsitööoskus iga" },
-  "tech.title_em": { en: "KHIS", et: "KHIS taga" },
+  "tech.title_1": { en: "The craftsmanship behind every", et: "Ajatu käsitöö ja" },
+  "tech.title_em": { en: "KHIS", et: "insenerikunst" },
   "tech.subtitle": {
     en: "Thermally processed ash, custom rubber seals, hidden stainless-steel cables — engineering protected by OHIM registration.",
     et: "Termiliselt töödeldud saar, kohandatud kummitihendid, peidetud roostevabad terastrossid — insenertöö, mis on kaitstud OHIM registreeringuga.",
   },
-  "tech.intro_eyebrow": { en: "Hallmarks of every bath", et: "Iga vanni tunnused" },
-  "tech.intro_title": { en: "Each plank, thermally processed at 215°C.", et: "Iga laud termiliselt töödeldud 215°C juures." },
+  "tech.intro_eyebrow": { en: "Hallmarks of every bath", et: "Iga detail loeb" },
+  "tech.intro_title": { en: "Each plank, thermally processed at 215°C.", et: "Iga puitdetail termiliselt töödeldud 215°C juures" },
   "tech.intro_body": {
     en: "Each plank of white ash wood (also known by its Latin name, Fraxinus Americana) is thermally processed at 215°C for water-resistance and durability. This process also naturally darkens the wood, which is then hand-cut and oiled or waxed. The process is eco-friendly, and no toxic or harsh chemicals are used at any point. Each piece of wood is paired with a custom-designed rubber seal to prevent water loss when the wood naturally expands or contracts. Each KHIS bath is a feat of engineering, and the designs are protected by an OHIM registration.",
-    et: "Iga valge saare puu (tuntud ka ladinakeelse nime Fraxinus Americana all) laud on termiliselt töödeldud 215°C juures, et tagada veekindlus ja vastupidavus. See protsess tumendab puidu loomulikult, mis seejärel käsitsi lõigatakse ja õlitatakse või vahatatakse. Protsess on keskkonnasõbralik ning ühelgi etapil ei kasutata mürgiseid ega karme kemikaale. Iga puidutükk on paaritatud kohandatud kummitihendiga, et vältida vee kadu, kui puit loomulikult paisub või kahaneb. Iga KHIS vann on insenertöö saavutus ja disainid on kaitstud OHIM registreeringuga.",
+    et: "Iga valge saare puidu (Fraxinus Americana) detail läbib termilise töötlemise 215°C juures, et tagada erakordne vastupidavus, veekindlus ja pikaealisus. See protsess annab puidule loomulikult sügava tumeda tooni ning toob esile selle elegantse ja ajatu karakteri. Pärast termotöötlust viimistletakse iga detail käsitsi kvaliteetse Osmo õlivahaga, mis kaitseb puitu ning rõhutab selle loomulikku ilu ja luksuslikku tekstuuri. Kogu tootmisprotsess on keskkonnasõbralik ning ei sisalda mürgiseid ega kahjulikke kemikaale. Iga puidudetail ühendatakse spetsiaalselt kohandatud kummitihenditega, mis tagavad konstruktsiooni vastupidavuse ja veekindluse ka puidu loomuliku paisumise ja kahanemise korral. Iga KHIS vann on ainulaadne kombinatsioon ajatud disainist, meistritasemel käsitööst ja täpsest insenerikunstist. Kõik disainid on kaitstud OHIM registreeringuga.",
   },
-  "tech.p1.t": { en: "Assembled individually", et: "Individuaalselt kokku pandud" },
+  "tech.p1.t": { en: "Assembled individually", et: "Käsitööna valminud" },
   "tech.p1.b": {
     en: "Each KHIS bathtub is assembled by hand, every project individually, from hand-cut and hand-finished ash parts. Every detail is unique in its measures, making each KHIS bathtub an engineering achievement.",
-    et: "Iga KHIS vann pannakse käsitsi kokku, iga projekt eraldi, käsitsi lõigatud ja viimistletud saareosadest. Iga detail on oma mõõtmetes ainulaadne, muutes iga KHIS vanni insenertöö saavutuseks.",
+    et: "Iga KHIS vann valmib eraldi käsitööna, kasutades käsitsi lõigatud ja viimistletud detaile. Iga element on ainulaadne oma mõõtmete ja iseloomu poolest, muutes iga vanni erakordseks kombinatsiooniks meistritasemel käsitööst ja täpsest insenerikunstist.",
   },
   "tech.p2.t": { en: "Finishing", et: "Viimistlus" },
   "tech.p2.b": {
     en: "The colour of a KHIS bathtub is dark brown, almost black — due to the thermal processing of the wood at 215°C. Apart from elegant appeal, it gives the wood extraordinary water-resistance and durability. Eco-friendly post-processing: natural linen seed oil or hot waxing. Choose a wooden or stone bottom.",
-    et: "KHIS vanni värv on tumepruun, peaaegu must — tänu puidu termilisele töötlemisele 215°C juures. Lisaks elegantsele välimusele annab see puidule erakordse veekindluse ja vastupidavuse. Keskkonnasõbralik järeltöötlus: looduslik linaseemneõli või kuumvahatamine. Vali puidust või kivist põhi.",
+    et: "KHIS vannide sügav tumepruun, peaaegu must toon saavutatakse puidu termilise töötlemisega 215°C juures. Lisaks elegantsele ja ajatule välimusele muudab see protsess puidu erakordselt vastupidavaks ja veekindlaks. Lõppviimistluses kasutatakse kvaliteetset Osmo õlivaha, mis kaitseb puitu ning toob esile selle loomuliku ilu, sügavuse ja luksusliku tekstuuri.",
   },
   "tech.p3.t": { en: "Unique technology", et: "Ainulaadne tehnoloogia" },
   "tech.p3.b": {
     en: "Combination of materials, design and technology can make simply good things great. KHIS bathtubs use rubber seals to connect hand-cut Nordic ash parts — the combination is made to last, providing durability and aesthetic appeal.",
-    et: "Materjalide, disaini ja tehnoloogia kombinatsioon võib muuta lihtsalt head asjad suurepäraseks. KHIS vannid kasutavad kummitihendeid käsitsi lõigatud Põhjamaade saareosade ühendamiseks — kombinatsioon on loodud kestma, pakkudes vastupidavust ja esteetilist atraktiivsust.",
+    et: "Ajatu disaini, hoolikalt valitud materjalide ja täpse inseneritöö kooslus loob vannid, mis ühendavad luksuse, vastupidavuse ja erakordse viimistluse. KHIS vannides kasutatakse spetsiaalseid kummitihendeid käsitsi valmistatud Põhjamaise saarepuidu ühendamisel, tagades laitmatu veekindluse, konstruktsiooni kestvuse ning elegantse lõpptulemuse.",
   },
-  "tech.p4.t": { en: "Yacht-deck assembly", et: "Jahilaeva tekiviimistlus" },
+  "tech.p4.t": { en: "Yacht-deck assembly", et: "Jahilaevade tehnoloogia" },
   "tech.p4.b": {
     en: "All parts are fitted together by hand using two strong, hidden cables. This assembly imitates yacht deck technology, and the invisibility of the cables ensures the elegant exterior of the bath.",
-    et: "Kõik osad pannakse käsitsi kokku kahe tugeva peidetud trossiga. See koostamisviis jäljendab jahilaeva tekitehnoloogiat ja trosside nähtamatus tagab vanni elegantse välimuse.",
+    et: "Kõik detailid ühendatakse käsitsi kahe tugeva peidetud roostevabast terasest trossi abil. See ainulaadne lahendus põhineb jahilaevade tekiehituse tehnoloogial ning peidetud kinnitused annavad vannile puhta, elegantse ja ajatu välimuse.",
   },
   "tech.built_eyebrow": { en: "Built to last", et: "Loodud kestma" },
-  "tech.built_title": { en: "Engineering, not decoration.", et: "Insenertöö, mitte dekoratsioon." },
+  "tech.built_title": { en: "Engineering, not decoration.", et: "Enamat kui lihtsalt vann" },
   "tech.built_body": {
     en: "When combined with any number of customisations, the final result is always a beautiful, unique bath of the highest quality craftsmanship — protected by OHIM registration so you won't find baths like these made by anyone else.",
-    et: "Koos mistahes kohandustega on lõpptulemus alati ilus, ainulaadne ja kõrgeima kvaliteediga käsitööna valmistatud vann — kaitstud OHIM registreeringuga, nii et selliseid vanne ei leia kelleltki teiselt.",
+    et: "Ajatu insenerikunst luksusliku käsitöö vormis. Iga vann valmib eritellimusena, ühendades laitmatu käsitöö, täpse inseneritöö ning ajatu elegantse disaini. Tulemuseks on erakordne luksusese, mis loob ruumi iseloomu ning pakub ainulaadset kogemust igas detailis. OHIM registreeringuga kaitstud disain tagab eksklusiivsuse, mida ei ole võimalik kopeerida.",
   },
-  "tech.configure": { en: "Configure your bath", et: "Konfigureeri oma vann" },
+  "tech.configure": { en: "Configure your bath", et: "Loo oma vann!" },
 
   // ===== TailorMade =====
   "tailor.eyebrow": { en: "Tailor-made", et: "Eritellimused" },
@@ -227,7 +227,7 @@ const dict: Record<string, { en: string; et: string }> = {
   },
   "tailor.intro": {
     en: "KHIS performs special orders, where each client can choose the type of bath, the style, and the right size for them. There is also possible to add heating system, air-massage, lights and a stone bottom. Tell us your vision — we will hand-build it.",
-    et: "KHIS teostab eritellimusi, kus iga klient saab valida vanni tüübi, stiili ja sobiva suuruse. Lisaks on võimalik lisada küttesüsteem, õhumassaaž, valgustus ja kivipõhi. Räägi meile oma visioonist — me ehitame selle käsitsi.",
+    et: "Iga eritellimusel valmiv KHIS vann luuakse vastavalt sinu soovidele, ruumile ja visioonile. Võimalik on valida mudel, stiil ja mõõdud ning lisada erinevaid funktsioone, sealhulgas küttesüsteem, õhumassaaž ja valgustus. Jaga meiega oma visiooni — meie loome sellest ajatult elegantse käsitööna valminud vanni.",
   },
   "tailor.intro_em": { en: "heating system, air-massage, lights and a stone bottom", et: "küttesüsteem, õhumassaaž, valgustus ja kivipõhi" },
   "tailor.free_quote": { en: "Request a free quote", et: "Küsi tasuta pakkumist" },
@@ -237,7 +237,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "tailor.ohim_label": { en: "Registered, protected designs", et: "Registreeritud, kaitstud disainid" },
   "tailor.worldwide": { en: "Worldwide", et: "Üle maailma" },
   "tailor.shipping": { en: "Shipping to your door", et: "Tarne ukseni" },
-  "tailor.no_plastic": { en: "Natural materials, no plastic", et: "Looduslikud materjalid, plastivaba" },
+  "tailor.no_plastic": { en: "Natural materials, no plastic", et: "Loodusest inspireeritud. Puidu loomulik ilu ja soojus igas detailis." },
   "tailor.what_eyebrow": { en: "What you can customise", et: "Mida saad kohandada" },
   "tailor.what_title": { en: "Six ways to make it yours", et: "Kuus viisi seda omaks teha" },
   "tailor.how_eyebrow": { en: "How it works", et: "Kuidas see käib" },
@@ -280,7 +280,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "product.tech_title": { en: "Technical drawings", et: "Tehnilised joonised" },
   "product.tech_lead": {
     en: "Indicative dimensions in millimetres. Each KHIS is custom-made — final sizing is tailored to your space.",
-    et: "Soovituslikud mõõdud millimeetrites. Iga KHIS on eritellimusel — lõplikud mõõdud kohandatakse sinu ruumi järgi.",
+    et: "Mõõdud on toodud millimeetrites. KHIS vannid on saadaval erinevates standardmõõtudes sõltuvalt mudelist ja konfiguratsioonist. Lisaks on võimalik esitada päring täielikult eritellimusel valmistatava vanni jaoks, mis valmib sinu soovide, visiooni ja ruumilahenduse järgi.",
   },
   "product.also_eyebrow": { en: "You may also like", et: "Sulle võib ka meeldida" },
   "product.also_title": { en: "Other KHIS models", et: "Teised KHIS mudelid" },
@@ -306,51 +306,51 @@ const dict: Record<string, { en: string; et: string }> = {
   "prod.first-khis.capacity": { en: "Up to 380 litres", et: "Kuni 380 liitrit" },
   "prod.first-khis.description": {
     en: "First KHIS is the smallest model, though still larger than average with a capacity of up to 380 litres. First KHIS is available in two styles (Classic and French).",
-    et: "First KHIS on väikseim mudel, kuid siiski keskmisest suurem — mahutavus kuni 380 liitrit. First KHIS on saadaval kahes stiilis (Classic ja French).",
+    et: "First KHIS on kollektsiooni kõige kompaktsem mudel, pakkudes siiski avarat ja luksuslikku vannikogemust mahutavusega kuni 380 liitrit. Läbimõeldud disain ja sügav vorm loovad tõelise spaa-elamuse ka väiksemas ruumis. First KHIS on saadaval kahes erinevas stiilis.",
   },
   "prod.first-khis.classic.t": { en: "First KHIS Classic", et: "First KHIS Classic" },
   "prod.first-khis.classic.b": {
     en: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
-    et: "Meie standardstiil kõrgete sirgete külgedega. Pakub suurimat veemahtu. Isegi väikseim mudel loob spaa-tunde.",
+    et: "Ajatu ja elegantne disain kõrgete sirgete külgedega, mis tagavad maksimaalse veemahutavuse ning sügava lõõgastava vannikogemuse.",
   },
   "prod.first-khis.french.t": { en: "First KHIS French", et: "First KHIS French" },
   "prod.first-khis.french.b": {
     en: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
-    et: "Klassikaline Prantsuse stiil sümmeetriliste väljalõigetega külgedel. Tagab mugava sisenemise mõlemalt poolt.",
+    et: "Prantsuse klassikast inspireeritud pehmete ja sümmeetriliste küljejoontega disain, mis annab vannile elegantse, dekoratiivse ja ajatult luksusliku ilme.",
   },
 
   "prod.eternal-khis.tagline": { en: "for a spa-like experience at home", et: "spaa-elamus sinu enda kodus" },
   "prod.eternal-khis.capacity": { en: "Up to 700 litres", et: "Kuni 700 liitrit" },
   "prod.eternal-khis.description": {
     en: "Wooden bath “Eternal KHIS” is tall and sculptural, with a capacity of up to 700 litres. It is the perfect centrepiece for large bathrooms. Each bath can be made-to-order, based upon your specific needs and preferences. Eternal KHIS is available in two elegant styles (Classic and French).",
-    et: "Puidust vann „Eternal KHIS“ on kõrge ja skulpturaalne, mahutavusega kuni 700 liitrit. See on suurte vannitubade ideaalne keskpunkt. Iga vann valmib eritellimusena vastavalt sinu vajadustele ja soovidele. Eternal KHIS on saadaval kahes elegantses stiilis (Classic ja French).",
+    et: "Puidust vann Eternal KHIS on avar ja silmapaistev luksusvann mahutavusega kuni 700 liitrit. Selle elegantne vorm ja ajatult luksuslik disain muudavad vanni suuremate vannitubade pilkupüüdvaks disainielemendiks. Iga vann valmib eritellimusena vastavalt sinu soovidele ja vajadustele. Eternal KHIS on saadaval kahes elegantses stiilis.",
   },
   "prod.eternal-khis.classic.t": { en: "Eternal KHIS Classic", et: "Eternal KHIS Classic" },
   "prod.eternal-khis.classic.b": {
     en: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
-    et: "Meie standardstiil kõrgete sirgete külgedega. Pakub suurimat veemahtu. Isegi väikseim mudel loob spaa-tunde.",
+    et: "Ajatu ja elegantne disain sirgete servadega, mis loob luksusliku ja lõõgastava vannielamuse.",
   },
   "prod.eternal-khis.french.t": { en: "Eternal KHIS French", et: "Eternal KHIS French" },
   "prod.eternal-khis.french.b": {
     en: "A classical French style with symmetric cutout sides. Provides effortless access from both sides.",
-    et: "Klassikaline Prantsuse stiil sümmeetriliste väljalõigetega külgedel. Tagab mugava sisenemise mõlemalt poolt.",
+    et: "Prantsuse klassikast inspireeritud pehmete ja sümmeetriliste küljejoontega disain, mis annab vannile elegantse, dekoratiivse ja ajatult luksusliku ilme.",
   },
 
-  "prod.natural-khis.tagline": { en: "for a group indoors or in nature", et: "seltskonnale siseruumides või looduses" },
+  "prod.natural-khis.tagline": { en: "for a group indoors or in nature", et: "Avar spaa-elamus jagatud hetkede nautimiseks." },
   "prod.natural-khis.capacity": { en: "Up to 960 litres", et: "Kuni 960 liitrit" },
   "prod.natural-khis.description": {
     en: "Natural KHIS is a large and versatile bath with an impressive capacity of up to 960 litres. Customisations include light, massage and heating systems.",
-    et: "Natural KHIS on suur ja mitmekülgne vann muljetavaldava mahutavusega kuni 960 liitrit. Kohanduste hulka kuuluvad valgustus-, massaaži- ja küttesüsteem.",
+    et: "Natural KHIS on avar ja mitmekülgne luksusvann mahutavusega kuni 960 liitrit, loodud tõeliseks spaa-elamuseks. Võimalik on lisada erinevaid funktsioone, sealhulgas valgustus-, massaaži- ja küttesüsteem.",
   },
   "prod.natural-khis.classic.t": { en: "Natural KHIS Classic", et: "Natural KHIS Classic" },
   "prod.natural-khis.classic.b": {
     en: "Our standard style with high, straight sides. It offers the greatest water capacity. Even the smallest models create a spa sensation.",
-    et: "Meie standardstiil kõrgete sirgete külgedega. Pakub suurimat veemahtu. Isegi väikseim mudel loob spaa-tunde.",
+    et: "Ajatu ja elegantne disain sirgete servadega, mis loob luksusliku ja lõõgastava vannielamuse.",
   },
 
   "prod.delivery_note": {
     en: "Once your order is received and we confirm all the custom details, your exclusive, handcrafted bath will be delivered within 9 weeks (depending on the model and availability of accessories).",
-    et: "Pärast tellimuse vastuvõtmist ja kõigi detailide kinnitamist tarnime sinu eksklusiivse käsitsi valmistatud vanni 9 nädala jooksul (sõltuvalt mudelist ja lisatarvikute saadavusest).",
+    et: "Pärast tellimuse kinnitamist ja detailide kooskõlastamist valmib sinu käsitööna valmistatud KHIS vann kuni 9 nädala jooksul, sõltuvalt valitud mudelist ja lisavarustuse saadavusest.",
   },
 };
 
