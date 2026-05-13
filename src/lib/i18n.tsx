@@ -177,45 +177,45 @@ const dict: Record<string, { en: string; et: string }> = {
 
   // ===== Technology page =====
   "tech.eyebrow": { en: "Technology", et: "Tehnoloogia" },
-  "tech.title_1": { en: "The craftsmanship behind every", et: "Käsitööoskus iga" },
-  "tech.title_em": { en: "KHIS", et: "KHIS taga" },
+  "tech.title_1": { en: "The craftsmanship behind every", et: "Ajatu käsitöö ja" },
+  "tech.title_em": { en: "KHIS", et: "insenerikunst" },
   "tech.subtitle": {
     en: "Thermally processed ash, custom rubber seals, hidden stainless-steel cables — engineering protected by OHIM registration.",
     et: "Termiliselt töödeldud saar, kohandatud kummitihendid, peidetud roostevabad terastrossid — insenertöö, mis on kaitstud OHIM registreeringuga.",
   },
-  "tech.intro_eyebrow": { en: "Hallmarks of every bath", et: "Iga vanni tunnused" },
-  "tech.intro_title": { en: "Each plank, thermally processed at 215°C.", et: "Iga laud termiliselt töödeldud 215°C juures." },
+  "tech.intro_eyebrow": { en: "Hallmarks of every bath", et: "Iga detail loeb" },
+  "tech.intro_title": { en: "Each plank, thermally processed at 215°C.", et: "Iga puitdetail termiliselt töödeldud 215°C juures" },
   "tech.intro_body": {
     en: "Each plank of white ash wood (also known by its Latin name, Fraxinus Americana) is thermally processed at 215°C for water-resistance and durability. This process also naturally darkens the wood, which is then hand-cut and oiled or waxed. The process is eco-friendly, and no toxic or harsh chemicals are used at any point. Each piece of wood is paired with a custom-designed rubber seal to prevent water loss when the wood naturally expands or contracts. Each KHIS bath is a feat of engineering, and the designs are protected by an OHIM registration.",
-    et: "Iga valge saare puu (tuntud ka ladinakeelse nime Fraxinus Americana all) laud on termiliselt töödeldud 215°C juures, et tagada veekindlus ja vastupidavus. See protsess tumendab puidu loomulikult, mis seejärel käsitsi lõigatakse ja õlitatakse või vahatatakse. Protsess on keskkonnasõbralik ning ühelgi etapil ei kasutata mürgiseid ega karme kemikaale. Iga puidutükk on paaritatud kohandatud kummitihendiga, et vältida vee kadu, kui puit loomulikult paisub või kahaneb. Iga KHIS vann on insenertöö saavutus ja disainid on kaitstud OHIM registreeringuga.",
+    et: "Iga valge saare puidu (Fraxinus Americana) detail läbib termilise töötlemise 215°C juures, et tagada erakordne vastupidavus, veekindlus ja pikaealisus. See protsess annab puidule loomulikult sügava tumeda tooni ning toob esile selle elegantse ja ajatu karakteri. Pärast termotöötlust viimistletakse iga detail käsitsi kvaliteetse Osmo õlivahaga, mis kaitseb puitu ning rõhutab selle loomulikku ilu ja luksuslikku tekstuuri. Kogu tootmisprotsess on keskkonnasõbralik ning ei sisalda mürgiseid ega kahjulikke kemikaale. Iga puidudetail ühendatakse spetsiaalselt kohandatud kummitihenditega, mis tagavad konstruktsiooni vastupidavuse ja veekindluse ka puidu loomuliku paisumise ja kahanemise korral. Iga KHIS vann on ainulaadne kombinatsioon ajatud disainist, meistritasemel käsitööst ja täpsest insenerikunstist. Kõik disainid on kaitstud OHIM registreeringuga.",
   },
-  "tech.p1.t": { en: "Assembled individually", et: "Individuaalselt kokku pandud" },
+  "tech.p1.t": { en: "Assembled individually", et: "Käsitööna valminud" },
   "tech.p1.b": {
     en: "Each KHIS bathtub is assembled by hand, every project individually, from hand-cut and hand-finished ash parts. Every detail is unique in its measures, making each KHIS bathtub an engineering achievement.",
-    et: "Iga KHIS vann pannakse käsitsi kokku, iga projekt eraldi, käsitsi lõigatud ja viimistletud saareosadest. Iga detail on oma mõõtmetes ainulaadne, muutes iga KHIS vanni insenertöö saavutuseks.",
+    et: "Iga KHIS vann valmib eraldi käsitööna, kasutades käsitsi lõigatud ja viimistletud detaile. Iga element on ainulaadne oma mõõtmete ja iseloomu poolest, muutes iga vanni erakordseks kombinatsiooniks meistritasemel käsitööst ja täpsest insenerikunstist.",
   },
   "tech.p2.t": { en: "Finishing", et: "Viimistlus" },
   "tech.p2.b": {
     en: "The colour of a KHIS bathtub is dark brown, almost black — due to the thermal processing of the wood at 215°C. Apart from elegant appeal, it gives the wood extraordinary water-resistance and durability. Eco-friendly post-processing: natural linen seed oil or hot waxing. Choose a wooden or stone bottom.",
-    et: "KHIS vanni värv on tumepruun, peaaegu must — tänu puidu termilisele töötlemisele 215°C juures. Lisaks elegantsele välimusele annab see puidule erakordse veekindluse ja vastupidavuse. Keskkonnasõbralik järeltöötlus: looduslik linaseemneõli või kuumvahatamine. Vali puidust või kivist põhi.",
+    et: "KHIS vannide sügav tumepruun, peaaegu must toon saavutatakse puidu termilise töötlemisega 215°C juures. Lisaks elegantsele ja ajatule välimusele muudab see protsess puidu erakordselt vastupidavaks ja veekindlaks. Lõppviimistluses kasutatakse kvaliteetset Osmo õlivaha, mis kaitseb puitu ning toob esile selle loomuliku ilu, sügavuse ja luksusliku tekstuuri.",
   },
   "tech.p3.t": { en: "Unique technology", et: "Ainulaadne tehnoloogia" },
   "tech.p3.b": {
     en: "Combination of materials, design and technology can make simply good things great. KHIS bathtubs use rubber seals to connect hand-cut Nordic ash parts — the combination is made to last, providing durability and aesthetic appeal.",
-    et: "Materjalide, disaini ja tehnoloogia kombinatsioon võib muuta lihtsalt head asjad suurepäraseks. KHIS vannid kasutavad kummitihendeid käsitsi lõigatud Põhjamaade saareosade ühendamiseks — kombinatsioon on loodud kestma, pakkudes vastupidavust ja esteetilist atraktiivsust.",
+    et: "Ajatu disaini, hoolikalt valitud materjalide ja täpse inseneritöö kooslus loob vannid, mis ühendavad luksuse, vastupidavuse ja erakordse viimistluse. KHIS vannides kasutatakse spetsiaalseid kummitihendeid käsitsi valmistatud Põhjamaise saarepuidu ühendamisel, tagades laitmatu veekindluse, konstruktsiooni kestvuse ning elegantse lõpptulemuse.",
   },
-  "tech.p4.t": { en: "Yacht-deck assembly", et: "Jahilaeva tekiviimistlus" },
+  "tech.p4.t": { en: "Yacht-deck assembly", et: "Jahilaevade tehnoloogia" },
   "tech.p4.b": {
     en: "All parts are fitted together by hand using two strong, hidden cables. This assembly imitates yacht deck technology, and the invisibility of the cables ensures the elegant exterior of the bath.",
-    et: "Kõik osad pannakse käsitsi kokku kahe tugeva peidetud trossiga. See koostamisviis jäljendab jahilaeva tekitehnoloogiat ja trosside nähtamatus tagab vanni elegantse välimuse.",
+    et: "Kõik detailid ühendatakse käsitsi kahe tugeva peidetud roostevabast terasest trossi abil. See ainulaadne lahendus põhineb jahilaevade tekiehituse tehnoloogial ning peidetud kinnitused annavad vannile puhta, elegantse ja ajatu välimuse.",
   },
   "tech.built_eyebrow": { en: "Built to last", et: "Loodud kestma" },
-  "tech.built_title": { en: "Engineering, not decoration.", et: "Insenertöö, mitte dekoratsioon." },
+  "tech.built_title": { en: "Engineering, not decoration.", et: "Enamat kui lihtsalt vann" },
   "tech.built_body": {
     en: "When combined with any number of customisations, the final result is always a beautiful, unique bath of the highest quality craftsmanship — protected by OHIM registration so you won't find baths like these made by anyone else.",
-    et: "Koos mistahes kohandustega on lõpptulemus alati ilus, ainulaadne ja kõrgeima kvaliteediga käsitööna valmistatud vann — kaitstud OHIM registreeringuga, nii et selliseid vanne ei leia kelleltki teiselt.",
+    et: "Ajatu insenerikunst luksusliku käsitöö vormis. Iga vann valmib eritellimusena, ühendades laitmatu käsitöö, täpse inseneritöö ning ajatu elegantse disaini. Tulemuseks on erakordne luksusese, mis loob ruumi iseloomu ning pakub ainulaadset kogemust igas detailis. OHIM registreeringuga kaitstud disain tagab eksklusiivsuse, mida ei ole võimalik kopeerida.",
   },
-  "tech.configure": { en: "Configure your bath", et: "Konfigureeri oma vann" },
+  "tech.configure": { en: "Configure your bath", et: "Loo oma vann!" },
 
   // ===== TailorMade =====
   "tailor.eyebrow": { en: "Tailor-made", et: "Eritellimused" },
