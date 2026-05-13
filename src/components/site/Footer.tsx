@@ -70,7 +70,7 @@ export const Footer = () => {
           </p>
           <div className="mt-5 flex flex-wrap gap-2.5">
             <PartnerBadge href="https://puiduklaster.ee/" label="Puiduklaster" sub="Member" />
-            <PartnerBadge href="https://stripe.com" label="Stripe" sub="Payments" />
+            <PartnerBadge href="https://wise.com" label="Wise" sub="Payments" />
             <PartnerBadge href="https://www.paypal.com" label="PayPal" sub="Payments" />
           </div>
           <div className="mt-6 flex gap-5">
