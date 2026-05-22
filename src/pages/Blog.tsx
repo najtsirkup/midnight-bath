@@ -49,6 +49,7 @@ const Blog = () => {
       </div>
     </section>
   </PageShell>
-);
+  );
+};
 
 export default Blog;
