@@ -3,7 +3,7 @@ import { GoldButton } from "@/components/site/GoldButton";
 import ContactForm from "@/components/site/ContactForm";
 import { Mountain, Waves, Lightbulb, Ruler, Palette, Thermometer, Check, Clock, Award, Globe } from "lucide-react";
 import { products } from "@/lib/site-data";
-import gallery4 from "@/assets/gallery-4.jpg";
+import tailorBanner from "@/assets/tailor-banner.jpg";
 import gallery7 from "@/assets/gallery-7.jpg";
 import { useLang } from "@/lib/i18n";
 
@@ -28,7 +28,7 @@ const TailorMade = () => {
     eyebrow={t("tailor.eyebrow")}
     title={<>{t("tailor.title_1")} <em className="text-primary-glow not-italic">{t("tailor.title_em")}</em>.</>}
     subtitle={t("tailor.subtitle")}
-    bannerImage={gallery4}
+    bannerImage={tailorBanner}
     bannerAlt="Tailor-made KHIS bath in candlelight"
   >
     <section className="py-20 md:py-28 bg-background">

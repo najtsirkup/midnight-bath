@@ -23,7 +23,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "hero.eyebrow": { en: "KHIS Bath — Handcrafted in Estonia", et: "KHIS Bath — Käsitsi valmistatud Eestis" },
   "hero.title_1": { en: "Feel the warmth and luxury of", et: "Naturaalse puidu pehmus ja" },
   "hero.title_em": { en: "fine wood", et: "luksuslik tunnetus" },
-  "hero.title_2": { en: "in your bathroom.", et: "igas detailis." },
+  "hero.title_2": { en: "in your bathroom", et: "igas detailis" },
   "hero.lead": {
     en: "Nowadays plastic consumption has become a global problem. Let's fight against plastic pollution together and be by green environment. Use natural products.",
     et: "Keskkonnasõbralikum tulevik algab teadlikest valikutest — eelista looduslikke tooteid ja aita vähendada plastireostust.",
@@ -33,8 +33,8 @@ const dict: Record<string, { en: string; et: string }> = {
 
   // ===== Philosophy =====
   "philosophy.eyebrow": { en: "Philosophy", et: "Filosoofia" },
-  "philosophy.h1": { en: "Bath as a design element.", et: "Vann kui disainielement." },
-  "philosophy.h2": { en: "Build your bathroom around it.", et: "Ehita oma vannituba selle ümber." },
+  "philosophy.h1": { en: "Bath as a design element", et: "Vann kui disainielement" },
+  "philosophy.h2": { en: "Build your bathroom around it", et: "Ehita oma vannituba selle ümber" },
   "philosophy.body": {
     en: "Loneliness can be boring. Emptiness can be sad. Neither is true for a KHIS bathtub — with its unique design, meant to catch your attention and please the senses even when empty. As in nature, you only can build your own universe in a safe, cozy, warm and inspiring place.",
     et: "Üksindus võib olla igav. Tühjus võib olla kurb. Kumbki ei ole tõsi KHIS vanni puhul — selle ainulaadne disain on loodud köitma tähelepanu ja meelt rõõmustama isegi siis, kui see on tühi. Nagu looduses, saad oma universumi ehitada vaid turvalises, hubases, soojas ja inspireerivas paigas.",
@@ -81,6 +81,11 @@ const dict: Record<string, { en: string; et: string }> = {
   // ===== Blog section =====
   "blog.eyebrow": { en: "Blog", et: "Blogi" },
   "blog.latest": { en: "Latest reading", et: "Viimased lood" },
+  "blog.page_title": { en: "KHIS Blog", et: "KHIS Blogi" },
+  "blog.page_subtitle": {
+    en: "Stories on craftsmanship, quiet luxury, and the deep-soak bathroom",
+    et: "Lood meistri käsitööst, vaiksest luksusest ja lõõgastavast vannielamusest",
+  },
   "blog.all": { en: "All articles", et: "Kõik artiklid" },
 
   // ===== Contact =====
@@ -126,7 +131,7 @@ const dict: Record<string, { en: string; et: string }> = {
     et: "Loo vannituba või privaatne spaa, mille keskpunktiks on ajatu elegants.",
   },
   "about.section1_eyebrow": { en: "Bath as a design element", et: "Vann kui disainielement" },
-  "about.section1_title": { en: "Meant to please your senses, even empty.", et: "Loodud meelt rõõmustama, isegi tühjana." },
+  "about.section1_title": { en: "Meant to please your senses, even empty", et: "Loodud meelt rõõmustama, isegi tühjana" },
   "about.section1_p1": {
     en: "Loneliness can be boring. Emptiness can be sad. Neither is true for a KHIS bathtub, with its unique design — meant to catch your attention and please the senses even when empty. KHIS bathtub as a design element: build your bathroom (or your very personal spa) around it.",
     et: "Üksindus võib olla igav. Tühjus võib olla kurb. Kumbki ei kehti KHIS vanni puhul — ainulaadne disain köidab pilku ja rõõmustab meelt ka tühjana. KHIS vann kui disainielement: ehita oma vannituba (või oma väga isiklik spa) selle ümber.",
@@ -136,7 +141,7 @@ const dict: Record<string, { en: string; et: string }> = {
     et: "Nagu looduses, saad oma universumi ehitada vaid turvalises, hubases, soojas ja inspireerivas paigas. Olgu sa asjadega tegev või neid mõtiskledes — see peab olema esteetiliselt nauditav, ainulaadne, pilkupüüdev. Nagu KHIS vann.",
   },
   "about.philo_eyebrow": { en: "KHIS philosophy", et: "KHIS filosoofia" },
-  "about.philo_t": { en: "Start your own tradition.", et: "Alusta oma traditsiooni." },
+  "about.philo_t": { en: "Start your own tradition", et: "Alusta oma traditsiooni" },
   "about.philo_p1": {
     en: "Everything about ourselves is in constant movement, whatever efforts we make to stop time and capture the essence. Some traditions have to be kept and nourished — bathtubs made of fine wood; and some have to be started by ourselves.",
     et: "Kõik meie ümber on pidevas liikumises, ükskõik kui väga me püüame aega peatada ja olemust tabada. Mõned traditsioonid tuleb hoida ja toita — peenest puidust vannid; ja mõned tuleb endal alustada.",
@@ -146,7 +151,7 @@ const dict: Record<string, { en: string; et: string }> = {
     et: "KHISiga saad alustada oma kvaliteetaja traditsiooni, libistades end läbi täiuslikkuse lainete.",
   },
   "about.indulge_eyebrow": { en: "Indulgence", et: "Nautimine" },
-  "about.indulge_t": { en: "Your very own home spa.", et: "Sinu enda kodune spa." },
+  "about.indulge_t": { en: "Your very own home spa", et: "Sinu enda kodune spa" },
   "about.indulge_p1": {
     en: "We believe in natural flow of time and experience. We believe that maintaining the natural rhythm of life is essential, keeping up with harmony around us is the path to follow.",
     et: "Usume aja ja kogemuse loomulikku voogu. Usume, et elu loomuliku rütmi säilitamine on hädavajalik ning meid ümbritsev harmoonia on tee, mida tasub järgida.",
@@ -184,7 +189,7 @@ const dict: Record<string, { en: string; et: string }> = {
     et: "Termiliselt töödeldud saar, kohandatud kummitihendid, peidetud roostevabad terastrossid — insenertöö, mis on kaitstud OHIM registreeringuga.",
   },
   "tech.intro_eyebrow": { en: "Hallmarks of every bath", et: "Iga detail loeb" },
-  "tech.intro_title": { en: "Each plank, thermally processed at 215°C.", et: "Iga puitdetail termiliselt töödeldud 215°C juures" },
+  "tech.intro_title": { en: "Each plank, thermally processed at 215°C", et: "Iga puitdetail termiliselt töödeldud 215°C juures" },
   "tech.intro_body": {
     en: "Each plank of white ash wood (also known by its Latin name, Fraxinus Americana) is thermally processed at 215°C for water-resistance and durability. This process also naturally darkens the wood, which is then hand-cut and oiled or waxed. The process is eco-friendly, and no toxic or harsh chemicals are used at any point. Each piece of wood is paired with a custom-designed rubber seal to prevent water loss when the wood naturally expands or contracts. Each KHIS bath is a feat of engineering, and the designs are protected by an OHIM registration.",
     et: "Iga valge saare puidu (Fraxinus Americana) detail läbib termilise töötlemise 215°C juures, et tagada erakordne vastupidavus, veekindlus ja pikaealisus. See protsess annab puidule loomulikult sügava tumeda tooni ning toob esile selle elegantse ja ajatu karakteri. Pärast termotöötlust viimistletakse iga detail käsitsi kvaliteetse Osmo õlivahaga, mis kaitseb puitu ning rõhutab selle loomulikku ilu ja luksuslikku tekstuuri. Kogu tootmisprotsess on keskkonnasõbralik ning ei sisalda mürgiseid ega kahjulikke kemikaale. Iga puidudetail ühendatakse spetsiaalselt kohandatud kummitihenditega, mis tagavad konstruktsiooni vastupidavuse ja veekindluse ka puidu loomuliku paisumise ja kahanemise korral. Iga KHIS vann on ainulaadne kombinatsioon ajatud disainist, meistritasemel käsitööst ja täpsest insenerikunstist. Kõik disainid on kaitstud OHIM registreeringuga.",
@@ -210,7 +215,7 @@ const dict: Record<string, { en: string; et: string }> = {
     et: "Kõik detailid ühendatakse käsitsi kahe tugeva peidetud roostevabast terasest trossi abil. See ainulaadne lahendus põhineb jahilaevade tekiehituse tehnoloogial ning peidetud kinnitused annavad vannile puhta, elegantse ja ajatu välimuse.",
   },
   "tech.built_eyebrow": { en: "Built to last", et: "Loodud kestma" },
-  "tech.built_title": { en: "Engineering, not decoration.", et: "Enamat kui lihtsalt vann" },
+  "tech.built_title": { en: "Engineering, not decoration", et: "Enamat kui lihtsalt vann" },
   "tech.built_body": {
     en: "When combined with any number of customisations, the final result is always a beautiful, unique bath of the highest quality craftsmanship — protected by OHIM registration so you won't find baths like these made by anyone else.",
     et: "Ajatu insenerikunst luksusliku käsitöö vormis. Iga vann valmib eritellimusena, ühendades laitmatu käsitöö, täpse inseneritöö ning ajatu elegantse disaini. Tulemuseks on erakordne luksusese, mis loob ruumi iseloomu ning pakub ainulaadset kogemust igas detailis. OHIM registreeringuga kaitstud disain tagab eksklusiivsuse, mida ei ole võimalik kopeerida.",
@@ -289,7 +294,7 @@ const dict: Record<string, { en: string; et: string }> = {
   // Contact page
   "contactpg.title_1": { en: "Let's build your", et: "Ehitame sinu" },
   "contactpg.title_em": { en: "KHIS", et: "KHIS-i" },
-  "contactpg.title_2": { en: ".", et: "." },
+  "contactpg.title_2": { en: "", et: "" },
   "contactpg.subtitle": {
     en: "Tell us about your space and your wishes — we'll come back with a personal proposal.",
     et: "Räägi meile oma ruumist ja soovidest — tuleme tagasi isikliku pakkumisega.",

@@ -20,7 +20,6 @@ export const PageShell = ({ eyebrow, title, subtitle, bannerImage, bannerAlt = "
       <img src={bannerImage} alt={bannerAlt} className="page-banner-img animate-slow-zoom" />
       <div className="page-banner-overlay" />
       <div className="container-luxe relative z-10 text-center max-w-3xl mx-auto py-20">
-        {eyebrow && <p className="eyebrow mb-5 text-white/80 animate-fade-up">{eyebrow}</p>}
         <h1 className="font-serif text-4xl md:text-6xl leading-tight text-white animate-fade-up">{title}</h1>
         {subtitle && (
           <p className="mt-8 text-white/85 text-base md:text-lg leading-relaxed animate-fade-up max-w-2xl mx-auto">

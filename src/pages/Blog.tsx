@@ -3,12 +3,15 @@ import { blogPosts } from "@/lib/site-data";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import gallery6 from "@/assets/gallery-6.jpg";
+import { useLang } from "@/lib/i18n";
 
-const Blog = () => (
+const Blog = () => {
+  const { t } = useLang();
+  return (
   <PageShell
-    eyebrow="Blog"
-    title="KHIS Blog"
-    subtitle="Stories on craftsmanship, quiet luxury, and the deep-soak bathroom."
+    eyebrow={t("blog.eyebrow")}
+    title={t("blog.page_title")}
+    subtitle={t("blog.page_subtitle")}
     bannerImage={gallery6}
     bannerAlt="KHIS bath in a calm interior"
   >
@@ -46,6 +49,7 @@ const Blog = () => (
       </div>
     </section>
   </PageShell>
-);
+  );
+};
 
 export default Blog;
