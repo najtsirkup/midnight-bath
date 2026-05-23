@@ -1,4 +1,5 @@
 import { PageShell } from "@/components/site/PageShell";
+import { SEO } from "@/components/site/SEO";
 import { blogPosts } from "@/lib/site-data";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
@@ -8,6 +9,12 @@ import { useLang } from "@/lib/i18n";
 const Blog = () => {
   const { t } = useLang();
   return (
+  <>
+  <SEO
+    title="KHIS Blog — Craftsmanship, Quiet Luxury & Wellness"
+    description="Stories on handcrafted bathtubs, quiet luxury, deep-soak bathing rituals and modern wellness design from the KHIS Bath workshop."
+    path="/blog"
+  />
   <PageShell
     eyebrow={t("blog.eyebrow")}
     title={t("blog.page_title")}
@@ -49,6 +56,7 @@ const Blog = () => {
       </div>
     </section>
   </PageShell>
+  </>
   );
 };
 

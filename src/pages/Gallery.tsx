@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { PageShell } from "@/components/site/PageShell";
+import { SEO } from "@/components/site/SEO";
 import { Lightbox } from "@/components/site/Lightbox";
 import { galleryImages } from "@/lib/site-data";
 import { useLang } from "@/lib/i18n";
@@ -10,6 +11,12 @@ const Gallery = () => {
   const [index, setIndex] = useState<number | null>(null);
 
   return (
+    <>
+    <SEO
+      title="Gallery — KHIS Bath in Real Interiors"
+      description="Browse handcrafted KHIS wooden bathtubs installed in real luxury interiors, hotels and private homes across Europe."
+      path="/gallery"
+    />
     <PageShell
       eyebrow={t("gallery.eyebrow")}
       title={t("gallery.title")}
@@ -53,6 +60,7 @@ const Gallery = () => {
         />
       )}
     </PageShell>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/site/PageShell";
 import { GoldButton } from "@/components/site/GoldButton";
+import { SEO } from "@/components/site/SEO";
 import { Hammer, Settings2, Anchor, Leaf } from "lucide-react";
 import technologyImg from "@/assets/products/eternal-khis-2.jpg";
 import gallery7 from "@/assets/tech-engineering.jpg";
@@ -15,6 +16,12 @@ const Technology = () => {
   ];
 
   return (
+  <>
+  <SEO
+    title="Technology — Thermo-Treated Wood & Marine Engineering"
+    description="How KHIS Bath wooden bathtubs are built: thermo-treated wood, yacht-grade sealing, marine engineering and meticulous handcrafted finish."
+    path="/technology"
+  />
   <PageShell
     eyebrow={t("tech.eyebrow")}
     title={<>{t("tech.title_1")} <em className="text-primary-glow not-italic">{t("tech.title_em")}</em></>}
@@ -57,6 +64,7 @@ const Technology = () => {
       </div>
     </section>
   </PageShell>
+  </>
   );
 };
 
