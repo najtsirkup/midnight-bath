@@ -64,6 +64,7 @@ const Technology = () => {
       </div>
     </section>
   </PageShell>
+  </>
   );
 };
 

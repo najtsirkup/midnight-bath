@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/site/PageShell";
 import { GoldButton } from "@/components/site/GoldButton";
+import { SEO } from "@/components/site/SEO";
 import ContactForm from "@/components/site/ContactForm";
 import { Mountain, Waves, Lightbulb, Ruler, Palette, Thermometer, Check, Clock, Award, Globe } from "lucide-react";
 import { products } from "@/lib/site-data";
@@ -24,6 +25,12 @@ const TailorMade = () => {
     ["04", t("step.delivery.t"), t("step.delivery.b")],
   ];
   return (
+  <>
+  <SEO
+    title="Tailor-Made Wooden Bathtubs — Custom KHIS Bath"
+    description="Custom wooden bathtubs built to your specification: choose size, stone bottom, air-massage, lighting, heating and finish. Handcrafted in Estonia."
+    path="/tailor-made"
+  />
   <PageShell
     eyebrow={t("tailor.eyebrow")}
     title={<>{t("tailor.title_1")} <em className="text-primary-glow not-italic">{t("tailor.title_em")}</em>.</>}
