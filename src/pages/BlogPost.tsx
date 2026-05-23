@@ -13,7 +13,36 @@ const BlogPost = () => {
 
   if (!html || !meta) return <Navigate to="/blog" replace />;
 
+  const path = `/blog/${slug}`;
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: meta.title,
+    image: `https://khisbath.com${meta.image}`,
+    datePublished: meta.date,
+    author: { "@type": "Organization", name: "KHIS Bath" },
+    publisher: { "@type": "Organization", name: "KHIS Bath", logo: { "@type": "ImageObject", url: "https://khisbath.com/favicon.png" } },
+    mainEntityOfPage: `https://khisbath.com${path}`,
+  };
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://khisbath.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://khisbath.com/blog" },
+      { "@type": "ListItem", position: 3, name: meta.title, item: `https://khisbath.com${path}` },
+    ],
+  };
+
   return (
+    <>
+    <SEO
+      title={`${meta.title} | KHIS Bath`.slice(0, 70)}
+      description={meta.excerpt.slice(0, 160)}
+      path={path}
+      type="article"
+      jsonLd={[articleSchema, breadcrumb]}
+    />
     <PageShell
       eyebrow={`${meta.category} · ${meta.date}`}
       title={meta.title}
@@ -42,6 +71,7 @@ const BlogPost = () => {
         </div>
       </article>
     </PageShell>
+    </>
   );
 };
 
