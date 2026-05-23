@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { PageShell } from "@/components/site/PageShell";
 import { GoldButton } from "@/components/site/GoldButton";
+import { SEO } from "@/components/site/SEO";
 import { blogHtml } from "@/lib/blog-html";
 import { blogPosts } from "@/lib/site-data";
 import { ArrowLeft } from "lucide-react";

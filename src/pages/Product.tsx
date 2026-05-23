@@ -198,6 +198,7 @@ const Product = () => {
         </div>
       </section>
     </PageShell>
+    </>
   );
 };
 
