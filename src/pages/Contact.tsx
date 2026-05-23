@@ -22,6 +22,7 @@ const Contact = () => {
     >
       <ContactForm />
     </PageShell>
+    </>
   );
 };
 
