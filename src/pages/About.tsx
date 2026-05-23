@@ -77,6 +77,7 @@ const About = () => {
       </div>
     </section>
   </PageShell>
+  </>
   );
 };
 
