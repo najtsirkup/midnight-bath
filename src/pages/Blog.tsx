@@ -56,6 +56,7 @@ const Blog = () => {
       </div>
     </section>
   </PageShell>
+  </>
   );
 };
 
