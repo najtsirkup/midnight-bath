@@ -1,5 +1,6 @@
 import { PageShell } from "@/components/site/PageShell";
 import { GoldButton } from "@/components/site/GoldButton";
+import { SEO } from "@/components/site/SEO";
 import aboutHero from "@/assets/about-hero.jpg";
 import frantsSeer from "@/assets/frants-seer.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
@@ -8,6 +9,12 @@ import { useLang } from "@/lib/i18n";
 const About = () => {
   const { t } = useLang();
   return (
+  <>
+  <SEO
+    title="About KHIS Bath — Estonian Craftsmanship & Heritage"
+    description="The story behind KHIS Bath: Estonian craftsmanship, thermo-treated wood, and a quiet-luxury philosophy shaping every handcrafted bathtub."
+    path="/about"
+  />
   <PageShell
     eyebrow={t("about.eyebrow")}
     title={t("about.title")}
