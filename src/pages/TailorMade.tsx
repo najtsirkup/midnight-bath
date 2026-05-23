@@ -143,6 +143,7 @@ const TailorMade = () => {
       </div>
     </section>
   </PageShell>
+  </>
   );
 };
 
