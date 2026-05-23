@@ -40,7 +40,35 @@ const Product = () => {
   const styles = t(stylesKeyBySlug[product.slug] || "");
   const deliveryNote = t("prod.delivery_note");
 
+  const path = `/shop/${product.slug}`;
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: product.description,
+    brand: { "@type": "Brand", name: "KHIS Bath" },
+    image: `https://khisbath.com${product.image}`,
+    url: `https://khisbath.com${path}`,
+  };
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://khisbath.com/" },
+      { "@type": "ListItem", position: 2, name: "Products", item: "https://khisbath.com/#products" },
+      { "@type": "ListItem", position: 3, name: product.name, item: `https://khisbath.com${path}` },
+    ],
+  };
+
   return (
+    <>
+    <SEO
+      title={`${product.name} — Handcrafted Wooden Bathtub | KHIS Bath`}
+      description={`${product.name}: ${tagline}. ${product.description}`.slice(0, 160)}
+      path={path}
+      type="product"
+      jsonLd={[productSchema, breadcrumb]}
+    />
     <PageShell
       eyebrow={t("products.collection_eyebrow")}
       title={product.name}
