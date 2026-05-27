@@ -24,10 +24,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "hero.title_1": { en: "Feel the warmth and luxury of", et: "Naturaalse puidu pehmus ja" },
   "hero.title_em": { en: "fine wood", et: "luksuslik tunnetus" },
   "hero.title_2": { en: "in your bathroom", et: "igas detailis" },
-  "hero.lead": {
-    en: "Nowadays plastic consumption has become a global problem. Let's fight against plastic pollution together and be by green environment. Use natural products.",
-    et: "Keskkonnasõbralikum tulevik algab teadlikest valikutest — eelista looduslikke tooteid ja aita vähendada plastireostust.",
-  },
+  "hero.lead": { en: "", et: "" },
   "cta.request_quote": { en: "Request a quote", et: "Küsi pakkumist" },
   "cta.about_khis": { en: "About KHIS", et: "KHISist" },
 
@@ -226,10 +223,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "tailor.eyebrow": { en: "Tailor-made", et: "Eritellimused" },
   "tailor.title_1": { en: "Every KHIS bath is", et: "Iga KHIS vann on" },
   "tailor.title_em": { en: "unique", et: "ainulaadne" },
-  "tailor.subtitle": {
-    en: "You don't pick a KHIS off a shelf. You commission one. Choose the model, the style, the dimensions, the bottom, the finish — and the features that make it yours.",
-    et: "KHIS-i ei vali riiulilt. Tellid selle. Vali mudel, stiil, mõõdud, põhi, viimistlus — ja omadused, mis teevad sellest sinu oma.",
-  },
+  "tailor.subtitle": { en: "", et: "" },
   "tailor.intro": {
     en: "KHIS performs special orders, where each client can choose the type of bath, the style, and the right size for them. There is also possible to add heating system, air-massage, lights and a stone bottom. Tell us your vision — we will hand-build it.",
     et: "Iga eritellimusel valmiv KHIS vann luuakse vastavalt sinu soovidele, ruumile ja visioonile. Võimalik on valida mudel, stiil ja mõõdud ning lisada erinevaid funktsioone, sealhulgas küttesüsteem, õhumassaaž ja valgustus. Jaga meiega oma visiooni — meie loome sellest ajatult elegantse käsitööna valminud vanni.",

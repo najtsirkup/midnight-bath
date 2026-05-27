@@ -13,7 +13,7 @@ import { useLang } from "@/lib/i18n";
 const featureIcons = [Hammer, Brush, Settings2, Leaf, Flame, Waves, Anchor, Mountain];
 
 const HomeLayout = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const [lightbox, setLightbox] = useState<number | null>(null);
   const previewImages = galleryImages.slice(0, 4);
 
@@ -37,11 +37,8 @@ const HomeLayout = () => {
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-white drop-shadow-[0_2px_24px_rgba(0,0,0,0.6)]">
             {t("hero.title_1")} <em className="text-primary-glow not-italic">{t("hero.title_em")}</em> {t("hero.title_2")}
           </h1>
-          <p className="mt-8 max-w-2xl mx-auto text-base md:text-lg text-white leading-relaxed font-light drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
-            {t("hero.lead")}
-          </p>
           <div className="mt-12 flex flex-wrap gap-4 justify-center">
-            <GoldButton to="/contact">{t("cta.request_quote")}</GoldButton>
+            <GoldButton to="/#contact">{t("cta.request_quote")}</GoldButton>
             <GoldButton to="/about" variant="outlineLight" arrow={false}>
               {t("cta.about_khis")}
             </GoldButton>
@@ -49,20 +46,22 @@ const HomeLayout = () => {
         </div>
       </section>
 
-      {/* PHILOSOPHY */}
-      <section className="py-28 md:py-40 bg-background">
-        <div className="container-luxe text-center max-w-3xl">
-          <p className="eyebrow mb-6">{t("philosophy.eyebrow")}</p>
-          <div className="gold-divider mb-10" />
-          <h2 className="font-serif text-3xl md:text-5xl leading-tight">
-            {t("philosophy.h1")}<br />
-            <span className="text-primary italic">{t("philosophy.h2")}</span>
-          </h2>
-          <p className="mt-10 text-base md:text-lg text-muted-foreground leading-relaxed font-light">
-            {t("philosophy.body")}
-          </p>
-        </div>
-      </section>
+      {/* PHILOSOPHY (ENG only) */}
+      {lang !== "et" && (
+        <section className="py-28 md:py-40 bg-background">
+          <div className="container-luxe text-center max-w-3xl">
+            <p className="eyebrow mb-6">{t("philosophy.eyebrow")}</p>
+            <div className="gold-divider mb-10" />
+            <h2 className="font-serif text-3xl md:text-5xl leading-tight">
+              {t("philosophy.h1")}<br />
+              <span className="text-primary italic">{t("philosophy.h2")}</span>
+            </h2>
+            <p className="mt-10 text-base md:text-lg text-muted-foreground leading-relaxed font-light">
+              {t("philosophy.body")}
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* PRODUCTS */}
       <section className="py-24 md:py-32 border-t border-border/60 bg-secondary/40">

@@ -44,7 +44,7 @@ const TailorMade = () => {
           {t("tailor.intro")}
         </p>
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
-          <GoldButton to="/contact">{t("tailor.free_quote")}</GoldButton>
+          <GoldButton to="/#contact">{t("tailor.free_quote")}</GoldButton>
         </div>
       </div>
     </section>
