@@ -109,7 +109,7 @@ const Product = () => {
               <p className="text-sm text-muted-foreground italic mb-10">{deliveryNote}</p>
 
               <div className="flex flex-wrap gap-4">
-                <GoldButton to="/contact">{t("cta.request_quote")}</GoldButton>
+                <GoldButton to="/#contact">{t("cta.request_quote")}</GoldButton>
                 <GoldButton to="/technology" variant="outline" arrow={false}>{t("product.tech_btn")}</GoldButton>
               </div>
             </div>

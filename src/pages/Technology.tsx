@@ -58,7 +58,7 @@ const Technology = () => {
             <p className="eyebrow mb-4">{t("tech.built_eyebrow")}</p>
             <h2 className="font-serif text-4xl md:text-5xl mb-6">{t("tech.built_title")}</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">{t("tech.built_body")}</p>
-            <GoldButton to="/contact">{t("tech.configure")}</GoldButton>
+            <GoldButton to="/#contact">{t("tech.configure")}</GoldButton>
           </div>
         </div>
       </div>
