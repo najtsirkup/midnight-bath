@@ -1,1 +1,12 @@
-/*    /index.html   200
+# Legacy EST URLs from Google index
+/et/meist          /about         301
+/et/meist/         /about         301
+/et/shop           /tailor-made   301
+/et/shop/          /tailor-made   301
+
+# Removed standalone contact page → homepage contact section
+/contact           /#contact      301
+/contact/          /#contact      301
+
+# SPA fallback
+/*                 /index.html    200
