@@ -44,7 +44,7 @@ export const ContactForm = ({ embedded = false }: Props) => {
       });
       setSent(true);
       formEl.reset();
-      toast({ title: t("contact.send"), description: t("contact.personal") });
+      toast({ title: t("contact.success_title"), description: t("contact.success_desc") });
     } catch (err) {
       toast({ title: "Error", description: String(err), variant: "destructive" });
     } finally {

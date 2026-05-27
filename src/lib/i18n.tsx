@@ -101,6 +101,8 @@ const dict: Record<string, { en: string; et: string }> = {
   "contact.tellus": { en: "Tell us about your project", et: "Räägi meile oma projektist" },
   "contact.send": { en: "Send my request", et: "Saada päring" },
   "contact.personal": { en: "We respond personally — never with a templated reply.", et: "Personaalne lähenemine igale päringule." },
+  "contact.success_title": { en: "Request sent!", et: "Päring saadetud!" },
+  "contact.success_desc": { en: "We'll get back to you quickly.", et: "Vastame Teile peagi." },
 
   // ===== Footer =====
   "footer.member": {
