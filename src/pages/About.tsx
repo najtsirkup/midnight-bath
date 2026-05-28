@@ -58,13 +58,17 @@ const About = () => {
             <p className="eyebrow mb-4">{t("about.philo_eyebrow")}</p>
             <h3 className="font-serif text-2xl md:text-3xl mb-6">{t("about.philo_t")}</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">{t("about.philo_p1")}</p>
-            <p className="text-muted-foreground leading-relaxed">{t("about.philo_p2")}</p>
+            {t("about.philo_p2") && (
+              <p className="text-muted-foreground leading-relaxed">{t("about.philo_p2")}</p>
+            )}
           </div>
           <div className="border-l-2 border-primary pl-8">
             <p className="eyebrow mb-4">{t("about.indulge_eyebrow")}</p>
             <h3 className="font-serif text-2xl md:text-3xl mb-6">{t("about.indulge_t")}</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">{t("about.indulge_p1")}</p>
-            <p className="text-muted-foreground leading-relaxed">{t("about.indulge_p2")}</p>
+            {t("about.indulge_p2") && (
+              <p className="text-muted-foreground leading-relaxed">{t("about.indulge_p2")}</p>
+            )}
           </div>
         </div>
 

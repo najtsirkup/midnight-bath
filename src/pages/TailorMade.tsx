@@ -5,19 +5,20 @@ import ContactForm from "@/components/site/ContactForm";
 import { Mountain, Waves, Lightbulb, Ruler, Palette, Thermometer, Check, Clock, Award, Globe } from "lucide-react";
 import { products } from "@/lib/site-data";
 import tailorBanner from "@/assets/tailor-banner.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
+import tailorProcess from "@/assets/tailor-process.jpg";
 import { useLang } from "@/lib/i18n";
 
 const TailorMade = () => {
-  const { t } = useLang();
-  const extras = [
-    { icon: Mountain, title: t("ext.stone.t"), text: t("ext.stone.b") },
-    { icon: Waves, title: t("ext.air.t"), text: t("ext.air.b") },
-    { icon: Lightbulb, title: t("ext.light.t"), text: t("ext.light.b") },
-    { icon: Ruler, title: t("ext.size.t"), text: t("ext.size.b") },
-    { icon: Palette, title: t("ext.finish.t"), text: t("ext.finish.b") },
-    { icon: Thermometer, title: t("ext.heat.t"), text: t("ext.heat.b") },
+  const { t, lang } = useLang();
+  const allExtras = [
+    { key: "stone", icon: Mountain, title: t("ext.stone.t"), text: t("ext.stone.b") },
+    { key: "air", icon: Waves, title: t("ext.air.t"), text: t("ext.air.b") },
+    { key: "light", icon: Lightbulb, title: t("ext.light.t"), text: t("ext.light.b") },
+    { key: "size", icon: Ruler, title: t("ext.size.t"), text: t("ext.size.b") },
+    { key: "finish", icon: Palette, title: t("ext.finish.t"), text: t("ext.finish.b") },
+    { key: "heat", icon: Thermometer, title: t("ext.heat.t"), text: t("ext.heat.b") },
   ];
+  const extras = lang === "et" ? allExtras.filter((e) => e.key !== "stone") : allExtras;
   const steps: [string, string, string][] = [
     ["01", t("step.consult.t"), t("step.consult.b")],
     ["02", t("step.design.t"), t("step.design.b")],
@@ -33,8 +34,7 @@ const TailorMade = () => {
   />
   <PageShell
     eyebrow={t("tailor.eyebrow")}
-    title={<>{t("tailor.title_1")} <em className="text-primary-glow not-italic">{t("tailor.title_em")}</em>.</>}
-    subtitle={t("tailor.subtitle")}
+    title={<>{t("tailor.title_1")} <em className="text-primary-glow not-italic">{t("tailor.title_em")}</em></>}
     bannerImage={tailorBanner}
     bannerAlt="Tailor-made KHIS bath in candlelight"
   >
@@ -89,7 +89,7 @@ const TailorMade = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center mt-32">
           <div className="relative">
             <div className="absolute -inset-6 bg-gradient-radial-gold opacity-60 blur-2xl" />
-            <img src={gallery7} alt="Natural KHIS — stone bottom and air-massage" loading="lazy" className="relative w-full aspect-square object-cover border border-border" />
+            <img src={tailorProcess} alt="KHIS tailor-made process" loading="lazy" className="relative w-full aspect-square object-cover border border-border" />
           </div>
           <div>
             <p className="eyebrow mb-4">{t("tailor.how_eyebrow")}</p>
