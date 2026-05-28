@@ -34,8 +34,7 @@ const TailorMade = () => {
   />
   <PageShell
     eyebrow={t("tailor.eyebrow")}
-    title={<>{t("tailor.title_1")} <em className="text-primary-glow not-italic">{t("tailor.title_em")}</em>.</>}
-    subtitle={t("tailor.subtitle")}
+    title={<>{t("tailor.title_1")} <em className="text-primary-glow not-italic">{t("tailor.title_em")}</em></>}
     bannerImage={tailorBanner}
     bannerAlt="Tailor-made KHIS bath in candlelight"
   >
