@@ -5,7 +5,7 @@ import ContactForm from "@/components/site/ContactForm";
 import { Mountain, Waves, Lightbulb, Ruler, Palette, Thermometer, Check, Clock, Award, Globe } from "lucide-react";
 import { products } from "@/lib/site-data";
 import tailorBanner from "@/assets/tailor-banner.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
+import tailorProcess from "@/assets/tailor-process.jpg";
 import { useLang } from "@/lib/i18n";
 
 const TailorMade = () => {
