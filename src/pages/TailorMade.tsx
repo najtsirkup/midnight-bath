@@ -89,7 +89,7 @@ const TailorMade = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center mt-32">
           <div className="relative">
             <div className="absolute -inset-6 bg-gradient-radial-gold opacity-60 blur-2xl" />
-            <img src={gallery7} alt="Natural KHIS — stone bottom and air-massage" loading="lazy" className="relative w-full aspect-square object-cover border border-border" />
+            <img src={tailorProcess} alt="KHIS tailor-made process" loading="lazy" className="relative w-full aspect-square object-cover border border-border" />
           </div>
           <div>
             <p className="eyebrow mb-4">{t("tailor.how_eyebrow")}</p>
