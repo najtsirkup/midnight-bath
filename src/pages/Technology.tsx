@@ -3,7 +3,7 @@ import { GoldButton } from "@/components/site/GoldButton";
 import { SEO } from "@/components/site/SEO";
 import { Hammer, Settings2, Anchor, Leaf } from "lucide-react";
 import technologyImg from "@/assets/products/eternal-khis-2.jpg";
-import gallery7 from "@/assets/tech-engineering.jpg";
+import gallery7 from "@/assets/tech-khys.jpg";
 import { useLang } from "@/lib/i18n";
 
 const Technology = () => {
