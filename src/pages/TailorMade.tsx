@@ -9,15 +9,16 @@ import tailorProcess from "@/assets/tailor-process.jpg";
 import { useLang } from "@/lib/i18n";
 
 const TailorMade = () => {
-  const { t } = useLang();
-  const extras = [
-    { icon: Mountain, title: t("ext.stone.t"), text: t("ext.stone.b") },
-    { icon: Waves, title: t("ext.air.t"), text: t("ext.air.b") },
-    { icon: Lightbulb, title: t("ext.light.t"), text: t("ext.light.b") },
-    { icon: Ruler, title: t("ext.size.t"), text: t("ext.size.b") },
-    { icon: Palette, title: t("ext.finish.t"), text: t("ext.finish.b") },
-    { icon: Thermometer, title: t("ext.heat.t"), text: t("ext.heat.b") },
+  const { t, lang } = useLang();
+  const allExtras = [
+    { key: "stone", icon: Mountain, title: t("ext.stone.t"), text: t("ext.stone.b") },
+    { key: "air", icon: Waves, title: t("ext.air.t"), text: t("ext.air.b") },
+    { key: "light", icon: Lightbulb, title: t("ext.light.t"), text: t("ext.light.b") },
+    { key: "size", icon: Ruler, title: t("ext.size.t"), text: t("ext.size.b") },
+    { key: "finish", icon: Palette, title: t("ext.finish.t"), text: t("ext.finish.b") },
+    { key: "heat", icon: Thermometer, title: t("ext.heat.t"), text: t("ext.heat.b") },
   ];
+  const extras = lang === "et" ? allExtras.filter((e) => e.key !== "stone") : allExtras;
   const steps: [string, string, string][] = [
     ["01", t("step.consult.t"), t("step.consult.b")],
     ["02", t("step.design.t"), t("step.design.b")],
