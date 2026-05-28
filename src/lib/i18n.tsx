@@ -140,24 +140,24 @@ const dict: Record<string, { en: string; et: string }> = {
     et: "Nagu looduses, saad oma universumi ehitada vaid turvalises, hubases, soojas ja inspireerivas paigas. Olgu sa asjadega tegev või neid mõtiskledes — see peab olema esteetiliselt nauditav, ainulaadne, pilkupüüdev. Nagu KHIS vann.",
   },
   "about.philo_eyebrow": { en: "KHIS philosophy", et: "KHIS filosoofia" },
-  "about.philo_t": { en: "Start your own tradition", et: "Alusta oma traditsiooni" },
+  "about.philo_t": { en: "Start your own tradition", et: "Väärt traditsioonid" },
   "about.philo_p1": {
     en: "Everything about ourselves is in constant movement, whatever efforts we make to stop time and capture the essence. Some traditions have to be kept and nourished — bathtubs made of fine wood; and some have to be started by ourselves.",
-    et: "Kõik meie ümber on pidevas liikumises, ükskõik kui väga me püüame aega peatada ja olemust tabada. Mõned traditsioonid tuleb hoida ja toita — peenest puidust vannid; ja mõned tuleb endal alustada.",
+    et: "Kõik meie ümber on pidevas liikumises, ükskõik kui väga me püüame aega peatada ja olemust tabada. Mõned traditsioonid, nagu peenest puidust vannid on väärtustamiseks ja hoidmiseks.",
   },
   "about.philo_p2": {
     en: "With KHIS, you can start your own tradition of quality time, gliding through waves of fullness.",
-    et: "KHISiga saad alustada oma kvaliteetaja traditsiooni, libistades end läbi täiuslikkuse lainete.",
+    et: "",
   },
   "about.indulge_eyebrow": { en: "Indulgence", et: "Nautimine" },
   "about.indulge_t": { en: "Your very own home spa", et: "Sinu enda kodune spa" },
   "about.indulge_p1": {
     en: "We believe in natural flow of time and experience. We believe that maintaining the natural rhythm of life is essential, keeping up with harmony around us is the path to follow.",
-    et: "Usume aja ja kogemuse loomulikku voogu. Usume, et elu loomuliku rütmi säilitamine on hädavajalik ning meid ümbritsev harmoonia on tee, mida tasub järgida.",
+    et: "Usume, et elu loomuliku rütmi säilitamine on hädavajalik. KHIS-i vanni püsiv soojus, rahu ja vanniskäimise lõõgastav mõju aitab selle saavutada.",
   },
   "about.indulge_p2": {
     en: "You can have your very own home spa, indulge yourself with the lasting warmth of a wooden KHIS bathtub, experience tranquility and the relaxing effect of bathing.",
-    et: "Sul võib olla oma kodune spa, naudi puidust KHIS vanni püsivat soojust, koge rahu ja vannitamise lõõgastavat mõju.",
+    et: "",
   },
   "about.frants_eyebrow": { en: "Frants Seer", et: "Frants Seer" },
   "about.frants_title": { en: "KHIS Master Craftsman", et: "KHIS meistrikäsitööline" },
@@ -167,7 +167,7 @@ const dict: Record<string, { en: string; et: string }> = {
   },
   "about.frants_p2": {
     en: "I started building KHIS baths to re-establish the link between bathing — a natural and soothing activity — and nature, a relationship that has been broken by building bathtubs from synthetic materials. Even most wooden baths are covered in varnish or plastic, so they no longer feel like natural wood.",
-    et: "Hakkasin KHIS vanne ehitama, et taastada side vannitamise — loomuliku ja rahustava tegevuse — ja looduse vahel. See suhe on katkenud sünteetiliste materjalide kasutamise tõttu. Isegi enamik puidust vanne on lakitud või plastikuga kaetud, nii et need ei tundu enam loomuliku puiduna.",
+    et: "Hakkasin KHIS vanne ehitama, et siduda omavahel vannituba ja loodus. See side on katkenud sünteetiliste materjalide kasutamise tõttu. Isegi enamik puidust vanne on lakitud või plastikuga kaetud, nii et need ei tundu enam loomuliku puiduna.",
   },
   "about.frants_p3": {
     en: "My challenge was to build a bath that is organic, but still durable and beautiful. After three years of experimenting with different materials, designs, processes and technologies, I finally found a special combination that works perfectly.",
@@ -175,7 +175,7 @@ const dict: Record<string, { en: string; et: string }> = {
   },
   "about.frants_quote": {
     en: "You won't find baths like these made by anyone else. Not only are these baths unique in the world, but no two baths are the same.",
-    et: "Selliseid vanne ei leia kelleltki teiselt. Need vannid pole mitte ainult maailmas ainulaadsed, vaid ka kaks vanni pole kunagi täpselt ühesugused.",
+    et: "Selliseid vanne ei leia kelleltki teiselt. Need vannid pole mitte ainult maailmas ainulaadsed, vaid ka iga järgmine vann on eelmisest natuke erinev.",
   },
   "about.start_project": { en: "Start your project", et: "Alusta oma projekti" },
 
