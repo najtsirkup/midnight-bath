@@ -23,6 +23,7 @@ const Gallery = () => {
       subtitle={t("gallery.subtitle")}
       bannerImage={couchBanner}
       bannerAlt="KHIS bath beside a green velvet sofa"
+      bannerPosition="center 30%"
     >
       <section className="py-20 md:py-28">
         <div className="container-luxe">

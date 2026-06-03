@@ -21,6 +21,7 @@ const Blog = () => {
     subtitle={t("blog.page_subtitle")}
     bannerImage={gallery6}
     bannerAlt="KHIS bath in a calm interior"
+    bannerPosition="center 30%"
   >
     <section className="py-24">
       <div className="container-luxe">

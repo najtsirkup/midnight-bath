@@ -8,16 +8,17 @@ interface Props {
   subtitle?: ReactNode;
   bannerImage: string;
   bannerAlt?: string;
+  bannerPosition?: string;
   children: ReactNode;
 }
 
-export const PageShell = ({ eyebrow, title, subtitle, bannerImage, bannerAlt = "", children }: Props) => (
+export const PageShell = ({ eyebrow, title, subtitle, bannerImage, bannerAlt = "", bannerPosition = "center", children }: Props) => (
   <div className="min-h-screen bg-background text-foreground">
     <Header overDark />
 
     {/* Beautiful image banner — sets a buying mood */}
     <section className="page-banner pt-20">
-      <img src={bannerImage} alt={bannerAlt} className="page-banner-img animate-slow-zoom" />
+      <img src={bannerImage} alt={bannerAlt} className="page-banner-img animate-slow-zoom" style={{ objectPosition: bannerPosition }} />
       <div className="page-banner-overlay" />
       <div className="container-luxe relative z-10 text-center max-w-3xl mx-auto py-20">
         <h1 className="font-serif text-4xl md:text-6xl leading-tight text-white animate-fade-up">{title}</h1>
