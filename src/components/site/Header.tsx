@@ -86,9 +86,9 @@ export const Header = ({ overDark = false }: { overDark?: boolean }) => {
           <img
             src={logo}
             alt="KHIS"
-            width={44}
-            height={44}
-            className="h-12 w-auto object-contain"
+            width={56}
+            height={56}
+            className="h-14 w-auto object-contain"
           />
         </Link>
 

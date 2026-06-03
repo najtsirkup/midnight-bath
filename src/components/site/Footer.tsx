@@ -45,7 +45,7 @@ export const Footer = () => {
         {/* Brand + intro + partners */}
         <div className="md:col-span-5">
           <div>
-            <img src={logo} alt="KHIS" className="h-16 w-auto object-contain" loading="lazy" />
+            <img src={logo} alt="KHIS" className="h-20 w-auto object-contain" loading="lazy" />
           </div>
           <p className="mt-6 max-w-md text-sm text-foreground/80 leading-relaxed">
             {t("footer.member")}{" "}

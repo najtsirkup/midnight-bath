@@ -32,17 +32,13 @@ const Gallery = () => {
                 key={i}
                 type="button"
                 onClick={() => setIndex(i)}
-                className={`overflow-hidden border border-border group bg-muted cursor-zoom-in ${
-                  i % 7 === 0 ? "md:col-span-2 md:row-span-2" : ""
-                }`}
+                className="overflow-hidden border border-border group bg-muted cursor-zoom-in"
               >
                 <img
                   src={img.src}
                   alt={img.alt}
                   loading="lazy"
-                  className={`w-full object-cover transition-transform duration-1000 group-hover:scale-110 ${
-                    i % 7 === 0 ? "h-full min-h-[400px] md:min-h-[600px]" : "aspect-square"
-                  }`}
+                  className="w-full aspect-square object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
               </button>
             ))}
