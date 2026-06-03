@@ -25,16 +25,19 @@ const About = () => {
     <section className="py-24 md:py-32">
       <div className="container-luxe">
         {lang === "et" ? (
-          <div className="max-w-3xl mx-auto text-center mb-32">
-            <h2 className="font-serif text-3xl md:text-4xl leading-tight mb-4">
-              Vann kui disainielement.
-            </h2>
-            <h3 className="font-serif text-2xl md:text-3xl text-primary italic mb-10">
-              Vann, mis kujundab kogu ruumi ilme.
-            </h3>
-            <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              KHIS vanni ainulaadne disain püüab pilku ja loob meeleolu ka siis, kui vann parajasti kasutuses ei ole. Selle vorm ühendab elegantsi, hubasuse ja ajatuse, muutes vannitoa tõeliseks lõõgastumise paigaks. Nagu looduseski, sünnib tasakaal keskkonnas, mis on soe, turvaline ja inspireeriv. KHIS vann loob ruumi, kus disain ja heaolu kohtuvad loomulikul viisil.
-            </p>
+          <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
+            <div>
+              <h3 className="font-serif text-2xl md:text-3xl text-primary italic mb-8">
+                Vann, mis kujundab kogu ruumi ilme
+              </h3>
+              <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
+                KHIS vanni ainulaadne disain püüab pilku ja loob meeleolu ka siis, kui vann parajasti kasutuses ei ole. Selle vorm ühendab elegantsi, hubasuse ja ajatuse, muutes vannitoa tõeliseks lõõgastumise paigaks. Nagu looduseski, sünnib tasakaal keskkonnas, mis on soe, turvaline ja inspireeriv. KHIS vann loob ruumi, kus disain ja heaolu kohtuvad loomulikul viisil.
+              </p>
+            </div>
+            <div className="relative">
+              <div className="absolute -inset-6 bg-gradient-radial-gold opacity-60 blur-2xl" />
+              <img src={gallery5} alt="KHIS vann interjööris" loading="lazy" className="relative w-full aspect-[4/5] object-cover border border-border" />
+            </div>
           </div>
         ) : (
           <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
