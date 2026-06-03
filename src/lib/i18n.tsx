@@ -47,7 +47,7 @@ const dict: Record<string, { en: string; et: string }> = {
   // ===== Features =====
   "features.eyebrow": { en: "Features", et: "Omadused" },
   "features.title": { en: "Features of KHIS", et: "Tunnused" },
-  "features.hallmarks": { en: "Hallmarks", et: "Tunnused" },
+  "features.hallmarks": { en: "Hallmarks", et: "" },
 
   "feat.one_of_a_kind.t": { en: "One of a kind", et: "Eksklusiivne disain" },
   "feat.one_of_a_kind.b": { en: "Bathtubs unlike any others in the world.", et: "Vannid, mis on ainulaadsed maailmas." },
