@@ -156,7 +156,7 @@ const Product = () => {
           {/* Features */}
           <div className="mt-32">
             <div className="text-center mb-14">
-              <p className="eyebrow mb-4">{t("features.hallmarks")}</p>
+              {t("features.hallmarks") && <p className="eyebrow mb-4">{t("features.hallmarks")}</p>}
               <h2 className="font-serif text-4xl md:text-5xl">{t("features.title")}</h2>
               <div className="gold-divider mt-8" />
             </div>
