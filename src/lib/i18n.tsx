@@ -72,7 +72,7 @@ const dict: Record<string, { en: string; et: string }> = {
   "gallery.see_more": { en: "See more", et: "Vaata rohkem" },
   "gallery.subtitle": {
     en: "From private homes in the UK to pilgrimage houses in Estonia — every KHIS bath finds its own room.",
-    et: "Erakodudest Suurbritannias palverännumajadeni Eestis — iga KHIS vann leiab oma ruumi.",
+    et: "Villadest Hollywoodis kuni palverännumajadeni Eestis — iga KHIS vann leiab endale õige koha.",
   },
 
   // ===== Blog section =====
@@ -163,19 +163,19 @@ const dict: Record<string, { en: string; et: string }> = {
   "about.frants_title": { en: "KHIS Master Craftsman", et: "KHIS meistrikäsitööline" },
   "about.frants_p1": {
     en: "I love the natural world. My family has lived in the countryside for generations, and now I am raising my children here. I want them to have a deep, life-long connection to nature — to trees, to water, to pure air.",
-    et: "Armastan loodust. Mu perekond on elanud maal põlvkondi, nüüd kasvatan siin oma lapsi. Soovin, et neil oleks sügav, eluaegne side loodusega — puudega, veega, puhta õhuga.",
+    et: "Armastan loodust. Minu pere on elanud maal põlvkondi ning nüüd kasvatan siin ka oma lapsi. Soovin, et neil tekiks sama sügav ja eluaegne side loodusega — puidu, vee ja puhta õhuga.",
   },
   "about.frants_p2": {
     en: "I started building KHIS baths to re-establish the link between bathing — a natural and soothing activity — and nature, a relationship that has been broken by building bathtubs from synthetic materials. Even most wooden baths are covered in varnish or plastic, so they no longer feel like natural wood.",
-    et: "Hakkasin KHIS vanne ehitama, et siduda omavahel vannituba ja loodus. See side on katkenud sünteetiliste materjalide kasutamise tõttu. Isegi enamik puidust vanne on lakitud või plastikuga kaetud, nii et need ei tundu enam loomuliku puiduna.",
+    et: "Just sellest soovist sündiski KHIS. Tahtsin luua midagi, mis ühendaks vannitoa taas loodusega. Tänapäeval on see side sageli kadunud sünteetiliste materjalide tõttu. Isegi paljud puidust vannid on kaetud laki või plastiga ning ei mõju enam ehtsa puiduna.",
   },
   "about.frants_p3": {
     en: "My challenge was to build a bath that is organic, but still durable and beautiful. After three years of experimenting with different materials, designs, processes and technologies, I finally found a special combination that works perfectly.",
-    et: "Minu väljakutse oli ehitada vann, mis on orgaaniline, kuid samas vastupidav ja ilus. Pärast kolme aastat erinevate materjalide, disainide, protsesside ja tehnoloogiatega katsetamist leidsin lõpuks erilise kombinatsiooni, mis töötab täiuslikult.",
+    et: "Minu eesmärk oli luua vann, mis oleks ühteaegu orgaaniline, vastupidav ja esteetiliselt kaunis. Selle täiusliku tasakaalu leidmine võttis aega. Kolme aasta jooksul katsetasin erinevate materjalide, tehnoloogiate, töövõtete ja disainilahendustega, kuni leidsin ainulaadse kombinatsiooni, mis toimib täpselt nii, nagu olin unistanud.",
   },
   "about.frants_quote": {
     en: "You won't find baths like these made by anyone else. Not only are these baths unique in the world, but no two baths are the same.",
-    et: "Selliseid vanne ei leia kelleltki teiselt. Need vannid pole mitte ainult maailmas ainulaadsed, vaid ka iga järgmine vann on eelmisest natuke erinev.",
+    et: "Selliseid vanne ei leia kelleltki teiselt. Need pole mitte ainult maailmas ainulaadsed — ka iga järgmine vann sünnib veidi erinevana kui eelmine.",
   },
   "about.start_project": { en: "Start your project", et: "Alusta oma projekti" },
 
