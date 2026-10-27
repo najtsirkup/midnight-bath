@@ -14,7 +14,9 @@ import BlogPost from "./pages/BlogPost.tsx";
 import Product from "./pages/Product.tsx";
 
 import NotFound from "./pages/NotFound.tsx";
+import Privacy from "./pages/Privacy";
 import ScrollToTop from "./components/site/ScrollToTop";
+import CookieConsent from "./components/site/CookieConsent";
 import { LangProvider } from "@/lib/i18n";
 
 const queryClient = new QueryClient();
@@ -37,9 +39,11 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/shop/:slug" element={<Product />} />
-            
+            <Route path="/privacy" element={<Privacy />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <CookieConsent />
         </BrowserRouter>
       </TooltipProvider>
       </LangProvider>

@@ -353,6 +353,17 @@ const dict: Record<string, { en: string; et: string }> = {
     en: "Once your order is received and we confirm all the custom details, your exclusive, handcrafted bath will be delivered within 9 weeks (depending on the model and availability of accessories).",
     et: "Pärast tellimuse kinnitamist ja detailide kooskõlastamist valmib sinu käsitööna valmistatud KHIS vann kuni 9 nädala jooksul, sõltuvalt valitud mudelist ja lisavarustuse saadavusest.",
   },
+
+  // ===== Cookies / privacy =====
+  "footer.privacy": { en: "Privacy Policy", et: "Privaatsuspoliitika" },
+  "footer.cookies": { en: "Cookie settings", et: "Küpsiste seaded" },
+  "consent.title": { en: "Your privacy choices", et: "Sinu privaatsusvalikud" },
+  "consent.body": {
+    en: "We use cookies to measure how visitors use our site and to improve our marketing, including Facebook and Instagram ads. Pages you view may be shared with Meta Platforms. Choose whether we may use these cookies — you can change your choice anytime via “Cookie settings” in the footer.",
+    et: "Kasutame küpsiseid, et mõõta, kuidas külastajad meie saiti kasutavad, ja täiustada oma turundust, sealhulgas Facebooki ja Instagrami reklaame. Külastatud leheküljed võidakse edastada Meta Platformsile. Vali, kas sa lubad meil neid küpsiseid kasutada — valikut saad igal ajal muuta jaluses oleva „Küpsiste seadete“ kaudu.",
+  },
+  "consent.accept": { en: "Accept", et: "Nõustun" },
+  "consent.decline": { en: "Decline", et: "Keeldun" },
 };
 
 interface Ctx {
