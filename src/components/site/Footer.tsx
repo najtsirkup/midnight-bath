@@ -153,9 +153,21 @@ export const Footer = () => {
           <p className="text-xs text-muted-foreground tracking-wider">
             © {new Date().getFullYear()} KHIS by Frants Seer. {t("footer.rights")}
           </p>
-          <p className="text-xs text-muted-foreground tracking-[0.2em] uppercase">
-            {t("footer.handcrafted")}
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new CustomEvent("khis:open-consent"))}
+              className="text-xs text-muted-foreground tracking-[0.2em] uppercase hover:text-primary transition-colors"
+            >
+              {t("footer.cookies")}
+            </button>
+            <Link to="/privacy" className="text-xs text-muted-foreground tracking-[0.2em] uppercase hover:text-primary transition-colors">
+              {t("footer.privacy")}
+            </Link>
+            <p className="text-xs text-muted-foreground tracking-[0.2em] uppercase">
+              {t("footer.handcrafted")}
+            </p>
+          </div>
         </div>
       </div>
     </footer>

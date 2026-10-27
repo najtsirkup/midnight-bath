@@ -2,6 +2,7 @@ import { useState, FormEvent } from "react";
 import { GoldButton } from "@/components/site/GoldButton";
 import { useLang } from "@/lib/i18n";
 import { toast } from "@/hooks/use-toast";
+import { trackLead } from "@/lib/meta-pixel";
 
 interface Props {
   embedded?: boolean;
@@ -42,6 +43,7 @@ export const ContactForm = ({ embedded = false }: Props) => {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...data }),
       });
+      trackLead();
       setSent(true);
       formEl.reset();
       toast({ title: t("contact.success_title"), description: t("contact.success_desc") });
