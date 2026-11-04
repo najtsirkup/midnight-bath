@@ -38,11 +38,12 @@ export const ContactForm = ({ embedded = false }: Props) => {
 
     setSubmitting(true);
     try {
-      await fetch("/", {
+      const res = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...data }),
       });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       trackLead();
       setSent(true);
       formEl.reset();

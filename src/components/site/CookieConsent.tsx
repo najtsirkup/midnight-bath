@@ -15,6 +15,9 @@ export const CookieConsent = () => {
     detectRegion().then((r) => {
       if (cancelled) return;
       setRegionState(r);
+      // Load the pixel on every page visit when permitted (earlier acceptance,
+      // or visitor outside consent regions). initPixel re-checks consent itself.
+      initPixel(r);
       if (isConsentRegion(r) && !getConsent()) setVisible(true);
     });
     const open = () => setVisible(true);
